@@ -1,0 +1,6 @@
+{
+  "name": "IndianShares",
+  "description": "Independent Indian equity research and market intelligence platform with proprietary scoring, IPO & GMP intelligence, institutional flows, and AI analysis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
