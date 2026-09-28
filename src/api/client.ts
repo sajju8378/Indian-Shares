@@ -90,6 +90,16 @@ export const apiClient = {
     return await clientFallback.getMarketOverview();
   },
 
+  async refreshMarketOverview(): Promise<MarketOverviewData> {
+    if (!isStaticHost) {
+      try {
+        const res = await fetch('/api/market/refresh', { method: 'POST' });
+        if (res.ok) return await res.json();
+      } catch {}
+    }
+    return await clientFallback.getMarketOverview();
+  },
+
   async getMarketMovers(): Promise<MoversData> {
     if (!isStaticHost) {
       try {

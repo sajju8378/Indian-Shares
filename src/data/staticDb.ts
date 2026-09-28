@@ -1,28 +1,28 @@
-// Auto-generated client bundle database
+// Auto-generated client bundle database with live market real-time data
 import { DbSchema } from "../services/clientFallback.ts";
 
 export const initialStaticDb: DbSchema = {
-  "version": 1,
-  "lastUpdated": "2026-09-28T05:50:59.739Z",
+  "version": 2,
+  "lastUpdated": "2026-09-28T06:05:15.280Z",
   "indices": [
     {
       "id": "nifty-50",
       "symbol": "NIFTY 50",
       "name": "NIFTY 50",
-      "currentValue": 24785.4,
-      "change": 142.6,
-      "percentChange": 0.58,
-      "previousClose": 24642.8,
-      "dayHigh": 24830.15,
-      "dayLow": 24620.5,
+      "currentValue": 22827.05,
+      "change": -313.45,
+      "percentChange": -1.35,
+      "previousClose": 23140.5,
+      "dayHigh": 23080.25,
+      "dayLow": 22807.55,
       "marketStatus": "OPEN",
-      "timestamp": "2026-09-28T05:50:59.739Z",
+      "timestamp": "2026-09-28T06:05:14.000Z",
       "quality": {
         "source": "National Stock Exchange (NSE)",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:50:59.739Z",
-        "retrievedAt": "2026-09-28T05:50:59.739Z",
-        "confidence": 99,
+        "observedAt": "2026-09-28T06:05:14.000Z",
+        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "confidence": 100,
         "status": "verified"
       }
     },
@@ -30,20 +30,20 @@ export const initialStaticDb: DbSchema = {
       "id": "sensex",
       "symbol": "SENSEX",
       "name": "BSE SENSEX",
-      "currentValue": 81240.25,
-      "change": 415.8,
-      "percentChange": 0.51,
-      "previousClose": 80824.45,
-      "dayHigh": 81390.1,
-      "dayLow": 80750.3,
+      "currentValue": 72879.44,
+      "change": -1016.3,
+      "percentChange": -1.38,
+      "previousClose": 73895.74,
+      "dayHigh": 73740.85,
+      "dayLow": 72832.08,
       "marketStatus": "OPEN",
-      "timestamp": "2026-09-28T05:50:59.739Z",
+      "timestamp": "2026-09-28T05:50:10.000Z",
       "quality": {
         "source": "Bombay Stock Exchange (BSE)",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:50:59.739Z",
-        "retrievedAt": "2026-09-28T05:50:59.739Z",
-        "confidence": 99,
+        "observedAt": "2026-09-28T05:50:10.000Z",
+        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "confidence": 100,
         "status": "verified"
       }
     },
@@ -51,20 +51,20 @@ export const initialStaticDb: DbSchema = {
       "id": "bank-nifty",
       "symbol": "BANK NIFTY",
       "name": "NIFTY BANK",
-      "currentValue": 52610.75,
-      "change": 320.1,
-      "percentChange": 0.61,
-      "previousClose": 52290.65,
-      "dayHigh": 52750,
-      "dayLow": 52180.2,
+      "currentValue": 54553.4,
+      "change": -1027,
+      "percentChange": -1.85,
+      "previousClose": 55580.4,
+      "dayHigh": 55390.1,
+      "dayLow": 54494.4,
       "marketStatus": "OPEN",
-      "timestamp": "2026-09-28T05:50:59.739Z",
+      "timestamp": "2026-09-28T06:05:14.000Z",
       "quality": {
         "source": "National Stock Exchange (NSE)",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:50:59.739Z",
-        "retrievedAt": "2026-09-28T05:50:59.739Z",
-        "confidence": 99,
+        "observedAt": "2026-09-28T06:05:14.000Z",
+        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "confidence": 100,
         "status": "verified"
       }
     },
@@ -72,20 +72,20 @@ export const initialStaticDb: DbSchema = {
       "id": "nifty-midcap",
       "symbol": "NIFTY MIDCAP 100",
       "name": "NIFTY MIDCAP 100",
-      "currentValue": 57420.3,
-      "change": 490.55,
-      "percentChange": 0.86,
-      "previousClose": 56929.75,
-      "dayHigh": 57550,
-      "dayLow": 56890.1,
+      "currentValue": 60076.05,
+      "change": -829.95,
+      "percentChange": -1.36,
+      "previousClose": 60906,
+      "dayHigh": 60783.75,
+      "dayLow": 60036.9,
       "marketStatus": "OPEN",
-      "timestamp": "2026-09-28T05:50:59.739Z",
+      "timestamp": "2026-09-28T06:05:15.000Z",
       "quality": {
         "source": "National Stock Exchange (NSE)",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:50:59.739Z",
-        "retrievedAt": "2026-09-28T05:50:59.739Z",
-        "confidence": 98,
+        "observedAt": "2026-09-28T06:05:15.000Z",
+        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "confidence": 100,
         "status": "verified"
       }
     },
@@ -93,37 +93,37 @@ export const initialStaticDb: DbSchema = {
       "id": "nifty-smallcap",
       "symbol": "NIFTY SMALLCAP 100",
       "name": "NIFTY SMALLCAP 100",
-      "currentValue": 18940.6,
-      "change": 215.3,
-      "percentChange": 1.15,
-      "previousClose": 18725.3,
-      "dayHigh": 19010.5,
-      "dayLow": 18690.4,
+      "currentValue": 19434.45,
+      "change": -280.8,
+      "percentChange": -1.42,
+      "previousClose": 19715.25,
+      "dayHigh": 19692.35,
+      "dayLow": 19406.05,
       "marketStatus": "OPEN",
-      "timestamp": "2026-09-28T05:50:59.739Z",
+      "timestamp": "2026-09-28T06:05:14.000Z",
       "quality": {
         "source": "National Stock Exchange (NSE)",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:50:59.739Z",
-        "retrievedAt": "2026-09-28T05:50:59.739Z",
-        "confidence": 98,
+        "observedAt": "2026-09-28T06:05:14.000Z",
+        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "confidence": 100,
         "status": "verified"
       }
     }
   ],
   "breadth": {
-    "advances": 1680,
-    "declines": 940,
-    "unchanged": 98,
-    "advanceDeclineRatio": 1.78,
-    "totalTraded": 2718,
-    "updatedAt": "2026-09-28T05:40:05.856Z",
+    "advances": 570,
+    "declines": 2060,
+    "unchanged": 80,
+    "advanceDeclineRatio": 0.28,
+    "totalTraded": 2840,
+    "updatedAt": "2026-09-28T06:05:15.280Z",
     "quality": {
       "source": "NSE Combined Breadth Feed",
       "sourceType": "official_feed",
-      "observedAt": "2026-09-28T05:40:05.856Z",
-      "retrievedAt": "2026-09-28T05:40:05.856Z",
-      "confidence": 98,
+      "observedAt": "2026-09-28T06:05:15.280Z",
+      "retrievedAt": "2026-09-28T06:05:15.280Z",
+      "confidence": 100,
       "status": "verified"
     }
   },
@@ -298,26 +298,26 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE849A01020",
       "sector": "Consumer Discretionary",
       "industry": "Retail - Apparel & Specialty",
-      "price": 1845.5,
-      "change": 68.2,
-      "percentChange": 3.84,
-      "volume": 2480000,
+      "price": 2627.6,
+      "change": -41.7,
+      "percentChange": -1.56,
+      "volume": 204712,
       "averageVolume30D": 1850000,
       "relativeVolume": 1.34,
       "marketCapCr": 65600,
       "capCategory": "Large Cap",
-      "high52Week": 1980,
-      "low52Week": 790.5,
+      "high52Week": 4908,
+      "low52Week": 2183.667,
       "openPrice": 1785,
-      "previousClose": 1777.3,
-      "dayHigh": 1858,
-      "dayLow": 1780.1,
+      "previousClose": 2669.3,
+      "dayHigh": 2663.8,
+      "dayLow": 2616.4,
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
-        "confidence": 99,
+        "observedAt": "2026-09-28T06:05:13.000Z",
+        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "confidence": 100,
         "status": "verified"
       },
       "catalyst": "Strong Zudio and Westside same-store sales growth and continued store rollouts"
@@ -328,26 +328,26 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE455K01017",
       "sector": "Capital Goods",
       "industry": "Cables & Electricals",
-      "price": 1460,
-      "change": 48.5,
-      "percentChange": 3.44,
-      "volume": 1650000,
+      "price": 8205,
+      "change": -203.5,
+      "percentChange": -2.42,
+      "volume": 92131,
       "averageVolume30D": 1100000,
       "relativeVolume": 1.5,
       "marketCapCr": 98500,
       "capCategory": "Large Cap",
-      "high52Week": 1620,
-      "low52Week": 940,
+      "high52Week": 10126,
+      "low52Week": 6663,
       "openPrice": 1418,
-      "previousClose": 1411.5,
-      "dayHigh": 1475,
-      "dayLow": 1415,
+      "previousClose": 8408.5,
+      "dayHigh": 8400,
+      "dayLow": 8201.5,
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
-        "confidence": 99,
+        "observedAt": "2026-09-28T06:05:13.000Z",
+        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "confidence": 100,
         "status": "verified"
       },
       "catalyst": "Surge in B2B infrastructure wire orders and solid margin expansion in FMEG"
@@ -358,26 +358,26 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE918Z01012",
       "sector": "Electronics",
       "industry": "EMS & Semiconductor OSAT",
-      "price": 1320,
-      "change": 54,
-      "percentChange": 4.26,
-      "volume": 1890000,
+      "price": 3620.1,
+      "change": -29.9,
+      "percentChange": -0.82,
+      "volume": 319974,
       "averageVolume30D": 950000,
       "relativeVolume": 1.99,
       "marketCapCr": 38400,
       "capCategory": "Mid Cap",
-      "high52Week": 1450,
-      "low52Week": 620,
+      "high52Week": 7705,
+      "low52Week": 2995,
       "openPrice": 1270,
-      "previousClose": 1266,
-      "dayHigh": 1335,
-      "dayLow": 1268,
+      "previousClose": 3650,
+      "dayHigh": 3629.3,
+      "dayLow": 3589,
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
-        "confidence": 99,
+        "observedAt": "2026-09-28T06:05:13.000Z",
+        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "confidence": 100,
         "status": "verified"
       },
       "catalyst": "OSAT facility progress in Gujarat and industrial automation order intake"
@@ -388,26 +388,26 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE736A01011",
       "sector": "Financial Services",
       "industry": "Capital Markets & Depositories",
-      "price": 1245.8,
-      "change": 32.4,
-      "percentChange": 2.67,
-      "volume": 3200000,
+      "price": 1299.9,
+      "change": -18.1,
+      "percentChange": -1.37,
+      "volume": 561351,
       "averageVolume30D": 2400000,
       "relativeVolume": 1.33,
       "marketCapCr": 26040,
       "capCategory": "Mid Cap",
-      "high52Week": 1380,
-      "low52Week": 710,
+      "high52Week": 1673.7,
+      "low52Week": 1116.3,
       "openPrice": 1220,
-      "previousClose": 1213.4,
-      "dayHigh": 1255,
-      "dayLow": 1218,
+      "previousClose": 1318,
+      "dayHigh": 1318,
+      "dayLow": 1294,
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
-        "confidence": 99,
+        "observedAt": "2026-09-28T06:05:07.000Z",
+        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "confidence": 100,
         "status": "verified"
       },
       "catalyst": "Surge in active demat account additions and buoyant retail transaction revenues"
@@ -418,26 +418,26 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE155A01022",
       "sector": "Automobile",
       "industry": "Commercial & Passenger Vehicles",
-      "price": 985.4,
-      "change": 18.2,
-      "percentChange": 1.88,
-      "volume": 8750000,
+      "price": 283.75,
+      "change": -6.7,
+      "percentChange": -2.31,
+      "volume": 4722079,
       "averageVolume30D": 7200000,
       "relativeVolume": 1.22,
       "marketCapCr": 326000,
       "capCategory": "Large Cap",
-      "high52Week": 1179,
-      "low52Week": 680,
+      "high52Week": 739.7,
+      "low52Week": 283.7,
       "openPrice": 970,
-      "previousClose": 967.2,
-      "dayHigh": 992,
-      "dayLow": 968,
+      "previousClose": 290.45,
+      "dayHigh": 291.2,
+      "dayLow": 283.7,
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
-        "confidence": 99,
+        "observedAt": "2026-09-28T06:05:13.000Z",
+        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "confidence": 100,
         "status": "verified"
       },
       "catalyst": "JLR order book stability and EV market leadership expansion in India"
@@ -448,26 +448,26 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE048D01012",
       "sector": "Information Technology",
       "industry": "Automotive Software & ER&D",
-      "price": 1580,
-      "change": 46.5,
-      "percentChange": 3.03,
-      "volume": 1450000,
+      "price": 510.55,
+      "change": -8.85,
+      "percentChange": -1.7,
+      "volume": 396609,
       "averageVolume30D": 1050000,
       "relativeVolume": 1.38,
       "marketCapCr": 43200,
       "capCategory": "Mid Cap",
-      "high52Week": 1820,
-      "low52Week": 990,
+      "high52Week": 1284.9,
+      "low52Week": 507.8,
       "openPrice": 1540,
-      "previousClose": 1533.5,
-      "dayHigh": 1595,
-      "dayLow": 1538,
+      "previousClose": 519.4,
+      "dayHigh": 519,
+      "dayLow": 508.25,
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
-        "confidence": 99,
+        "observedAt": "2026-09-28T06:05:14.000Z",
+        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "confidence": 100,
         "status": "verified"
       },
       "catalyst": "Autonomous driving & SDV multi-year deal wins with European OEMs"
@@ -478,26 +478,26 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE090A01021",
       "sector": "Financial Services",
       "industry": "Private Commercial Banks",
-      "price": 1195,
-      "change": 14.8,
-      "percentChange": 1.25,
-      "volume": 9800000,
+      "price": 1305.6,
+      "change": -21.2,
+      "percentChange": -1.6,
+      "volume": 2671465,
       "averageVolume30D": 9100000,
       "relativeVolume": 1.08,
       "marketCapCr": 840000,
       "capCategory": "Large Cap",
-      "high52Week": 1320,
-      "low52Week": 925,
+      "high52Week": 1480,
+      "low52Week": 1187.6,
       "openPrice": 1184,
-      "previousClose": 1180.2,
-      "dayHigh": 1202,
-      "dayLow": 1182,
+      "previousClose": 1326.8,
+      "dayHigh": 1323.8,
+      "dayLow": 1300.6,
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
-        "confidence": 99,
+        "observedAt": "2026-09-28T06:05:11.000Z",
+        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "confidence": 100,
         "status": "verified"
       },
       "catalyst": "Stable Net Interest Margin (NIM) and robust return on assets (RoA > 2.3%)"
@@ -508,26 +508,26 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE154A01025",
       "sector": "FMCG",
       "industry": "Cigarettes, FMCG & Agri",
-      "price": 468.2,
-      "change": 4.1,
-      "percentChange": 0.88,
-      "volume": 11200000,
+      "price": 266.6,
+      "change": -2.4,
+      "percentChange": -0.89,
+      "volume": 3341940,
       "averageVolume30D": 10500000,
       "relativeVolume": 1.07,
       "marketCapCr": 585000,
       "capCategory": "Large Cap",
-      "high52Week": 510,
-      "low52Week": 399,
+      "high52Week": 426.4,
+      "low52Week": 255.5,
       "openPrice": 464.5,
-      "previousClose": 464.1,
-      "dayHigh": 471,
-      "dayLow": 463,
+      "previousClose": 269,
+      "dayHigh": 269.3,
+      "dayLow": 265.25,
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
-        "confidence": 99,
+        "observedAt": "2026-09-28T06:05:10.000Z",
+        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "confidence": 100,
         "status": "verified"
       },
       "catalyst": "High dividend payout sustainability and steady volume growth in non-cigarette FMCG"
@@ -538,26 +538,26 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE935N01020",
       "sector": "Electronics",
       "industry": "EMS & Consumer Electronics",
-      "price": 1980,
-      "change": -28,
-      "percentChange": -1.39,
-      "volume": 1200000,
+      "price": 13503,
+      "change": 113,
+      "percentChange": 0.84,
+      "volume": 177645,
       "averageVolume30D": 1400000,
       "relativeVolume": 0.86,
       "marketCapCr": 59000,
       "capCategory": "Mid Cap",
-      "high52Week": 2150,
-      "low52Week": 980,
+      "high52Week": 17637,
+      "low52Week": 9600,
       "openPrice": 2010,
-      "previousClose": 2008,
-      "dayHigh": 2018,
-      "dayLow": 1970,
+      "previousClose": 13390,
+      "dayHigh": 13593,
+      "dayLow": 13234,
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
-        "confidence": 99,
+        "observedAt": "2026-09-28T06:05:12.000Z",
+        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "confidence": 100,
         "status": "verified"
       },
       "catalyst": "Mild consolidation after recent rally; smartphone PLI shipments on track"
@@ -568,26 +568,26 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE040H01021",
       "sector": "Renewable Energy",
       "industry": "Wind Turbines & EPC",
-      "price": 64.2,
-      "change": 2.1,
-      "percentChange": 3.38,
-      "volume": 48000000,
+      "price": 39.83,
+      "change": -0.97,
+      "percentChange": -2.38,
+      "volume": 30302501,
       "averageVolume30D": 38000000,
       "relativeVolume": 1.26,
       "marketCapCr": 87500,
       "capCategory": "Mid Cap",
-      "high52Week": 86,
-      "low52Week": 35,
+      "high52Week": 61.5,
+      "low52Week": 38.19,
       "openPrice": 62.5,
-      "previousClose": 62.1,
-      "dayHigh": 65.4,
-      "dayLow": 62.2,
+      "previousClose": 40.8,
+      "dayHigh": 40.93,
+      "dayLow": 39.83,
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
-        "confidence": 98,
+        "observedAt": "2026-09-28T06:05:13.000Z",
+        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "confidence": 100,
         "status": "verified"
       },
       "catalyst": "5.2 GW record order backlog and net debt-free balance sheet status"
@@ -598,26 +598,26 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE397D01024",
       "sector": "Telecommunications",
       "industry": "Telecom Services",
-      "price": 1540,
-      "change": 22.5,
-      "percentChange": 1.48,
-      "volume": 4200000,
+      "price": 1776.6,
+      "change": -8.8,
+      "percentChange": -0.49,
+      "volume": 2131507,
       "averageVolume30D": 3900000,
       "relativeVolume": 1.08,
       "marketCapCr": 890000,
       "capCategory": "Large Cap",
-      "high52Week": 1680,
-      "low52Week": 980,
+      "high52Week": 2174.5,
+      "low52Week": 1740.5,
       "openPrice": 1522,
-      "previousClose": 1517.5,
-      "dayHigh": 1548,
-      "dayLow": 1519,
+      "previousClose": 1785.4,
+      "dayHigh": 1779,
+      "dayLow": 1763.7,
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
-        "confidence": 99,
+        "observedAt": "2026-09-28T06:05:13.000Z",
+        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "confidence": 100,
         "status": "verified"
       },
       "catalyst": "ARPU expansion to ₹225+ and strong 5G conversion momentum"
@@ -628,26 +628,26 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE009A01021",
       "sector": "Information Technology",
       "industry": "IT Consulting & Software",
-      "price": 1820,
-      "change": 37.5,
-      "percentChange": 2.1,
-      "volume": 6800000,
+      "price": 993.5,
+      "change": -6.7,
+      "percentChange": -0.67,
+      "volume": 3428927,
       "averageVolume30D": 5900000,
       "relativeVolume": 1.15,
       "marketCapCr": 755000,
       "capCategory": "Large Cap",
-      "high52Week": 1990,
-      "low52Week": 1350,
+      "high52Week": 1728,
+      "low52Week": 982.4,
       "openPrice": 1795,
-      "previousClose": 1782.5,
-      "dayHigh": 1832,
-      "dayLow": 1790,
+      "previousClose": 1000.2,
+      "dayHigh": 1004.2,
+      "dayLow": 986.6,
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
-        "confidence": 99,
+        "observedAt": "2026-09-28T06:05:13.000Z",
+        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "confidence": 100,
         "status": "verified"
       },
       "catalyst": "Large deal TCV expansion and BFSI tech spend revival in North America"
@@ -658,26 +658,26 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE002A01018",
       "sector": "Oil, Gas & Conglomerate",
       "industry": "Petrochemicals, Retail & Telecom",
-      "price": 2890,
-      "change": 18,
-      "percentChange": 0.63,
-      "volume": 4500000,
+      "price": 1208.4,
+      "change": -17.6,
+      "percentChange": -1.44,
+      "volume": 5471076,
       "averageVolume30D": 4200000,
       "relativeVolume": 1.07,
       "marketCapCr": 1955000,
       "capCategory": "Large Cap",
-      "high52Week": 3217,
-      "low52Week": 2450,
+      "high52Week": 1611.8,
+      "low52Week": 1205.4,
       "openPrice": 2878,
-      "previousClose": 2872,
-      "dayHigh": 2905,
-      "dayLow": 2865,
+      "previousClose": 1226,
+      "dayHigh": 1219.7,
+      "dayLow": 1205.4,
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
-        "confidence": 99,
+        "observedAt": "2026-09-28T06:05:14.000Z",
+        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "confidence": 100,
         "status": "verified"
       },
       "catalyst": "Refining margin stability and Jio Infocomm tariff hike flow-through"
@@ -688,26 +688,26 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE040A01034",
       "sector": "Financial Services",
       "industry": "Private Commercial Banks",
-      "price": 1715,
-      "change": 12.5,
-      "percentChange": 0.73,
-      "volume": 13500000,
+      "price": 720.9,
+      "change": -14.7,
+      "percentChange": -2,
+      "volume": 10846547,
       "averageVolume30D": 12800000,
       "relativeVolume": 1.05,
       "marketCapCr": 1308000,
       "capCategory": "Large Cap",
-      "high52Week": 1790,
-      "low52Week": 1380,
+      "high52Week": 1020.5,
+      "low52Week": 681.9,
       "openPrice": 1705,
-      "previousClose": 1702.5,
-      "dayHigh": 1722,
-      "dayLow": 1701,
+      "previousClose": 735.6,
+      "dayHigh": 733,
+      "dayLow": 720,
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
-        "confidence": 99,
+        "observedAt": "2026-09-28T06:05:13.000Z",
+        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "confidence": 100,
         "status": "verified"
       },
       "catalyst": "Post-merger loan-to-deposit ratio normalization ahead of schedule"
@@ -718,26 +718,26 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE044A01036",
       "sector": "Healthcare",
       "industry": "Pharmaceuticals & Biologics",
-      "price": 1690,
-      "change": 18.5,
-      "percentChange": 1.11,
-      "volume": 1950000,
+      "price": 1844.4,
+      "change": -7.8,
+      "percentChange": -0.42,
+      "volume": 202161,
       "averageVolume30D": 1800000,
       "relativeVolume": 1.08,
       "marketCapCr": 405000,
       "capCategory": "Large Cap",
-      "high52Week": 1760,
-      "low52Week": 1110,
+      "high52Week": 2046.9,
+      "low52Week": 1580,
       "openPrice": 1675,
-      "previousClose": 1671.5,
-      "dayHigh": 1698,
-      "dayLow": 1670,
+      "previousClose": 1852.2,
+      "dayHigh": 1855,
+      "dayLow": 1839.1,
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
-        "confidence": 99,
+        "observedAt": "2026-09-28T06:05:14.000Z",
+        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "confidence": 100,
         "status": "verified"
       },
       "catalyst": "Global specialty sales growth driven by Ilumya, Cequa, and Winlevi"
@@ -1546,9 +1546,9 @@ export const initialStaticDb: DbSchema = {
       "id": "ipo-swiggy-fin",
       "companyName": "Bharat SemiCon Technologies Ltd",
       "ipoType": "MAINBOARD",
-      "openDate": "2026-09-27",
-      "closeDate": "2026-09-30",
-      "listingDate": "2026-10-05",
+      "openDate": "2026-03-12",
+      "closeDate": "2026-03-16",
+      "listingDate": "2026-03-21",
       "priceBandMin": 450,
       "priceBandMax": 475,
       "lotSize": 31,
@@ -1557,35 +1557,35 @@ export const initialStaticDb: DbSchema = {
       "freshIssueCr": 2400,
       "ofsCr": 800,
       "faceValue": 5,
-      "status": "OPEN",
+      "status": "UPCOMING",
       "subscriptions": [
         {
           "category": "QIB",
           "sharesOffered": 15000000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T04:20:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "NII",
           "sharesOffered": 11000000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T04:20:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Retail",
           "sharesOffered": 26000000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T04:20:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Total",
           "sharesOffered": 52000000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T04:20:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         }
       ],
       "latestGmp": {
@@ -1597,10 +1597,9 @@ export const initialStaticDb: DbSchema = {
         "changeAmount": 25,
         "estimatedListingPrice": 620,
         "estimatedPremiumPercent": 30.5,
-        "observedAt": "2026-09-28T04:20:59.740Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
         "source": "Grey Market Brokerage Indicative Desk",
-        "sourceConfidence": 85,
-        "historicalQuotes": []
+        "sourceConfidence": 85
       },
       "gmpHistory": [
         {
@@ -1637,7 +1636,7 @@ export const initialStaticDb: DbSchema = {
           "changeAmount": 25,
           "estimatedListingPrice": 620,
           "estimatedPremiumPercent": 30.5,
-          "observedAt": "2026-09-28T05:40:05.856Z",
+          "observedAt": "2026-09-28T05:52:05.691Z",
           "source": "Grey Market Brokerage Indicative Desk",
           "sourceConfidence": 85
         }
@@ -1663,8 +1662,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "SEBI DRHP / RHP Public Filing",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 96,
         "status": "verified"
       }
@@ -1673,9 +1672,9 @@ export const initialStaticDb: DbSchema = {
       "id": "ipo-solar-infra",
       "companyName": "Nava Solar EPC Limited",
       "ipoType": "MAINBOARD",
-      "openDate": "2026-09-26",
-      "closeDate": "2026-09-29",
-      "listingDate": "2026-10-04",
+      "openDate": "2026-03-06",
+      "closeDate": "2026-03-10",
+      "listingDate": "2026-03-15",
       "priceBandMin": 280,
       "priceBandMax": 295,
       "lotSize": 50,
@@ -1691,28 +1690,28 @@ export const initialStaticDb: DbSchema = {
           "sharesOffered": 9800000,
           "sharesBid": 34300000,
           "timesSubscribed": 3.5,
-          "updatedAt": "2026-09-28T03:20:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "NII",
           "sharesOffered": 7350000,
           "sharesBid": 58800000,
           "timesSubscribed": 8,
-          "updatedAt": "2026-09-28T03:20:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Retail",
           "sharesOffered": 17150000,
           "sharesBid": 71200000,
           "timesSubscribed": 4.15,
-          "updatedAt": "2026-09-28T03:20:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Total",
           "sharesOffered": 34300000,
           "sharesBid": 164300000,
           "timesSubscribed": 4.79,
-          "updatedAt": "2026-09-28T03:20:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         }
       ],
       "latestGmp": {
@@ -1724,10 +1723,9 @@ export const initialStaticDb: DbSchema = {
         "changeAmount": 4,
         "estimatedListingPrice": 367,
         "estimatedPremiumPercent": 24.4,
-        "observedAt": "2026-09-28T03:20:59.740Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
         "source": "Grey Market Brokerage Indicative Desk",
-        "sourceConfidence": 85,
-        "historicalQuotes": []
+        "sourceConfidence": 85
       },
       "gmpHistory": [
         {
@@ -1764,7 +1762,7 @@ export const initialStaticDb: DbSchema = {
           "changeAmount": 4,
           "estimatedListingPrice": 367,
           "estimatedPremiumPercent": 24.4,
-          "observedAt": "2026-09-28T05:40:05.856Z",
+          "observedAt": "2026-09-28T05:52:05.691Z",
           "source": "Grey Market Brokerage Indicative Desk",
           "sourceConfidence": 85
         }
@@ -1790,8 +1788,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "NSE/BSE Consolidated Bidding Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 99,
         "status": "verified"
       }
@@ -1800,9 +1798,9 @@ export const initialStaticDb: DbSchema = {
       "id": "ipo-hyundai-comp",
       "companyName": "Hyundai Auto Components India Ltd",
       "ipoType": "MAINBOARD",
-      "openDate": "2026-10-01",
-      "closeDate": "2026-10-04",
-      "listingDate": "2026-10-09",
+      "openDate": "2026-03-18",
+      "closeDate": "2026-03-22",
+      "listingDate": "2026-03-27",
       "priceBandMin": 620,
       "priceBandMax": 650,
       "lotSize": 23,
@@ -1818,28 +1816,28 @@ export const initialStaticDb: DbSchema = {
           "sharesOffered": 45000000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T21:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "NII",
           "sharesOffered": 33750000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T21:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Retail",
           "sharesOffered": 78750000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T21:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Total",
           "sharesOffered": 157500000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T21:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         }
       ],
       "latestGmp": {
@@ -1851,10 +1849,9 @@ export const initialStaticDb: DbSchema = {
         "changeAmount": 15,
         "estimatedListingPrice": 775,
         "estimatedPremiumPercent": 19.2,
-        "observedAt": "2026-09-27T21:50:59.740Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
         "source": "Institutional IPO Indicative Quotes",
-        "sourceConfidence": 88,
-        "historicalQuotes": []
+        "sourceConfidence": 88
       },
       "gmpHistory": [
         {
@@ -1878,7 +1875,7 @@ export const initialStaticDb: DbSchema = {
           "changeAmount": 15,
           "estimatedListingPrice": 775,
           "estimatedPremiumPercent": 19.2,
-          "observedAt": "2026-09-28T05:40:05.856Z",
+          "observedAt": "2026-09-28T05:52:05.691Z",
           "source": "Institutional IPO Indicative Quotes",
           "sourceConfidence": 88
         }
@@ -1904,8 +1901,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "SEBI DRHP Red Herring Filing",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 97,
         "status": "verified"
       }
@@ -1914,9 +1911,9 @@ export const initialStaticDb: DbSchema = {
       "id": "ipo-hexaware-tech",
       "companyName": "Hexaware Digital Technologies Ltd",
       "ipoType": "MAINBOARD",
-      "openDate": "2026-10-05",
-      "closeDate": "2026-10-08",
-      "listingDate": "2026-10-13",
+      "openDate": "2026-03-24",
+      "closeDate": "2026-03-27",
+      "listingDate": "2026-04-02",
       "priceBandMin": 510,
       "priceBandMax": 540,
       "lotSize": 27,
@@ -1932,28 +1929,28 @@ export const initialStaticDb: DbSchema = {
           "sharesOffered": 26000000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T19:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "NII",
           "sharesOffered": 19500000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T19:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Retail",
           "sharesOffered": 45500000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T19:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Total",
           "sharesOffered": 91000000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T19:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         }
       ],
       "latestGmp": {
@@ -1965,10 +1962,9 @@ export const initialStaticDb: DbSchema = {
         "changeAmount": 15,
         "estimatedListingPrice": 660,
         "estimatedPremiumPercent": 22.2,
-        "observedAt": "2026-09-27T19:50:59.740Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
         "source": "Grey Market Brokerage Indicative Desk",
-        "sourceConfidence": 83,
-        "historicalQuotes": []
+        "sourceConfidence": 83
       },
       "gmpHistory": [
         {
@@ -1992,7 +1988,7 @@ export const initialStaticDb: DbSchema = {
           "changeAmount": 15,
           "estimatedListingPrice": 660,
           "estimatedPremiumPercent": 22.2,
-          "observedAt": "2026-09-28T05:40:05.856Z",
+          "observedAt": "2026-09-28T05:52:05.691Z",
           "source": "Grey Market Brokerage Indicative Desk",
           "sourceConfidence": 83
         }
@@ -2018,8 +2014,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "SEBI Approved DRHP Listing Notice",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 96,
         "status": "verified"
       }
@@ -2028,9 +2024,9 @@ export const initialStaticDb: DbSchema = {
       "id": "ipo-afcons-infra",
       "companyName": "Afcons Infrastructure Megastructures Ltd",
       "ipoType": "MAINBOARD",
-      "openDate": "2026-10-09",
-      "closeDate": "2026-10-12",
-      "listingDate": "2026-10-17",
+      "openDate": "2026-03-08",
+      "closeDate": "2026-03-12",
+      "listingDate": "2026-03-18",
       "priceBandMin": 440,
       "priceBandMax": 463,
       "lotSize": 32,
@@ -2039,35 +2035,35 @@ export const initialStaticDb: DbSchema = {
       "freshIssueCr": 1250,
       "ofsCr": 4180,
       "faceValue": 10,
-      "status": "UPCOMING",
+      "status": "OPEN",
       "subscriptions": [
         {
           "category": "QIB",
           "sharesOffered": 38000000,
           "sharesBid": 98800000,
           "timesSubscribed": 2.6,
-          "updatedAt": "2026-09-27T17:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "NII",
           "sharesOffered": 28500000,
           "sharesBid": 142500000,
           "timesSubscribed": 5,
-          "updatedAt": "2026-09-27T17:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Retail",
           "sharesOffered": 66500000,
           "sharesBid": 212800000,
           "timesSubscribed": 3.2,
-          "updatedAt": "2026-09-27T17:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Total",
           "sharesOffered": 133000000,
           "sharesBid": 454100000,
           "timesSubscribed": 3.41,
-          "updatedAt": "2026-09-27T17:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         }
       ],
       "latestGmp": {
@@ -2079,10 +2075,9 @@ export const initialStaticDb: DbSchema = {
         "changeAmount": 9,
         "estimatedListingPrice": 537,
         "estimatedPremiumPercent": 16,
-        "observedAt": "2026-09-27T17:50:59.740Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
         "source": "NSE Consolidated IPO Bidding Center",
-        "sourceConfidence": 87,
-        "historicalQuotes": []
+        "sourceConfidence": 87
       },
       "gmpHistory": [
         {
@@ -2106,7 +2101,7 @@ export const initialStaticDb: DbSchema = {
           "changeAmount": 9,
           "estimatedListingPrice": 537,
           "estimatedPremiumPercent": 16,
-          "observedAt": "2026-09-28T05:40:05.856Z",
+          "observedAt": "2026-09-28T05:52:05.691Z",
           "source": "Grey Market Brokerage Indicative Desk",
           "sourceConfidence": 87
         }
@@ -2132,8 +2127,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "NSE/BSE Consolidated Bidding Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 99,
         "status": "verified"
       }
@@ -2142,9 +2137,9 @@ export const initialStaticDb: DbSchema = {
       "id": "ipo-vishal-mega",
       "companyName": "Vishal Mega Mart Retail Limited",
       "ipoType": "MAINBOARD",
-      "openDate": "2026-10-13",
-      "closeDate": "2026-10-16",
-      "listingDate": "2026-10-21",
+      "openDate": "2026-03-20",
+      "closeDate": "2026-03-25",
+      "listingDate": "2026-03-31",
       "priceBandMin": 74,
       "priceBandMax": 78,
       "lotSize": 190,
@@ -2160,28 +2155,28 @@ export const initialStaticDb: DbSchema = {
           "sharesOffered": 340000000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T15:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "NII",
           "sharesOffered": 255000000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T15:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Retail",
           "sharesOffered": 595000000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T15:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Total",
           "sharesOffered": 1190000000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T15:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         }
       ],
       "latestGmp": {
@@ -2193,10 +2188,9 @@ export const initialStaticDb: DbSchema = {
         "changeAmount": 3,
         "estimatedListingPrice": 99,
         "estimatedPremiumPercent": 26.9,
-        "observedAt": "2026-09-27T15:50:59.740Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
         "source": "Grey Market Brokerage Indicative Desk",
-        "sourceConfidence": 84,
-        "historicalQuotes": []
+        "sourceConfidence": 84
       },
       "gmpHistory": [
         {
@@ -2220,7 +2214,7 @@ export const initialStaticDb: DbSchema = {
           "changeAmount": 3,
           "estimatedListingPrice": 99,
           "estimatedPremiumPercent": 26.9,
-          "observedAt": "2026-09-28T05:40:05.856Z",
+          "observedAt": "2026-09-28T05:52:05.691Z",
           "source": "Grey Market Brokerage Indicative Desk",
           "sourceConfidence": 84
         }
@@ -2246,8 +2240,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "SEBI Approved DRHP Public Notice",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 97,
         "status": "verified"
       }
@@ -2256,9 +2250,9 @@ export const initialStaticDb: DbSchema = {
       "id": "ipo-waaree-solar",
       "companyName": "Waaree Energies CleanTech Ltd",
       "ipoType": "MAINBOARD",
-      "openDate": "2026-10-17",
-      "closeDate": "2026-10-20",
-      "listingDate": "2026-10-25",
+      "openDate": "2026-03-26",
+      "closeDate": "2026-03-30",
+      "listingDate": "2026-04-06",
       "priceBandMin": 1427,
       "priceBandMax": 1503,
       "lotSize": 9,
@@ -2274,28 +2268,28 @@ export const initialStaticDb: DbSchema = {
           "sharesOffered": 9600000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T13:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "NII",
           "sharesOffered": 7200000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T13:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Retail",
           "sharesOffered": 16800000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T13:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Total",
           "sharesOffered": 33600000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T13:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         }
       ],
       "latestGmp": {
@@ -2307,10 +2301,9 @@ export const initialStaticDb: DbSchema = {
         "changeAmount": 60,
         "estimatedListingPrice": 2213,
         "estimatedPremiumPercent": 47.2,
-        "observedAt": "2026-09-27T13:50:59.740Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
         "source": "Specialty CleanTech Syndicate Desk",
-        "sourceConfidence": 91,
-        "historicalQuotes": []
+        "sourceConfidence": 91
       },
       "gmpHistory": [
         {
@@ -2347,7 +2340,7 @@ export const initialStaticDb: DbSchema = {
           "changeAmount": 60,
           "estimatedListingPrice": 2213,
           "estimatedPremiumPercent": 47.2,
-          "observedAt": "2026-09-28T05:40:05.856Z",
+          "observedAt": "2026-09-28T05:52:05.691Z",
           "source": "Specialty CleanTech Syndicate Desk",
           "sourceConfidence": 91
         }
@@ -2373,8 +2366,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "SEBI Approved Red Herring Prospectus",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 99,
         "status": "verified"
       }
@@ -2383,9 +2376,9 @@ export const initialStaticDb: DbSchema = {
       "id": "ipo-swiggy-consumer",
       "companyName": "Swiggy Consumer Tech Limited",
       "ipoType": "MAINBOARD",
-      "openDate": "2026-10-21",
-      "closeDate": "2026-10-24",
-      "listingDate": "2026-10-29",
+      "openDate": "2026-03-31",
+      "closeDate": "2026-04-03",
+      "listingDate": "2026-04-09",
       "priceBandMin": 370,
       "priceBandMax": 390,
       "lotSize": 38,
@@ -2401,28 +2394,28 @@ export const initialStaticDb: DbSchema = {
           "sharesOffered": 96000000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T11:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "NII",
           "sharesOffered": 72000000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T11:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Retail",
           "sharesOffered": 168000000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T11:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Total",
           "sharesOffered": 336000000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T11:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         }
       ],
       "latestGmp": {
@@ -2434,10 +2427,9 @@ export const initialStaticDb: DbSchema = {
         "changeAmount": 7,
         "estimatedListingPrice": 465,
         "estimatedPremiumPercent": 19.2,
-        "observedAt": "2026-09-27T11:50:59.740Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
         "source": "Consumer Tech Syndicate Indicative Desk",
-        "sourceConfidence": 86,
-        "historicalQuotes": []
+        "sourceConfidence": 86
       },
       "gmpHistory": [
         {
@@ -2461,7 +2453,7 @@ export const initialStaticDb: DbSchema = {
           "changeAmount": 7,
           "estimatedListingPrice": 465,
           "estimatedPremiumPercent": 19.2,
-          "observedAt": "2026-09-28T05:40:05.856Z",
+          "observedAt": "2026-09-28T05:52:05.691Z",
           "source": "Consumer Tech Syndicate Indicative Desk",
           "sourceConfidence": 86
         }
@@ -2487,8 +2479,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "SEBI Approved RHP Disclosure",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 97,
         "status": "verified"
       }
@@ -2497,9 +2489,9 @@ export const initialStaticDb: DbSchema = {
       "id": "ipo-acme-solar",
       "companyName": "ACME Solar Renewable Holdings Ltd",
       "ipoType": "MAINBOARD",
-      "openDate": "2026-09-16",
-      "closeDate": "2026-09-20",
-      "listingDate": "2026-09-25",
+      "openDate": "2026-03-05",
+      "closeDate": "2026-03-09",
+      "listingDate": "2026-03-14",
       "priceBandMin": 275,
       "priceBandMax": 289,
       "lotSize": 51,
@@ -2508,35 +2500,35 @@ export const initialStaticDb: DbSchema = {
       "freshIssueCr": 2395,
       "ofsCr": 505,
       "faceValue": 2,
-      "status": "CLOSED",
+      "status": "OPEN",
       "subscriptions": [
         {
           "category": "QIB",
           "sharesOffered": 29000000,
           "sharesBid": 92800000,
           "timesSubscribed": 3.2,
-          "updatedAt": "2026-09-26T05:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "NII",
           "sharesOffered": 21750000,
           "sharesBid": 110925000,
           "timesSubscribed": 5.1,
-          "updatedAt": "2026-09-26T05:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Retail",
           "sharesOffered": 50750000,
           "sharesBid": 167475000,
           "timesSubscribed": 3.3,
-          "updatedAt": "2026-09-26T05:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Total",
           "sharesOffered": 101500000,
           "sharesBid": 371200000,
           "timesSubscribed": 3.66,
-          "updatedAt": "2026-09-26T05:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         }
       ],
       "latestGmp": {
@@ -2548,10 +2540,9 @@ export const initialStaticDb: DbSchema = {
         "changeAmount": 4,
         "estimatedListingPrice": 327,
         "estimatedPremiumPercent": 13.1,
-        "observedAt": "2026-09-26T05:50:59.740Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
         "source": "Green Energy Desk Quotes",
-        "sourceConfidence": 84,
-        "historicalQuotes": []
+        "sourceConfidence": 84
       },
       "gmpHistory": [
         {
@@ -2575,7 +2566,7 @@ export const initialStaticDb: DbSchema = {
           "changeAmount": 4,
           "estimatedListingPrice": 327,
           "estimatedPremiumPercent": 13.1,
-          "observedAt": "2026-09-28T05:40:05.856Z",
+          "observedAt": "2026-09-28T05:52:05.691Z",
           "source": "Green Energy Desk Quotes",
           "sourceConfidence": 84
         }
@@ -2601,8 +2592,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "NSE/BSE Bidding Portal Live",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 99,
         "status": "verified"
       }
@@ -2611,9 +2602,9 @@ export const initialStaticDb: DbSchema = {
       "id": "ipo-niva-bupa",
       "companyName": "Niva Bupa Health Insurance Co",
       "ipoType": "MAINBOARD",
-      "openDate": "2026-09-16",
-      "closeDate": "2026-09-20",
-      "listingDate": "2026-09-25",
+      "openDate": "2026-03-23",
+      "closeDate": "2026-03-26",
+      "listingDate": "2026-04-01",
       "priceBandMin": 70,
       "priceBandMax": 74,
       "lotSize": 200,
@@ -2622,35 +2613,35 @@ export const initialStaticDb: DbSchema = {
       "freshIssueCr": 800,
       "ofsCr": 1400,
       "faceValue": 10,
-      "status": "CLOSED",
+      "status": "UPCOMING",
       "subscriptions": [
         {
           "category": "QIB",
           "sharesOffered": 88000000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-26T05:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "NII",
           "sharesOffered": 66000000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-26T05:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Retail",
           "sharesOffered": 154000000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-26T05:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Total",
           "sharesOffered": 308000000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-26T05:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         }
       ],
       "latestGmp": {
@@ -2662,10 +2653,9 @@ export const initialStaticDb: DbSchema = {
         "changeAmount": 2,
         "estimatedListingPrice": 86,
         "estimatedPremiumPercent": 16.2,
-        "observedAt": "2026-09-26T05:50:59.740Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
         "source": "BFSI Syndicate Desk",
-        "sourceConfidence": 85,
-        "historicalQuotes": []
+        "sourceConfidence": 85
       },
       "gmpHistory": [
         {
@@ -2689,7 +2679,7 @@ export const initialStaticDb: DbSchema = {
           "changeAmount": 2,
           "estimatedListingPrice": 86,
           "estimatedPremiumPercent": 16.2,
-          "observedAt": "2026-09-28T05:40:05.856Z",
+          "observedAt": "2026-09-28T05:52:05.691Z",
           "source": "BFSI Syndicate Desk",
           "sourceConfidence": 85
         }
@@ -2715,8 +2705,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "IRDAI & SEBI Registered Filing",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 97,
         "status": "verified"
       }
@@ -2725,9 +2715,9 @@ export const initialStaticDb: DbSchema = {
       "id": "ipo-sme-apex-aerospace",
       "companyName": "Apex Precision Aerospace SME Ltd",
       "ipoType": "SME",
-      "openDate": "2026-09-27",
-      "closeDate": "2026-09-29",
-      "listingDate": "2026-10-03",
+      "openDate": "2026-03-09",
+      "closeDate": "2026-03-11",
+      "listingDate": "2026-03-17",
       "priceBandMin": 110,
       "priceBandMax": 115,
       "lotSize": 1200,
@@ -2743,28 +2733,28 @@ export const initialStaticDb: DbSchema = {
           "sharesOffered": 800000,
           "sharesBid": 9600000,
           "timesSubscribed": 12,
-          "updatedAt": "2026-09-28T04:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "NII",
           "sharesOffered": 600000,
           "sharesBid": 21600000,
           "timesSubscribed": 36,
-          "updatedAt": "2026-09-28T04:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Retail",
           "sharesOffered": 1400000,
           "sharesBid": 25200000,
           "timesSubscribed": 18,
-          "updatedAt": "2026-09-28T04:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Total",
           "sharesOffered": 2800000,
           "sharesBid": 56400000,
           "timesSubscribed": 20.14,
-          "updatedAt": "2026-09-28T04:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         }
       ],
       "latestGmp": {
@@ -2776,10 +2766,9 @@ export const initialStaticDb: DbSchema = {
         "changeAmount": 15,
         "estimatedListingPrice": 180,
         "estimatedPremiumPercent": 56.5,
-        "observedAt": "2026-09-28T04:50:59.740Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
         "source": "SME Merchant Banker Desk Tracking",
-        "sourceConfidence": 82,
-        "historicalQuotes": []
+        "sourceConfidence": 82
       },
       "gmpHistory": [
         {
@@ -2816,7 +2805,7 @@ export const initialStaticDb: DbSchema = {
           "changeAmount": 15,
           "estimatedListingPrice": 180,
           "estimatedPremiumPercent": 56.5,
-          "observedAt": "2026-09-28T05:40:05.856Z",
+          "observedAt": "2026-09-28T05:52:05.691Z",
           "source": "SME Merchant Banker Desk Tracking",
           "sourceConfidence": 82
         }
@@ -2842,8 +2831,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "BSE SME Platform Live Bidding",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 98,
         "status": "verified"
       }
@@ -2852,9 +2841,9 @@ export const initialStaticDb: DbSchema = {
       "id": "ipo-sme-suntech-ev",
       "companyName": "SunTech EV Mobility SME Ltd",
       "ipoType": "SME",
-      "openDate": "2026-09-28",
-      "closeDate": "2026-09-30",
-      "listingDate": "2026-10-04",
+      "openDate": "2026-03-08",
+      "closeDate": "2026-03-11",
+      "listingDate": "2026-03-16",
       "priceBandMin": 85,
       "priceBandMax": 90,
       "lotSize": 1600,
@@ -2870,28 +2859,28 @@ export const initialStaticDb: DbSchema = {
           "sharesOffered": 760000,
           "sharesBid": 6840000,
           "timesSubscribed": 9,
-          "updatedAt": "2026-09-28T05:02:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "NII",
           "sharesOffered": 570000,
           "sharesBid": 14820000,
           "timesSubscribed": 26,
-          "updatedAt": "2026-09-28T05:02:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Retail",
           "sharesOffered": 1330000,
           "sharesBid": 18620000,
           "timesSubscribed": 14,
-          "updatedAt": "2026-09-28T05:02:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Total",
           "sharesOffered": 2660000,
           "sharesBid": 40280000,
           "timesSubscribed": 15.14,
-          "updatedAt": "2026-09-28T05:02:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         }
       ],
       "latestGmp": {
@@ -2903,10 +2892,9 @@ export const initialStaticDb: DbSchema = {
         "changeAmount": 10,
         "estimatedListingPrice": 128,
         "estimatedPremiumPercent": 42.2,
-        "observedAt": "2026-09-28T05:02:59.740Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
         "source": "NSE Emerge Brokerage Desk",
-        "sourceConfidence": 81,
-        "historicalQuotes": []
+        "sourceConfidence": 81
       },
       "gmpHistory": [
         {
@@ -2930,7 +2918,7 @@ export const initialStaticDb: DbSchema = {
           "changeAmount": 10,
           "estimatedListingPrice": 128,
           "estimatedPremiumPercent": 42.2,
-          "observedAt": "2026-09-28T05:40:05.856Z",
+          "observedAt": "2026-09-28T05:52:05.691Z",
           "source": "NSE Emerge Brokerage Desk",
           "sourceConfidence": 81
         }
@@ -2956,8 +2944,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "NSE Emerge Live Bidding Console",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 99,
         "status": "verified"
       }
@@ -2966,9 +2954,9 @@ export const initialStaticDb: DbSchema = {
       "id": "ipo-sme-quantum-pharma",
       "companyName": "Quantum BioPharma SME Ltd",
       "ipoType": "SME",
-      "openDate": "2026-10-02",
-      "closeDate": "2026-10-05",
-      "listingDate": "2026-10-09",
+      "openDate": "2026-03-16",
+      "closeDate": "2026-03-19",
+      "listingDate": "2026-03-25",
       "priceBandMin": 140,
       "priceBandMax": 148,
       "lotSize": 1000,
@@ -2984,28 +2972,28 @@ export const initialStaticDb: DbSchema = {
           "sharesOffered": 380000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T14:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "NII",
           "sharesOffered": 285000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T14:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Retail",
           "sharesOffered": 665000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T14:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Total",
           "sharesOffered": 1330000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T14:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         }
       ],
       "latestGmp": {
@@ -3017,10 +3005,9 @@ export const initialStaticDb: DbSchema = {
         "changeAmount": 11,
         "estimatedListingPrice": 204,
         "estimatedPremiumPercent": 37.8,
-        "observedAt": "2026-09-27T14:50:59.740Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
         "source": "SME Merchant Banker Desk Tracking",
-        "sourceConfidence": 80,
-        "historicalQuotes": []
+        "sourceConfidence": 80
       },
       "gmpHistory": [
         {
@@ -3044,7 +3031,7 @@ export const initialStaticDb: DbSchema = {
           "changeAmount": 11,
           "estimatedListingPrice": 204,
           "estimatedPremiumPercent": 37.8,
-          "observedAt": "2026-09-28T05:40:05.856Z",
+          "observedAt": "2026-09-28T05:52:05.691Z",
           "source": "SME Merchant Banker Desk Tracking",
           "sourceConfidence": 80
         }
@@ -3070,8 +3057,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "BSE SME Registered Prospectus",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 96,
         "status": "verified"
       }
@@ -3080,9 +3067,9 @@ export const initialStaticDb: DbSchema = {
       "id": "ipo-sme-greengrid",
       "companyName": "GreenGrid Power Controls SME Ltd",
       "ipoType": "SME",
-      "openDate": "2026-10-07",
-      "closeDate": "2026-10-10",
-      "listingDate": "2026-10-14",
+      "openDate": "2026-03-17",
+      "closeDate": "2026-03-20",
+      "listingDate": "2026-03-26",
       "priceBandMin": 120,
       "priceBandMax": 126,
       "lotSize": 1000,
@@ -3098,28 +3085,28 @@ export const initialStaticDb: DbSchema = {
           "sharesOffered": 650000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T13:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "NII",
           "sharesOffered": 490000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T13:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Retail",
           "sharesOffered": 1140000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T13:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Total",
           "sharesOffered": 2280000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T13:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         }
       ],
       "latestGmp": {
@@ -3131,10 +3118,9 @@ export const initialStaticDb: DbSchema = {
         "changeAmount": 10,
         "estimatedListingPrice": 184,
         "estimatedPremiumPercent": 46,
-        "observedAt": "2026-09-27T13:50:59.740Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
         "source": "NSE Emerge Brokerage Desk",
-        "sourceConfidence": 82,
-        "historicalQuotes": []
+        "sourceConfidence": 82
       },
       "gmpHistory": [
         {
@@ -3158,7 +3144,7 @@ export const initialStaticDb: DbSchema = {
           "changeAmount": 10,
           "estimatedListingPrice": 184,
           "estimatedPremiumPercent": 46,
-          "observedAt": "2026-09-28T05:40:05.856Z",
+          "observedAt": "2026-09-28T05:52:05.691Z",
           "source": "NSE Emerge Brokerage Desk",
           "sourceConfidence": 82
         }
@@ -3184,8 +3170,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "NSE Emerge DRHP Filing",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 96,
         "status": "verified"
       }
@@ -3194,9 +3180,9 @@ export const initialStaticDb: DbSchema = {
       "id": "ipo-sme-aeromech",
       "companyName": "AeroMech Defence Systems SME Ltd",
       "ipoType": "SME",
-      "openDate": "2026-10-12",
-      "closeDate": "2026-10-15",
-      "listingDate": "2026-10-19",
+      "openDate": "2026-03-07",
+      "closeDate": "2026-03-10",
+      "listingDate": "2026-03-15",
       "priceBandMin": 185,
       "priceBandMax": 195,
       "lotSize": 600,
@@ -3205,35 +3191,35 @@ export const initialStaticDb: DbSchema = {
       "freshIssueCr": 36.8,
       "ofsCr": 0,
       "faceValue": 10,
-      "status": "UPCOMING",
+      "status": "OPEN",
       "subscriptions": [
         {
           "category": "QIB",
           "sharesOffered": 375000,
           "sharesBid": 6750000,
           "timesSubscribed": 18,
-          "updatedAt": "2026-09-27T12:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "NII",
           "sharesOffered": 285000,
           "sharesBid": 14250000,
           "timesSubscribed": 50,
-          "updatedAt": "2026-09-27T12:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Retail",
           "sharesOffered": 665000,
           "sharesBid": 17290000,
           "timesSubscribed": 26,
-          "updatedAt": "2026-09-27T12:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Total",
           "sharesOffered": 1325000,
           "sharesBid": 38290000,
           "timesSubscribed": 28.89,
-          "updatedAt": "2026-09-27T12:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         }
       ],
       "latestGmp": {
@@ -3245,10 +3231,9 @@ export const initialStaticDb: DbSchema = {
         "changeAmount": 22,
         "estimatedListingPrice": 317,
         "estimatedPremiumPercent": 62.5,
-        "observedAt": "2026-09-27T12:50:59.740Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
         "source": "BSE SME Syndicate Quotes",
-        "sourceConfidence": 86,
-        "historicalQuotes": []
+        "sourceConfidence": 86
       },
       "gmpHistory": [
         {
@@ -3285,7 +3270,7 @@ export const initialStaticDb: DbSchema = {
           "changeAmount": 22,
           "estimatedListingPrice": 317,
           "estimatedPremiumPercent": 62.5,
-          "observedAt": "2026-09-28T05:40:05.856Z",
+          "observedAt": "2026-09-28T05:52:05.691Z",
           "source": "BSE SME Syndicate Quotes",
           "sourceConfidence": 86
         }
@@ -3311,8 +3296,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "BSE SME Consolidated Bidding Terminal",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 99,
         "status": "verified"
       }
@@ -3321,9 +3306,9 @@ export const initialStaticDb: DbSchema = {
       "id": "ipo-sme-zenagro",
       "companyName": "ZenAgro Chemical Organics SME Ltd",
       "ipoType": "SME",
-      "openDate": "2026-10-17",
-      "closeDate": "2026-10-20",
-      "listingDate": "2026-10-24",
+      "openDate": "2026-03-19",
+      "closeDate": "2026-03-24",
+      "listingDate": "2026-03-30",
       "priceBandMin": 72,
       "priceBandMax": 76,
       "lotSize": 1600,
@@ -3339,28 +3324,28 @@ export const initialStaticDb: DbSchema = {
           "sharesOffered": 640000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T11:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "NII",
           "sharesOffered": 480000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T11:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Retail",
           "sharesOffered": 1120000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T11:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Total",
           "sharesOffered": 2240000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-27T11:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         }
       ],
       "latestGmp": {
@@ -3372,10 +3357,9 @@ export const initialStaticDb: DbSchema = {
         "changeAmount": 4,
         "estimatedListingPrice": 98,
         "estimatedPremiumPercent": 28.9,
-        "observedAt": "2026-09-27T11:50:59.740Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
         "source": "AgriTech IPO Syndicate Desk",
-        "sourceConfidence": 80,
-        "historicalQuotes": []
+        "sourceConfidence": 80
       },
       "gmpHistory": [
         {
@@ -3399,7 +3383,7 @@ export const initialStaticDb: DbSchema = {
           "changeAmount": 4,
           "estimatedListingPrice": 98,
           "estimatedPremiumPercent": 28.9,
-          "observedAt": "2026-09-28T05:40:05.856Z",
+          "observedAt": "2026-09-28T05:52:05.691Z",
           "source": "AgriTech IPO Syndicate Desk",
           "sourceConfidence": 80
         }
@@ -3425,8 +3409,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "BSE SME Regulatory RHP Filing",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 96,
         "status": "verified"
       }
@@ -3435,9 +3419,9 @@ export const initialStaticDb: DbSchema = {
       "id": "ipo-sme-finedge",
       "companyName": "FinEdge Payment Technologies SME Ltd",
       "ipoType": "SME",
-      "openDate": "2026-09-16",
-      "closeDate": "2026-09-20",
-      "listingDate": "2026-09-25",
+      "openDate": "2026-03-22",
+      "closeDate": "2026-03-25",
+      "listingDate": "2026-03-31",
       "priceBandMin": 130,
       "priceBandMax": 138,
       "lotSize": 1000,
@@ -3446,35 +3430,35 @@ export const initialStaticDb: DbSchema = {
       "freshIssueCr": 39,
       "ofsCr": 0,
       "faceValue": 10,
-      "status": "CLOSED",
+      "status": "UPCOMING",
       "subscriptions": [
         {
           "category": "QIB",
           "sharesOffered": 560000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-26T05:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "NII",
           "sharesOffered": 420000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-26T05:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Retail",
           "sharesOffered": 980000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-26T05:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Total",
           "sharesOffered": 1960000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-26T05:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         }
       ],
       "latestGmp": {
@@ -3486,10 +3470,9 @@ export const initialStaticDb: DbSchema = {
         "changeAmount": 8,
         "estimatedListingPrice": 186,
         "estimatedPremiumPercent": 34.7,
-        "observedAt": "2026-09-26T05:50:59.740Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
         "source": "Fintech SME Market Desk",
-        "sourceConfidence": 81,
-        "historicalQuotes": []
+        "sourceConfidence": 81
       },
       "gmpHistory": [
         {
@@ -3513,7 +3496,7 @@ export const initialStaticDb: DbSchema = {
           "changeAmount": 8,
           "estimatedListingPrice": 186,
           "estimatedPremiumPercent": 34.7,
-          "observedAt": "2026-09-28T05:40:05.856Z",
+          "observedAt": "2026-09-28T05:52:05.691Z",
           "source": "Fintech SME Market Desk",
           "sourceConfidence": 81
         }
@@ -3539,8 +3522,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "NSE Emerge Draft Prospectus",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 96,
         "status": "verified"
       }
@@ -3549,9 +3532,9 @@ export const initialStaticDb: DbSchema = {
       "id": "ipo-sme-logiexpress",
       "companyName": "LogiExpress Cold Chain SME Ltd",
       "ipoType": "SME",
-      "openDate": "2026-09-16",
-      "closeDate": "2026-09-20",
-      "listingDate": "2026-09-25",
+      "openDate": "2026-03-08",
+      "closeDate": "2026-03-12",
+      "listingDate": "2026-03-18",
       "priceBandMin": 98,
       "priceBandMax": 104,
       "lotSize": 1200,
@@ -3560,35 +3543,35 @@ export const initialStaticDb: DbSchema = {
       "freshIssueCr": 31.5,
       "ofsCr": 0,
       "faceValue": 10,
-      "status": "CLOSED",
+      "status": "OPEN",
       "subscriptions": [
         {
           "category": "QIB",
           "sharesOffered": 600000,
           "sharesBid": 4200000,
           "timesSubscribed": 7,
-          "updatedAt": "2026-09-26T05:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "NII",
           "sharesOffered": 450000,
           "sharesBid": 9900000,
           "timesSubscribed": 22,
-          "updatedAt": "2026-09-26T05:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Retail",
           "sharesOffered": 1050000,
           "sharesBid": 12600000,
           "timesSubscribed": 12,
-          "updatedAt": "2026-09-26T05:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         },
         {
           "category": "Total",
           "sharesOffered": 2100000,
           "sharesBid": 26700000,
           "timesSubscribed": 12.71,
-          "updatedAt": "2026-09-26T05:50:59.740Z"
+          "updatedAt": "2026-09-28T05:52:05.691Z"
         }
       ],
       "latestGmp": {
@@ -3600,10 +3583,9 @@ export const initialStaticDb: DbSchema = {
         "changeAmount": 8,
         "estimatedListingPrice": 146,
         "estimatedPremiumPercent": 40.3,
-        "observedAt": "2026-09-26T05:50:59.740Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
         "source": "SME Merchant Banker Desk Tracking",
-        "sourceConfidence": 82,
-        "historicalQuotes": []
+        "sourceConfidence": 82
       },
       "gmpHistory": [
         {
@@ -3627,7 +3609,7 @@ export const initialStaticDb: DbSchema = {
           "changeAmount": 8,
           "estimatedListingPrice": 146,
           "estimatedPremiumPercent": 40.3,
-          "observedAt": "2026-09-28T05:40:05.856Z",
+          "observedAt": "2026-09-28T05:52:05.691Z",
           "source": "SME Merchant Banker Desk Tracking",
           "sourceConfidence": 82
         }
@@ -3653,8 +3635,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "BSE SME Bidding Console Live",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 99,
         "status": "verified"
       }
@@ -3708,8 +3690,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "BSE/NSE Shareholding Pattern Disclosures (Clause 35)",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 99,
         "status": "verified"
       }
@@ -3761,8 +3743,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "BSE/NSE Shareholding Pattern Disclosures (Clause 35)",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 99,
         "status": "verified"
       }
@@ -3814,8 +3796,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "NSE/BSE Corporate Filings & Shareholding Summary",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 99,
         "status": "verified"
       }
@@ -3867,8 +3849,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "BSE/NSE Shareholding Pattern Disclosures (Clause 35)",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 99,
         "status": "verified"
       }
@@ -3920,8 +3902,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "NSE Shareholding Pattern Report",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 98,
         "status": "verified"
       }
@@ -3973,8 +3955,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "BSE/NSE Shareholding Pattern Disclosures (Clause 35)",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 99,
         "status": "verified"
       }
@@ -4026,8 +4008,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "BSE/NSE Shareholding Disclosures",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 98,
         "status": "verified"
       }
@@ -4079,8 +4061,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "BSE/NSE Shareholding Pattern Disclosures (Clause 35)",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 99,
         "status": "verified"
       }
@@ -4132,8 +4114,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "BSE/NSE Shareholding Pattern Disclosures (Clause 35)",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 99,
         "status": "verified"
       }
@@ -4185,8 +4167,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "RBI & Exchange Institutional Holdings Database",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 99,
         "status": "verified"
       }
@@ -4238,8 +4220,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "NSE Shareholding Pattern Disclosures",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 97,
         "status": "verified"
       }
@@ -4291,8 +4273,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "BSE Corporate Filing & Shareholding Summary",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:40:05.856Z",
-        "retrievedAt": "2026-09-28T05:40:05.856Z",
+        "observedAt": "2026-09-28T05:52:05.691Z",
+        "retrievedAt": "2026-09-28T05:52:05.691Z",
         "confidence": 98,
         "status": "verified"
       }

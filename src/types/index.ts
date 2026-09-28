@@ -32,6 +32,8 @@ export interface MarketBreadth {
   unchanged: number;
   advanceDeclineRatio: number;
   totalTraded: number;
+  fiftyTwoWeekHighs?: number;
+  fiftyTwoWeekLows?: number;
   updatedAt: string;
   quality: DataQualityMeta;
 }

@@ -35,8 +35,8 @@ apiRouter.get('/healthz', (req: Request, res: Response) => {
 });
 
 // 2. Market Overview & Indices
-apiRouter.get('/market/overview', (req: Request, res: Response) => {
-  dbService.tick();
+apiRouter.get('/market/overview', async (req: Request, res: Response) => {
+  await dbService.syncRealtimeMarket(false);
   const db = dbService.getDb();
   const movers = IndianSharesMovementEngine.getMovers();
   res.json({
@@ -46,11 +46,29 @@ apiRouter.get('/market/overview', (req: Request, res: Response) => {
     topGainers: movers.gainers.slice(0, 4),
     topLosers: movers.losers.slice(0, 4),
     recentNews: db.news.slice(0, 5),
-    timestamp: new Date().toISOString(),
+    timestamp: db.lastUpdated || new Date().toISOString(),
   });
 });
 
-apiRouter.get('/market/indices', (req: Request, res: Response) => {
+apiRouter.post('/market/refresh', async (req: Request, res: Response) => {
+  const synced = await dbService.syncRealtimeMarket(true);
+  const db = dbService.getDb();
+  const movers = IndianSharesMovementEngine.getMovers();
+  res.json({
+    success: true,
+    synced,
+    indices: db.indices,
+    breadth: db.breadth,
+    sectors: db.sectors,
+    topGainers: movers.gainers.slice(0, 4),
+    topLosers: movers.losers.slice(0, 4),
+    recentNews: db.news.slice(0, 5),
+    timestamp: db.lastUpdated,
+  });
+});
+
+apiRouter.get('/market/indices', async (req: Request, res: Response) => {
+  await dbService.syncRealtimeMarket(false);
   res.json(dbService.getDb().indices);
 });
 
@@ -62,12 +80,14 @@ apiRouter.get('/market/sectors', (req: Request, res: Response) => {
   res.json(dbService.getDb().sectors);
 });
 
-apiRouter.get('/market/movers', (req: Request, res: Response) => {
+apiRouter.get('/market/movers', async (req: Request, res: Response) => {
+  await dbService.syncRealtimeMarket(false);
   res.json(IndianSharesMovementEngine.getMovers());
 });
 
 // 3. Stocks Listing & Search
-apiRouter.get('/stocks', (req: Request, res: Response) => {
+apiRouter.get('/stocks', async (req: Request, res: Response) => {
+  await dbService.syncRealtimeMarket(false);
   const db = dbService.getDb();
   const query = (req.query.q as string || '').toLowerCase().trim();
   const sector = (req.query.sector as string || '').trim();
@@ -91,7 +111,8 @@ apiRouter.get('/stocks', (req: Request, res: Response) => {
 });
 
 // 4. Stock Detail with full fundamentals, valuation, shareholding, actions, and scores
-apiRouter.get('/stocks/:symbol', (req: Request, res: Response) => {
+apiRouter.get('/stocks/:symbol', async (req: Request, res: Response) => {
+  await dbService.syncRealtimeMarket(false);
   const symbol = req.params.symbol.toUpperCase();
   const db = dbService.getDb();
 
@@ -166,7 +187,8 @@ apiRouter.get('/stocks/:symbol/ai-summary', async (req: Request, res: Response) 
 });
 
 // 6. Research Top 10 IndianShares
-apiRouter.get(['/research/top10', '/top10'], (req: Request, res: Response) => {
+apiRouter.get(['/research/top10', '/top10'], async (req: Request, res: Response) => {
+  await dbService.syncRealtimeMarket(false);
   const db = dbService.getDb();
   const top10 = IndianSharesScoringEngine.getTop10();
   res.json({

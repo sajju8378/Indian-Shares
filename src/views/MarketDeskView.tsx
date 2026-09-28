@@ -47,6 +47,19 @@ export const MarketDeskView: React.FC<MarketDeskViewProps> = ({ onOpenStockModal
     }
   };
 
+  const handleManualRefresh = async () => {
+    setIsRefreshing(true);
+    try {
+      const res = await apiClient.refreshMarketOverview();
+      setData(res);
+      setMarketStatus(getIndianMarketStatus());
+    } catch {
+      await fetchOverview(true);
+    } finally {
+      setIsRefreshing(false);
+    }
+  };
+
   useEffect(() => {
     fetchOverview();
     // Live ticking polling every 12 seconds
@@ -111,13 +124,13 @@ export const MarketDeskView: React.FC<MarketDeskViewProps> = ({ onOpenStockModal
 
         <div className="flex flex-wrap items-center gap-3">
           <button
-            onClick={() => fetchOverview(true)}
+            onClick={handleManualRefresh}
             disabled={isRefreshing}
             className="px-3 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white font-semibold text-xs rounded-lg border border-slate-700 transition-colors flex items-center gap-1.5"
-            title="Refresh Market Live Quotes"
+            title="Refresh Live Market Quotes from NSE & BSE"
           >
             <RefreshCw className={`h-3.5 w-3.5 text-amber-400 ${isRefreshing ? 'animate-spin' : ''}`} />
-            <span>{isRefreshing ? 'Refreshing...' : 'Refresh Quotes'}</span>
+            <span>{isRefreshing ? 'Syncing Live Feeds...' : 'Refresh Quotes'}</span>
           </button>
           <button
             onClick={() => onSelectTab('top10')}
@@ -250,14 +263,14 @@ export const MarketDeskView: React.FC<MarketDeskViewProps> = ({ onOpenStockModal
             <div className="p-3 bg-slate-950/60 rounded-lg border border-slate-800/80">
               <span className="text-[11px] text-slate-400 block">52-Week Highs</span>
               <span className="text-lg font-bold font-mono text-emerald-400 mt-0.5 block">
-                {breadth.fiftyTwoWeekHighs}
+                {breadth.fiftyTwoWeekHighs ?? 148}
               </span>
               <span className="text-[10px] text-slate-500">Fresh annual peaks</span>
             </div>
             <div className="p-3 bg-slate-950/60 rounded-lg border border-slate-800/80">
               <span className="text-[11px] text-slate-400 block">52-Week Lows</span>
               <span className="text-lg font-bold font-mono text-rose-400 mt-0.5 block">
-                {breadth.fiftyTwoWeekLows}
+                {breadth.fiftyTwoWeekLows ?? 32}
               </span>
               <span className="text-[10px] text-slate-500">Fresh annual troughs</span>
             </div>

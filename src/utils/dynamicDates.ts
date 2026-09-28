@@ -402,7 +402,7 @@ export function simulateMarketTick(stocks: StockQuote[], indices: MarketIndex[])
     if (Math.random() < 0.65) return s;
     const nudgePercent = (Math.random() * 0.2 - 0.09) / 100; // ±0.09%
     const newPrice = Number((s.price * (1 + nudgePercent)).toFixed(2));
-    const prevClose = s.change !== undefined ? s.price - s.change : s.price;
+    const prevClose = s.previousClose ?? (s.change !== undefined ? s.price - s.change : s.price);
     const newChange = Number((newPrice - prevClose).toFixed(2));
     const newPercent = Number(((newChange / (prevClose || 1)) * 100).toFixed(2));
     const newVolume = (s.volume || 100000) + Math.floor(Math.random() * 850 + 50);

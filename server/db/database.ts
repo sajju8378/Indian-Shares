@@ -19,6 +19,7 @@ import {
 import { getSeedIpos } from './iposData.ts';
 import { getSeedInstitutional } from './institutionalData.ts';
 import { freshenDatabaseDates, simulateMarketTick } from '../../src/utils/dynamicDates.ts';
+import { realtimeMarketService } from '../services/realtimeMarketService.ts';
 
 export interface ScoringWeights {
   fundamentalWeight: number; // default 25
@@ -90,10 +91,32 @@ class DatabaseService {
         this.db = freshenDatabaseDates(this.generateSeedData());
         this.persistSync();
       }
+
+      // Automatically trigger live real-time sync with Indian market feeds
+      if (this.db) {
+        realtimeMarketService
+          .syncMarketData(this.db, true)
+          .then((synced) => {
+            if (synced) {
+              this.persist();
+              console.log('[IndianShares DB] Real-time market feed initialized with live quotes.');
+            }
+          })
+          .catch((err) => console.error('[IndianShares DB] Background real-time sync failed:', err));
+      }
     } catch (err) {
       console.error('[IndianShares DB] Error initializing database:', err);
       this.db = freshenDatabaseDates(this.generateSeedData());
     }
+  }
+
+  public async syncRealtimeMarket(force = false): Promise<boolean> {
+    if (!this.db) return false;
+    const synced = await realtimeMarketService.syncMarketData(this.db, force);
+    if (synced) {
+      await this.persist();
+    }
+    return synced;
   }
 
   public tick(): void {
