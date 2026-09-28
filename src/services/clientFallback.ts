@@ -23,6 +23,7 @@ import {
   Top10Response,
   InstitutionalOverviewData,
 } from '../api/client.ts';
+import { initialStaticDb } from '../data/staticDb.ts';
 
 export interface DbSchema {
   version: number;
@@ -55,38 +56,14 @@ export interface DbSchema {
 }
 
 class ClientFallbackService {
-  private db: DbSchema | null = null;
-  private loadPromise: Promise<DbSchema> | null = null;
+  private db: DbSchema = initialStaticDb;
 
   private async loadDb(): Promise<DbSchema> {
-    if (this.db) return this.db;
-    if (this.loadPromise) return this.loadPromise;
-
-    this.loadPromise = (async () => {
-      try {
-        const res = await fetch('./data/indianshares_db.json');
-        if (res.ok) {
-          this.db = await res.json();
-          return this.db!;
-        }
-      } catch {}
-
-      try {
-        const res2 = await fetch('/data/indianshares_db.json');
-        if (res2.ok) {
-          this.db = await res2.json();
-          return this.db!;
-        }
-      } catch {}
-
-      throw new Error('Static dataset unavailable');
-    })();
-
-    return this.loadPromise;
+    return this.db;
   }
 
   public async getMarketOverview(): Promise<MarketOverviewData> {
-    const db = await this.loadDb();
+    const db = this.db;
     const sortedMovers = [...db.stocks].sort((a, b) => b.percentChange - a.percentChange);
     const topGainers = sortedMovers.slice(0, 5).map((s) => ({
       ...s,
@@ -320,8 +297,13 @@ class ClientFallbackService {
     };
   }
 
+  public async updateTop10Weights(newWeights: Top10Response['weights']): Promise<Top10Response> {
+    this.db.scoringWeights = { ...this.db.scoringWeights, ...newWeights };
+    return this.getTop10();
+  }
+
   public async discoverShares(criteria: ScreenerFilterCriteria) {
-    const db = await this.loadDb();
+    const db = this.db;
     let matches = db.stocks.map((stock) => {
       const fund = db.fundamentals[stock.symbol];
       const val = db.valuation[stock.symbol];
@@ -329,14 +311,44 @@ class ClientFallbackService {
       return { stock, fund, val, score };
     });
 
-    if (criteria.minPrice !== undefined) matches = matches.filter((m) => m.stock.price >= criteria.minPrice!);
-    if (criteria.maxPrice !== undefined) matches = matches.filter((m) => m.stock.price <= criteria.maxPrice!);
-    if (criteria.sector) matches = matches.filter((m) => m.stock.sector.toLowerCase() === criteria.sector!.toLowerCase());
-    if (criteria.maxPe !== undefined) matches = matches.filter((m) => (m.val?.peRatio || 999) <= criteria.maxPe!);
-    if (criteria.minRoe !== undefined) matches = matches.filter((m) => (m.fund?.roePercent || 0) >= criteria.minRoe!);
-    if (criteria.minRoce !== undefined) matches = matches.filter((m) => (m.fund?.rocePercent || 0) >= criteria.minRoce!);
-    if (criteria.maxDebtToEquity !== undefined) matches = matches.filter((m) => (m.fund?.debtToEquity || 99) <= criteria.maxDebtToEquity!);
-    if (criteria.minIndianSharesScore !== undefined) matches = matches.filter((m) => m.score.overallScore >= criteria.minIndianSharesScore!);
+    if (criteria.minPrice !== undefined && !isNaN(criteria.minPrice)) {
+      matches = matches.filter((m) => m.stock.price >= criteria.minPrice!);
+    }
+    if (criteria.maxPrice !== undefined && !isNaN(criteria.maxPrice)) {
+      matches = matches.filter((m) => m.stock.price <= criteria.maxPrice!);
+    }
+    if (criteria.sector && criteria.sector !== 'All' && criteria.sector.trim() !== '') {
+      matches = matches.filter((m) => m.stock.sector.toLowerCase() === criteria.sector!.toLowerCase());
+    }
+    if (criteria.maxPe !== undefined && !isNaN(criteria.maxPe)) {
+      matches = matches.filter((m) => (m.val?.peRatio || 999) <= criteria.maxPe!);
+    }
+    if (criteria.minRoe !== undefined && !isNaN(criteria.minRoe)) {
+      matches = matches.filter((m) => (m.fund?.roePercent || 0) >= criteria.minRoe!);
+    }
+    if (criteria.minRoce !== undefined && !isNaN(criteria.minRoce)) {
+      matches = matches.filter((m) => (m.fund?.rocePercent || 0) >= criteria.minRoce!);
+    }
+    if (criteria.maxDebtToEquity !== undefined && !isNaN(criteria.maxDebtToEquity)) {
+      matches = matches.filter((m) => {
+        // Exclude banking / financial institutions from standard D/E limits
+        if (m.stock.sector.includes('Bank') || m.stock.sector.includes('Financial')) return true;
+        return (m.fund?.debtToEquity || 99) <= criteria.maxDebtToEquity!;
+      });
+    }
+    if (criteria.minIndianSharesScore !== undefined && !isNaN(criteria.minIndianSharesScore)) {
+      matches = matches.filter((m) => m.score.overallScore >= criteria.minIndianSharesScore!);
+    }
+    if (criteria.minDividendYield !== undefined && !isNaN(criteria.minDividendYield)) {
+      matches = matches.filter((m) => {
+        const div = db.dividends.find((d) => d.symbol.toUpperCase() === m.stock.symbol.toUpperCase());
+        const yld = div ? div.dividendYield : 0;
+        return yld >= criteria.minDividendYield!;
+      });
+    }
+
+    // Sort by overall score descending
+    matches.sort((a, b) => b.score.overallScore - a.score.overallScore);
 
     const results = matches.map((m, idx) => ({
       ...m.stock,

@@ -273,6 +273,7 @@ export interface NewsItem {
     | 'Fund raising'
     | 'Promoter activity'
     | 'Sector events'
+    | 'Corporate events'
     | 'Government policy';
   source: string;
   publishedAt: string;

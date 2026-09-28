@@ -24,8 +24,8 @@ export const DiscoverView: React.FC<DiscoverViewProps> = ({ onOpenStockModal }) 
     sector: 'All',
     maxPe: undefined,
     minRoe: 15,
-    minRoce: 15,
-    maxDebtToEquity: 1.0,
+    minRoce: undefined,
+    maxDebtToEquity: 1.5,
     minIndianSharesScore: 70,
     minDividendYield: undefined,
   });
@@ -47,22 +47,41 @@ export const DiscoverView: React.FC<DiscoverViewProps> = ({ onOpenStockModal }) 
     }
   };
 
+  // Re-run filter live whenever criteria changes
   useEffect(() => {
-    executeScreener();
-  }, []);
+    executeScreener(criteria);
+  }, [
+    criteria.minPrice,
+    criteria.maxPrice,
+    criteria.sector,
+    criteria.maxPe,
+    criteria.minRoe,
+    criteria.minRoce,
+    criteria.maxDebtToEquity,
+    criteria.minIndianSharesScore,
+    criteria.minDividendYield,
+  ]);
 
   const applyPreset = (presetName: string) => {
     let newCrit = { ...criteria };
-    if (presetName === 'COMPOUNDERS') {
+    if (presetName === 'ALL_SUGGESTED') {
+      newCrit = {
+        minPrice: 10,
+        maxPrice: 5000,
+        sector: 'All',
+        minRoe: 12,
+        maxDebtToEquity: 2.0,
+        minIndianSharesScore: 65,
+      };
+    } else if (presetName === 'COMPOUNDERS') {
       newCrit = {
         minPrice: 10,
         maxPrice: 5000,
         sector: 'All',
         maxPe: 60,
         minRoe: 20,
-        minRoce: 22,
-        maxDebtToEquity: 0.5,
-        minIndianSharesScore: 80,
+        maxDebtToEquity: 1.0,
+        minIndianSharesScore: 75,
       };
     } else if (presetName === 'UNDER_2000') {
       newCrit = {
@@ -70,9 +89,8 @@ export const DiscoverView: React.FC<DiscoverViewProps> = ({ onOpenStockModal }) 
         maxPrice: 2000,
         sector: 'All',
         minRoe: 15,
-        minRoce: 15,
-        maxDebtToEquity: 1.0,
-        minIndianSharesScore: 75,
+        maxDebtToEquity: 1.5,
+        minIndianSharesScore: 70,
       };
     } else if (presetName === 'HIGH_DIVIDEND') {
       newCrit = {
@@ -80,12 +98,20 @@ export const DiscoverView: React.FC<DiscoverViewProps> = ({ onOpenStockModal }) 
         maxPrice: 5000,
         sector: 'All',
         minDividendYield: 2.0,
-        maxDebtToEquity: 1.0,
+        maxDebtToEquity: 1.5,
+        minIndianSharesScore: 65,
+      };
+    } else if (presetName === 'DEBT_FREE') {
+      newCrit = {
+        minPrice: 10,
+        maxPrice: 5000,
+        sector: 'All',
+        maxDebtToEquity: 0.2,
+        minRoe: 15,
         minIndianSharesScore: 70,
       };
     }
     setCriteria(newCrit);
-    executeScreener(newCrit);
   };
 
   const handleReset = () => {
@@ -93,13 +119,11 @@ export const DiscoverView: React.FC<DiscoverViewProps> = ({ onOpenStockModal }) 
       minPrice: 10,
       maxPrice: 3000,
       sector: 'All',
-      minRoe: 15,
-      minRoce: 15,
-      maxDebtToEquity: 1.0,
-      minIndianSharesScore: 70,
+      minRoe: 12,
+      maxDebtToEquity: 2.0,
+      minIndianSharesScore: 65,
     };
     setCriteria(def);
-    executeScreener(def);
   };
 
   return (
@@ -129,6 +153,13 @@ export const DiscoverView: React.FC<DiscoverViewProps> = ({ onOpenStockModal }) 
           <div className="flex flex-wrap items-center gap-2">
             <span className="text-xs text-slate-400 font-semibold mr-1">Presets:</span>
             <button
+              onClick={() => applyPreset('ALL_SUGGESTED')}
+              className="px-2.5 py-1.5 bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/40 rounded-lg text-xs font-bold flex items-center gap-1.5 transition-all shadow-sm"
+            >
+              <Sparkles className="h-3.5 w-3.5 text-amber-400" />
+              Suggested Shares ({totalMatched > 0 ? totalMatched : '15'})
+            </button>
+            <button
               onClick={() => applyPreset('COMPOUNDERS')}
               className="px-2.5 py-1.5 bg-slate-800 hover:bg-slate-700 text-amber-400 border border-slate-700 rounded-lg text-xs font-semibold"
             >
@@ -145,6 +176,12 @@ export const DiscoverView: React.FC<DiscoverViewProps> = ({ onOpenStockModal }) 
               className="px-2.5 py-1.5 bg-slate-800 hover:bg-slate-700 text-emerald-400 border border-slate-700 rounded-lg text-xs font-semibold"
             >
               Yield &gt; 2%
+            </button>
+            <button
+              onClick={() => applyPreset('DEBT_FREE')}
+              className="px-2.5 py-1.5 bg-slate-800 hover:bg-slate-700 text-purple-400 border border-slate-700 rounded-lg text-xs font-semibold"
+            >
+              Zero / Low Debt
             </button>
           </div>
         </div>
@@ -182,13 +219,16 @@ export const DiscoverView: React.FC<DiscoverViewProps> = ({ onOpenStockModal }) 
               onChange={(e) => setCriteria({ ...criteria, sector: e.target.value })}
               className="w-full bg-slate-900 border border-slate-700 rounded px-2 py-1 text-slate-200"
             >
-              <option value="All">All Sectors</option>
+              <option value="All">All Sectors (Full Universe)</option>
               <option value="Information Technology">Information Technology</option>
-              <option value="Banking & Financials">Banking & Financials</option>
-              <option value="Automobiles & Auto Components">Automobiles</option>
-              <option value="Capital Goods & Electricals">Capital Goods & Electricals</option>
-              <option value="Pharmaceuticals & Healthcare">Pharmaceuticals</option>
-              <option value="Consumer Discretionary">Consumer Discretionary</option>
+              <option value="Financial Services">Banking & Financial Services</option>
+              <option value="Automobile">Automobile & EV</option>
+              <option value="Capital Goods">Capital Goods & Infrastructure</option>
+              <option value="Electronics">Electronics & EMS</option>
+              <option value="Healthcare">Healthcare & Pharma</option>
+              <option value="Consumer Discretionary">Consumer Discretionary & Retail</option>
+              <option value="FMCG">FMCG & Staples</option>
+              <option value="Renewable Energy">Renewable Energy</option>
             </select>
           </div>
 
@@ -318,71 +358,101 @@ export const DiscoverView: React.FC<DiscoverViewProps> = ({ onOpenStockModal }) 
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-800/80 text-slate-200">
-              {results.map((stock, idx) => {
-                const isPos = stock.percentChange >= 0;
-                return (
-                  <tr
-                    key={stock.symbol}
-                    className="hover:bg-slate-800/50 transition-colors group cursor-pointer"
-                    onClick={() => onOpenStockModal(stock.symbol)}
-                  >
-                    <td className="py-3 px-4">
-                      <div className="flex items-center gap-2.5">
-                        <span className="text-slate-500 font-mono text-xs font-semibold w-5">
-                          #{idx + 1}
-                        </span>
-                        <div>
-                          <span className="font-bold text-white group-hover:text-amber-400 transition-colors text-sm">
-                            {stock.symbol}
-                          </span>
-                          <p className="text-[11px] text-slate-400 truncate max-w-[200px]">
-                            {stock.companyName}
-                          </p>
-                        </div>
+              {results.length === 0 ? (
+                <tr>
+                  <td colSpan={7} className="py-12 text-center">
+                    <div className="max-w-md mx-auto space-y-3">
+                      <div className="p-3 bg-amber-500/10 text-amber-400 rounded-full w-12 h-12 flex items-center justify-center mx-auto border border-amber-500/20">
+                        <Filter className="h-6 w-6" />
                       </div>
-                    </td>
-
-                    <td className="py-3 px-4">
-                      <span className="text-xs text-slate-300">{stock.sector}</span>
-                    </td>
-
-                    <td className="py-3 px-4 text-right font-mono font-bold text-white text-sm">
-                      ₹{(stock.price ?? 0).toLocaleString('en-IN', { minimumFractionDigits: 2 })}
-                    </td>
-
-                    <td
-                      className={`py-3 px-4 text-right font-mono font-bold text-sm ${
-                        isPos ? 'text-emerald-400' : 'text-rose-400'
-                      }`}
+                      <h4 className="text-base font-bold text-white">No Companies Matched Current Filters</h4>
+                      <p className="text-xs text-slate-400 leading-relaxed">
+                        Your filter criteria may be too restrictive. Try relaxing the Minimum Score, lowering the RoE threshold, or click below to view all curated quality shares.
+                      </p>
+                      <div className="flex items-center justify-center gap-3 pt-2">
+                        <button
+                          onClick={() => applyPreset('ALL_SUGGESTED')}
+                          className="px-3 py-1.5 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold rounded-lg text-xs shadow"
+                        >
+                          Show All Suggested Shares
+                        </button>
+                        <button
+                          onClick={handleReset}
+                          className="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg text-xs font-semibold"
+                        >
+                          Reset to Defaults
+                        </button>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              ) : (
+                results.map((stock, idx) => {
+                  const isPos = stock.percentChange >= 0;
+                  return (
+                    <tr
+                      key={stock.symbol}
+                      className="hover:bg-slate-800/50 transition-colors group cursor-pointer"
+                      onClick={() => onOpenStockModal(stock.symbol)}
                     >
-                      {isPos ? '+' : ''}
-                      {(stock.percentChange ?? 0).toFixed(2)}%
-                    </td>
+                      <td className="py-3 px-4">
+                        <div className="flex items-center gap-2.5">
+                          <span className="text-slate-500 font-mono text-xs font-semibold w-5">
+                            #{idx + 1}
+                          </span>
+                          <div>
+                            <span className="font-bold text-white group-hover:text-amber-400 transition-colors text-sm">
+                              {stock.symbol}
+                            </span>
+                            <p className="text-[11px] text-slate-400 truncate max-w-[200px]">
+                              {stock.companyName}
+                            </p>
+                          </div>
+                        </div>
+                      </td>
 
-                    <td className="py-3 px-4 text-center">
-                      <span className="font-mono font-bold px-2 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">
-                        {stock.scores?.overallScore || '—'}/100
-                      </span>
-                    </td>
+                      <td className="py-3 px-4">
+                        <span className="text-xs text-slate-300">{stock.sector}</span>
+                      </td>
 
-                    <td className="py-3 px-4 text-right font-mono text-slate-400">
-                      ₹{(stock.high52Week ?? 0).toLocaleString('en-IN')}
-                    </td>
+                      <td className="py-3 px-4 text-right font-mono font-bold text-white text-sm">
+                        ₹{(stock.price ?? 0).toLocaleString('en-IN', { minimumFractionDigits: 2 })}
+                      </td>
 
-                    <td className="py-3 px-4 text-right">
-                      <button
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          onOpenStockModal(stock.symbol);
-                        }}
-                        className="px-2.5 py-1 bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 border border-amber-500/30 rounded text-[11px] font-semibold transition-colors flex items-center gap-1 ml-auto"
+                      <td
+                        className={`py-3 px-4 text-right font-mono font-bold text-sm ${
+                          isPos ? 'text-emerald-400' : 'text-rose-400'
+                        }`}
                       >
-                        Research <ArrowUpRight className="h-3.5 w-3.5" />
-                      </button>
-                    </td>
-                  </tr>
-                );
-              })}
+                        {isPos ? '+' : ''}
+                        {(stock.percentChange ?? 0).toFixed(2)}%
+                      </td>
+
+                      <td className="py-3 px-4 text-center">
+                        <span className="font-mono font-bold px-2 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">
+                          {stock.scores?.overallScore || '—'}/100
+                        </span>
+                      </td>
+
+                      <td className="py-3 px-4 text-right font-mono text-slate-400">
+                        ₹{(stock.high52Week ?? 0).toLocaleString('en-IN')}
+                      </td>
+
+                      <td className="py-3 px-4 text-right">
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            onOpenStockModal(stock.symbol);
+                          }}
+                          className="px-2.5 py-1 bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 border border-amber-500/30 rounded text-[11px] font-semibold transition-colors flex items-center gap-1 ml-auto"
+                        >
+                          Research <ArrowUpRight className="h-3.5 w-3.5" />
+                        </button>
+                      </td>
+                    </tr>
+                  );
+                })
+              )}
             </tbody>
           </table>
         </div>

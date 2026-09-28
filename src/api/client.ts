@@ -63,49 +63,65 @@ export interface InstitutionalOverviewData {
   };
 }
 
+const isStaticHost =
+  typeof window !== 'undefined' &&
+  (window.location.hostname.includes('github.io') ||
+    window.location.hostname.includes('pages.dev') ||
+    window.location.protocol === 'file:');
+
 export const apiClient = {
   async getHealthz() {
-    try {
-      const res = await fetch('/api/healthz');
-      if (res.ok) return await res.json();
-    } catch {}
-    return { status: 'ok', mode: 'client_fallback' };
+    if (!isStaticHost) {
+      try {
+        const res = await fetch('/api/healthz');
+        if (res.ok) return await res.json();
+      } catch {}
+    }
+    return { status: 'ok', mode: 'client_static_bundle' };
   },
 
   async getMarketOverview(): Promise<MarketOverviewData> {
-    try {
-      const res = await fetch('/api/market/overview');
-      if (res.ok) return await res.json();
-    } catch {}
+    if (!isStaticHost) {
+      try {
+        const res = await fetch('/api/market/overview');
+        if (res.ok) return await res.json();
+      } catch {}
+    }
     return await clientFallback.getMarketOverview();
   },
 
   async getMarketMovers(): Promise<MoversData> {
-    try {
-      const res = await fetch('/api/market/movers');
-      if (res.ok) return await res.json();
-    } catch {}
+    if (!isStaticHost) {
+      try {
+        const res = await fetch('/api/market/movers');
+        if (res.ok) return await res.json();
+      } catch {}
+    }
     return await clientFallback.getMarketMovers();
   },
 
   async getTop10(): Promise<Top10Response> {
-    try {
-      const res = await fetch('/api/research/top10');
-      if (res.ok) return await res.json();
-    } catch {}
+    if (!isStaticHost) {
+      try {
+        const res = await fetch('/api/research/top10');
+        if (res.ok) return await res.json();
+      } catch {}
+    }
     return await clientFallback.getTop10();
   },
 
   async updateTop10Weights(weights: Partial<Top10Response['weights']>): Promise<Top10Response> {
-    try {
-      const res = await fetch('/api/research/top10/weights', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(weights),
-      });
-      if (res.ok) return await res.json();
-    } catch {}
-    return await clientFallback.getTop10();
+    if (!isStaticHost) {
+      try {
+        const res = await fetch('/api/research/top10/weights', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(weights),
+        });
+        if (res.ok) return await res.json();
+      } catch {}
+    }
+    return await clientFallback.updateTop10Weights(weights as any);
   },
 
   async getStockDetail(symbol: string): Promise<CompanyStockDetail> {
@@ -173,21 +189,23 @@ export const apiClient = {
   },
 
   async discoverShares(criteria: ScreenerFilterCriteria): Promise<{ totalMatched: number; results: (StockQuote & { scores: StockScoreBreakdown; rank: number })[] }> {
-    try {
-      const params = new URLSearchParams();
-      if (criteria.minPrice !== undefined) params.append('minPrice', criteria.minPrice.toString());
-      if (criteria.maxPrice !== undefined) params.append('maxPrice', criteria.maxPrice.toString());
-      if (criteria.sector) params.append('sector', criteria.sector);
-      if (criteria.maxPe !== undefined) params.append('maxPe', criteria.maxPe.toString());
-      if (criteria.minRoe !== undefined) params.append('minRoe', criteria.minRoe.toString());
-      if (criteria.minRoce !== undefined) params.append('minRoce', criteria.minRoce.toString());
-      if (criteria.maxDebtToEquity !== undefined) params.append('maxDebt', criteria.maxDebtToEquity.toString());
-      if (criteria.minIndianSharesScore !== undefined) params.append('minScore', criteria.minIndianSharesScore.toString());
-      if (criteria.minDividendYield !== undefined) params.append('minYield', criteria.minDividendYield.toString());
+    if (!isStaticHost) {
+      try {
+        const params = new URLSearchParams();
+        if (criteria.minPrice !== undefined) params.append('minPrice', criteria.minPrice.toString());
+        if (criteria.maxPrice !== undefined) params.append('maxPrice', criteria.maxPrice.toString());
+        if (criteria.sector) params.append('sector', criteria.sector);
+        if (criteria.maxPe !== undefined) params.append('maxPe', criteria.maxPe.toString());
+        if (criteria.minRoe !== undefined) params.append('minRoe', criteria.minRoe.toString());
+        if (criteria.minRoce !== undefined) params.append('minRoce', criteria.minRoce.toString());
+        if (criteria.maxDebtToEquity !== undefined) params.append('maxDebt', criteria.maxDebtToEquity.toString());
+        if (criteria.minIndianSharesScore !== undefined) params.append('minScore', criteria.minIndianSharesScore.toString());
+        if (criteria.minDividendYield !== undefined) params.append('minYield', criteria.minDividendYield.toString());
 
-      const res = await fetch(`/api/research/discover?${params.toString()}`);
-      if (res.ok) return await res.json();
-    } catch {}
+        const res = await fetch(`/api/research/discover?${params.toString()}`);
+        if (res.ok) return await res.json();
+      } catch {}
+    }
     return await clientFallback.discoverShares(criteria);
   },
 
