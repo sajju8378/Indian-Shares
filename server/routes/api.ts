@@ -190,12 +190,12 @@ apiRouter.get('/stocks/:symbol/ai-summary', async (req: Request, res: Response) 
 apiRouter.get(['/research/top10', '/top10'], async (req: Request, res: Response) => {
   await dbService.syncRealtimeMarket(false);
   const db = dbService.getDb();
-  const top10 = IndianSharesScoringEngine.getTop10();
+  const ranked = IndianSharesScoringEngine.getRankedUniverse(db.scoringWeights);
   res.json({
     universeCriteria: `Price ₹${db.scoringWeights.minPrice} - ₹${db.scoringWeights.maxPrice}`,
     weights: db.scoringWeights,
     lastCalculated: new Date().toISOString(),
-    stocks: top10,
+    stocks: ranked,
   });
 });
 
@@ -213,12 +213,12 @@ apiRouter.post('/research/top10/weights', async (req: Request, res: Response) =>
   };
 
   await dbService.persist();
-  const updatedTop10 = IndianSharesScoringEngine.getTop10(db.scoringWeights);
+  const updatedRanked = IndianSharesScoringEngine.getRankedUniverse(db.scoringWeights);
 
   res.json({
     success: true,
     weights: db.scoringWeights,
-    stocks: updatedTop10,
+    stocks: updatedRanked,
   });
 });
 

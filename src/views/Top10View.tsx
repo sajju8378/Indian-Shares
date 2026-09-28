@@ -12,6 +12,8 @@ import {
   ChevronUp,
   ArrowUpRight,
   Info,
+  RefreshCw,
+  Layers,
 } from 'lucide-react';
 import { Top10Response, apiClient } from '../api/client.ts';
 import { formatRelativeTime, getIndianMarketStatus } from '../utils/dynamicDates.ts';
@@ -26,11 +28,14 @@ export const Top10View: React.FC<Top10ViewProps> = ({ onOpenStockModal }) => {
   const [showConfig, setShowConfig] = useState(false);
   const [weights, setWeights] = useState<Top10Response['weights'] | null>(null);
   const [isUpdating, setIsUpdating] = useState(false);
+  const [isRefreshing, setIsRefreshing] = useState(false);
+  const [viewScope, setViewScope] = useState<'TOP10' | 'ALL'>('TOP10');
   const [expandedStock, setExpandedStock] = useState<string | null>(null);
 
-  const fetchTop10 = async () => {
+  const fetchTop10 = async (silent = false) => {
     try {
-      setLoading(true);
+      if (!silent) setLoading(true);
+      else setIsRefreshing(true);
       const res = await apiClient.getTop10();
       setData(res);
       setWeights(res.weights);
@@ -38,12 +43,26 @@ export const Top10View: React.FC<Top10ViewProps> = ({ onOpenStockModal }) => {
       console.error('Error fetching Top 10:', err);
     } finally {
       setLoading(false);
+      setIsRefreshing(false);
     }
   };
 
   useEffect(() => {
     fetchTop10();
   }, []);
+
+  const handleRefreshLive = async () => {
+    setIsRefreshing(true);
+    try {
+      await apiClient.refreshMarketOverview();
+      const res = await apiClient.getTop10();
+      setData(res);
+    } catch (err) {
+      console.error('Error refreshing live rankings:', err);
+    } finally {
+      setIsRefreshing(false);
+    }
+  };
 
   const handleUpdateWeights = async () => {
     if (!weights) return;
@@ -60,15 +79,15 @@ export const Top10View: React.FC<Top10ViewProps> = ({ onOpenStockModal }) => {
 
   const handleResetWeights = async () => {
     const defaults = {
-      fundamentalWeight: 35,
+      fundamentalWeight: 30,
       growthWeight: 25,
       momentumWeight: 15,
       institutionalWeight: 15,
-      newsWeight: 5,
+      newsWeight: 10,
       sectorWeight: 5,
       riskPenaltyMax: 15,
       minPrice: 10,
-      maxPrice: 3000,
+      maxPrice: 50000,
     };
     setWeights(defaults);
     try {
@@ -119,7 +138,40 @@ export const Top10View: React.FC<Top10ViewProps> = ({ onOpenStockModal }) => {
             </p>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3">
+            <div className="flex items-center bg-slate-950 p-1 rounded-lg border border-slate-800">
+              <button
+                onClick={() => setViewScope('TOP10')}
+                className={`px-3 py-1.5 rounded-md text-xs font-bold transition-all ${
+                  viewScope === 'TOP10'
+                    ? 'bg-amber-500 text-slate-950 shadow-sm'
+                    : 'text-slate-400 hover:text-white'
+                }`}
+              >
+                Top 10 Picks
+              </button>
+              <button
+                onClick={() => setViewScope('ALL')}
+                className={`px-3 py-1.5 rounded-md text-xs font-bold transition-all ${
+                  viewScope === 'ALL'
+                    ? 'bg-amber-500 text-slate-950 shadow-sm'
+                    : 'text-slate-400 hover:text-white'
+                }`}
+              >
+                All 19 Scored Equities
+              </button>
+            </div>
+
+            <button
+              onClick={handleRefreshLive}
+              disabled={isRefreshing}
+              className="px-3 py-2 rounded-lg text-xs font-semibold flex items-center gap-1.5 bg-slate-800 text-slate-200 border border-slate-700 hover:bg-slate-700 transition-all"
+              title="Refresh live market rankings"
+            >
+              <RefreshCw className={`h-3.5 w-3.5 text-amber-400 ${isRefreshing ? 'animate-spin' : ''}`} />
+              <span>{isRefreshing ? 'Recalculating...' : 'Refresh Live'}</span>
+            </button>
+
             <button
               onClick={() => setShowConfig(!showConfig)}
               className={`px-4 py-2.5 rounded-lg text-xs font-semibold flex items-center gap-2 border transition-all ${
@@ -297,9 +349,19 @@ export const Top10View: React.FC<Top10ViewProps> = ({ onOpenStockModal }) => {
         )}
       </div>
 
-      {/* Top 10 Ranked Cards */}
+      {/* Ranked Cards (Top 10 or All 19) */}
+      <div className="flex items-center justify-between mb-1">
+        <h2 className="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-2">
+          <Layers className="h-4 w-4 text-amber-500" />
+          Showing {viewScope === 'TOP10' ? `Top 10 High Conviction Picks` : `All ${data.stocks.length} Scored Equities`}
+        </h2>
+        <span className="text-xs text-slate-400 font-mono">
+          Universe: {data.universeCriteria}
+        </span>
+      </div>
+
       <div className="space-y-4">
-        {data.stocks.map((item) => {
+        {(viewScope === 'TOP10' ? data.stocks.slice(0, 10) : data.stocks).map((item) => {
           const isExpanded = expandedStock === item.symbol;
           const { scores } = item;
 

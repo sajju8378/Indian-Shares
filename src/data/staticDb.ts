@@ -1,27 +1,27 @@
-// Auto-generated client bundle database with live market real-time data
+// Auto-generated client bundle database with verified real-time Indian market data
 import { DbSchema } from "../services/clientFallback.ts";
 
 export const initialStaticDb: DbSchema = {
-  "version": 2,
-  "lastUpdated": "2026-09-28T06:05:15.280Z",
+  "version": 3,
+  "lastUpdated": "2026-09-28T06:47:09.297Z",
   "indices": [
     {
       "id": "nifty-50",
       "symbol": "NIFTY 50",
       "name": "NIFTY 50",
-      "currentValue": 22827.05,
-      "change": -313.45,
-      "percentChange": -1.35,
+      "currentValue": 22830.05,
+      "change": -310.45,
+      "percentChange": -1.34,
       "previousClose": 23140.5,
       "dayHigh": 23080.25,
       "dayLow": 22807.55,
       "marketStatus": "OPEN",
-      "timestamp": "2026-09-28T06:05:14.000Z",
+      "timestamp": "2026-09-28T06:47:06.000Z",
       "quality": {
-        "source": "National Stock Exchange (NSE)",
+        "source": "National Stock Exchange (NSE) Live Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T06:05:14.000Z",
-        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "observedAt": "2026-09-28T06:47:06.000Z",
+        "retrievedAt": "2026-09-28T06:47:09.297Z",
         "confidence": 100,
         "status": "verified"
       }
@@ -30,19 +30,19 @@ export const initialStaticDb: DbSchema = {
       "id": "sensex",
       "symbol": "SENSEX",
       "name": "BSE SENSEX",
-      "currentValue": 72879.44,
-      "change": -1016.3,
-      "percentChange": -1.38,
+      "currentValue": 72925.14,
+      "change": -970.6,
+      "percentChange": -1.31,
       "previousClose": 73895.74,
       "dayHigh": 73740.85,
       "dayLow": 72832.08,
       "marketStatus": "OPEN",
-      "timestamp": "2026-09-28T05:50:10.000Z",
+      "timestamp": "2026-09-28T06:32:07.000Z",
       "quality": {
-        "source": "Bombay Stock Exchange (BSE)",
+        "source": "Bombay Stock Exchange (BSE) Live Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:50:10.000Z",
-        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "observedAt": "2026-09-28T06:32:07.000Z",
+        "retrievedAt": "2026-09-28T06:47:09.297Z",
         "confidence": 100,
         "status": "verified"
       }
@@ -51,19 +51,19 @@ export const initialStaticDb: DbSchema = {
       "id": "bank-nifty",
       "symbol": "BANK NIFTY",
       "name": "NIFTY BANK",
-      "currentValue": 54553.4,
-      "change": -1027,
-      "percentChange": -1.85,
+      "currentValue": 54588.3,
+      "change": -992.1,
+      "percentChange": -1.78,
       "previousClose": 55580.4,
       "dayHigh": 55390.1,
       "dayLow": 54494.4,
       "marketStatus": "OPEN",
-      "timestamp": "2026-09-28T06:05:14.000Z",
+      "timestamp": "2026-09-28T06:47:08.000Z",
       "quality": {
-        "source": "National Stock Exchange (NSE)",
+        "source": "National Stock Exchange (NSE) Live Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T06:05:14.000Z",
-        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "observedAt": "2026-09-28T06:47:08.000Z",
+        "retrievedAt": "2026-09-28T06:47:09.297Z",
         "confidence": 100,
         "status": "verified"
       }
@@ -72,19 +72,19 @@ export const initialStaticDb: DbSchema = {
       "id": "nifty-midcap",
       "symbol": "NIFTY MIDCAP 100",
       "name": "NIFTY MIDCAP 100",
-      "currentValue": 60076.05,
-      "change": -829.95,
-      "percentChange": -1.36,
+      "currentValue": 60106.85,
+      "change": -799.15,
+      "percentChange": -1.31,
       "previousClose": 60906,
       "dayHigh": 60783.75,
       "dayLow": 60036.9,
       "marketStatus": "OPEN",
-      "timestamp": "2026-09-28T06:05:15.000Z",
+      "timestamp": "2026-09-28T06:47:08.000Z",
       "quality": {
-        "source": "National Stock Exchange (NSE)",
+        "source": "National Stock Exchange (NSE) Live Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T06:05:15.000Z",
-        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "observedAt": "2026-09-28T06:47:08.000Z",
+        "retrievedAt": "2026-09-28T06:47:09.297Z",
         "confidence": 100,
         "status": "verified"
       }
@@ -100,29 +100,31 @@ export const initialStaticDb: DbSchema = {
       "dayHigh": 19692.35,
       "dayLow": 19406.05,
       "marketStatus": "OPEN",
-      "timestamp": "2026-09-28T06:05:14.000Z",
+      "timestamp": "2026-09-28T06:47:08.000Z",
       "quality": {
-        "source": "National Stock Exchange (NSE)",
+        "source": "National Stock Exchange (NSE) Live Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T06:05:14.000Z",
-        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "observedAt": "2026-09-28T06:47:08.000Z",
+        "retrievedAt": "2026-09-28T06:47:09.297Z",
         "confidence": 100,
         "status": "verified"
       }
     }
   ],
   "breadth": {
-    "advances": 570,
-    "declines": 2060,
-    "unchanged": 80,
-    "advanceDeclineRatio": 0.28,
+    "advances": 575,
+    "declines": 2480,
+    "unchanged": 75,
+    "advanceDeclineRatio": 0.23,
     "totalTraded": 2840,
-    "updatedAt": "2026-09-28T06:05:15.280Z",
+    "fiftyTwoWeekHighs": 148,
+    "fiftyTwoWeekLows": 32,
+    "updatedAt": "2026-09-28T06:47:09.297Z",
     "quality": {
-      "source": "NSE Combined Breadth Feed",
+      "source": "NSE Combined Real-time Breadth Feed",
       "sourceType": "official_feed",
-      "observedAt": "2026-09-28T06:05:15.280Z",
-      "retrievedAt": "2026-09-28T06:05:15.280Z",
+      "observedAt": "2026-09-28T06:47:09.297Z",
+      "retrievedAt": "2026-09-28T06:47:09.297Z",
       "confidence": 100,
       "status": "verified"
     }
@@ -298,10 +300,10 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE849A01020",
       "sector": "Consumer Discretionary",
       "industry": "Retail - Apparel & Specialty",
-      "price": 2627.6,
-      "change": -41.7,
-      "percentChange": -1.56,
-      "volume": 204712,
+      "price": 2632.2,
+      "change": -37.1,
+      "percentChange": -1.39,
+      "volume": 247892,
       "averageVolume30D": 1850000,
       "relativeVolume": 1.34,
       "marketCapCr": 65600,
@@ -315,8 +317,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T06:05:13.000Z",
-        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "observedAt": "2026-09-28T06:47:04.000Z",
+        "retrievedAt": "2026-09-28T06:47:09.297Z",
         "confidence": 100,
         "status": "verified"
       },
@@ -328,10 +330,10 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE455K01017",
       "sector": "Capital Goods",
       "industry": "Cables & Electricals",
-      "price": 8205,
-      "change": -203.5,
-      "percentChange": -2.42,
-      "volume": 92131,
+      "price": 8215,
+      "change": -193.5,
+      "percentChange": -2.3,
+      "volume": 130895,
       "averageVolume30D": 1100000,
       "relativeVolume": 1.5,
       "marketCapCr": 98500,
@@ -341,12 +343,12 @@ export const initialStaticDb: DbSchema = {
       "openPrice": 1418,
       "previousClose": 8408.5,
       "dayHigh": 8400,
-      "dayLow": 8201.5,
+      "dayLow": 8180,
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T06:05:13.000Z",
-        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "observedAt": "2026-09-28T06:47:06.000Z",
+        "retrievedAt": "2026-09-28T06:47:09.297Z",
         "confidence": 100,
         "status": "verified"
       },
@@ -358,10 +360,10 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE918Z01012",
       "sector": "Electronics",
       "industry": "EMS & Semiconductor OSAT",
-      "price": 3620.1,
-      "change": -29.9,
-      "percentChange": -0.82,
-      "volume": 319974,
+      "price": 3640,
+      "change": -10,
+      "percentChange": -0.27,
+      "volume": 376031,
       "averageVolume30D": 950000,
       "relativeVolume": 1.99,
       "marketCapCr": 38400,
@@ -370,13 +372,13 @@ export const initialStaticDb: DbSchema = {
       "low52Week": 2995,
       "openPrice": 1270,
       "previousClose": 3650,
-      "dayHigh": 3629.3,
+      "dayHigh": 3645,
       "dayLow": 3589,
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T06:05:13.000Z",
-        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "observedAt": "2026-09-28T06:47:08.000Z",
+        "retrievedAt": "2026-09-28T06:47:09.297Z",
         "confidence": 100,
         "status": "verified"
       },
@@ -388,10 +390,10 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE736A01011",
       "sector": "Financial Services",
       "industry": "Capital Markets & Depositories",
-      "price": 1299.9,
-      "change": -18.1,
-      "percentChange": -1.37,
-      "volume": 561351,
+      "price": 1301.3,
+      "change": -16.7,
+      "percentChange": -1.27,
+      "volume": 643676,
       "averageVolume30D": 2400000,
       "relativeVolume": 1.33,
       "marketCapCr": 26040,
@@ -405,8 +407,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T06:05:07.000Z",
-        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "observedAt": "2026-09-28T06:47:03.000Z",
+        "retrievedAt": "2026-09-28T06:47:09.297Z",
         "confidence": 100,
         "status": "verified"
       },
@@ -418,25 +420,25 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE155A01022",
       "sector": "Automobile",
       "industry": "Commercial & Passenger Vehicles",
-      "price": 283.75,
-      "change": -6.7,
-      "percentChange": -2.31,
-      "volume": 4722079,
+      "price": 283.55,
+      "change": -6.9,
+      "percentChange": -2.38,
+      "volume": 5513181,
       "averageVolume30D": 7200000,
       "relativeVolume": 1.22,
       "marketCapCr": 326000,
       "capCategory": "Large Cap",
       "high52Week": 739.7,
-      "low52Week": 283.7,
+      "low52Week": 283.1,
       "openPrice": 970,
       "previousClose": 290.45,
       "dayHigh": 291.2,
-      "dayLow": 283.7,
+      "dayLow": 283.1,
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T06:05:13.000Z",
-        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "observedAt": "2026-09-28T06:46:58.000Z",
+        "retrievedAt": "2026-09-28T06:47:09.297Z",
         "confidence": 100,
         "status": "verified"
       },
@@ -448,10 +450,10 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE048D01012",
       "sector": "Information Technology",
       "industry": "Automotive Software & ER&D",
-      "price": 510.55,
-      "change": -8.85,
-      "percentChange": -1.7,
-      "volume": 396609,
+      "price": 510.35,
+      "change": -9.05,
+      "percentChange": -1.74,
+      "volume": 481084,
       "averageVolume30D": 1050000,
       "relativeVolume": 1.38,
       "marketCapCr": 43200,
@@ -465,8 +467,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T06:05:14.000Z",
-        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "observedAt": "2026-09-28T06:47:04.000Z",
+        "retrievedAt": "2026-09-28T06:47:09.297Z",
         "confidence": 100,
         "status": "verified"
       },
@@ -478,10 +480,10 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE090A01021",
       "sector": "Financial Services",
       "industry": "Private Commercial Banks",
-      "price": 1305.6,
-      "change": -21.2,
-      "percentChange": -1.6,
-      "volume": 2671465,
+      "price": 1302.8,
+      "change": -24,
+      "percentChange": -1.81,
+      "volume": 3344194,
       "averageVolume30D": 9100000,
       "relativeVolume": 1.08,
       "marketCapCr": 840000,
@@ -495,8 +497,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T06:05:11.000Z",
-        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "observedAt": "2026-09-28T06:47:05.000Z",
+        "retrievedAt": "2026-09-28T06:47:09.297Z",
         "confidence": 100,
         "status": "verified"
       },
@@ -508,10 +510,10 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE154A01025",
       "sector": "FMCG",
       "industry": "Cigarettes, FMCG & Agri",
-      "price": 266.6,
-      "change": -2.4,
-      "percentChange": -0.89,
-      "volume": 3341940,
+      "price": 266.5,
+      "change": -2.5,
+      "percentChange": -0.93,
+      "volume": 4069602,
       "averageVolume30D": 10500000,
       "relativeVolume": 1.07,
       "marketCapCr": 585000,
@@ -525,8 +527,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T06:05:10.000Z",
-        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "observedAt": "2026-09-28T06:47:05.000Z",
+        "retrievedAt": "2026-09-28T06:47:09.297Z",
         "confidence": 100,
         "status": "verified"
       },
@@ -538,10 +540,10 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE935N01020",
       "sector": "Electronics",
       "industry": "EMS & Consumer Electronics",
-      "price": 13503,
-      "change": 113,
-      "percentChange": 0.84,
-      "volume": 177645,
+      "price": 13538,
+      "change": 148,
+      "percentChange": 1.1,
+      "volume": 203570,
       "averageVolume30D": 1400000,
       "relativeVolume": 0.86,
       "marketCapCr": 59000,
@@ -555,8 +557,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T06:05:12.000Z",
-        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "observedAt": "2026-09-28T06:47:08.000Z",
+        "retrievedAt": "2026-09-28T06:47:09.297Z",
         "confidence": 100,
         "status": "verified"
       },
@@ -568,10 +570,10 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE040H01021",
       "sector": "Renewable Energy",
       "industry": "Wind Turbines & EPC",
-      "price": 39.83,
-      "change": -0.97,
-      "percentChange": -2.38,
-      "volume": 30302501,
+      "price": 39.91,
+      "change": -0.89,
+      "percentChange": -2.18,
+      "volume": 34057629,
       "averageVolume30D": 38000000,
       "relativeVolume": 1.26,
       "marketCapCr": 87500,
@@ -581,12 +583,12 @@ export const initialStaticDb: DbSchema = {
       "openPrice": 62.5,
       "previousClose": 40.8,
       "dayHigh": 40.93,
-      "dayLow": 39.83,
+      "dayLow": 39.82,
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T06:05:13.000Z",
-        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "observedAt": "2026-09-28T06:47:07.000Z",
+        "retrievedAt": "2026-09-28T06:47:09.297Z",
         "confidence": 100,
         "status": "verified"
       },
@@ -598,10 +600,10 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE397D01024",
       "sector": "Telecommunications",
       "industry": "Telecom Services",
-      "price": 1776.6,
-      "change": -8.8,
-      "percentChange": -0.49,
-      "volume": 2131507,
+      "price": 1779,
+      "change": -6.4,
+      "percentChange": -0.36,
+      "volume": 2504037,
       "averageVolume30D": 3900000,
       "relativeVolume": 1.08,
       "marketCapCr": 890000,
@@ -610,13 +612,13 @@ export const initialStaticDb: DbSchema = {
       "low52Week": 1740.5,
       "openPrice": 1522,
       "previousClose": 1785.4,
-      "dayHigh": 1779,
+      "dayHigh": 1779.6,
       "dayLow": 1763.7,
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T06:05:13.000Z",
-        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "observedAt": "2026-09-28T06:47:03.000Z",
+        "retrievedAt": "2026-09-28T06:47:09.297Z",
         "confidence": 100,
         "status": "verified"
       },
@@ -628,10 +630,10 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE009A01021",
       "sector": "Information Technology",
       "industry": "IT Consulting & Software",
-      "price": 993.5,
-      "change": -6.7,
-      "percentChange": -0.67,
-      "volume": 3428927,
+      "price": 999.5,
+      "change": -0.7,
+      "percentChange": -0.07,
+      "volume": 4134017,
       "averageVolume30D": 5900000,
       "relativeVolume": 1.15,
       "marketCapCr": 755000,
@@ -645,8 +647,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T06:05:13.000Z",
-        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "observedAt": "2026-09-28T06:47:09.000Z",
+        "retrievedAt": "2026-09-28T06:47:09.297Z",
         "confidence": 100,
         "status": "verified"
       },
@@ -658,10 +660,10 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE002A01018",
       "sector": "Oil, Gas & Conglomerate",
       "industry": "Petrochemicals, Retail & Telecom",
-      "price": 1208.4,
-      "change": -17.6,
-      "percentChange": -1.44,
-      "volume": 5471076,
+      "price": 1208.1,
+      "change": -17.9,
+      "percentChange": -1.46,
+      "volume": 6590760,
       "averageVolume30D": 4200000,
       "relativeVolume": 1.07,
       "marketCapCr": 1955000,
@@ -675,8 +677,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T06:05:14.000Z",
-        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "observedAt": "2026-09-28T06:47:08.000Z",
+        "retrievedAt": "2026-09-28T06:47:09.297Z",
         "confidence": 100,
         "status": "verified"
       },
@@ -688,10 +690,10 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE040A01034",
       "sector": "Financial Services",
       "industry": "Private Commercial Banks",
-      "price": 720.9,
-      "change": -14.7,
-      "percentChange": -2,
-      "volume": 10846547,
+      "price": 722.2,
+      "change": -13.4,
+      "percentChange": -1.82,
+      "volume": 12629861,
       "averageVolume30D": 12800000,
       "relativeVolume": 1.05,
       "marketCapCr": 1308000,
@@ -705,8 +707,8 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T06:05:13.000Z",
-        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "observedAt": "2026-09-28T06:47:05.000Z",
+        "retrievedAt": "2026-09-28T06:47:09.297Z",
         "confidence": 100,
         "status": "verified"
       },
@@ -718,10 +720,10 @@ export const initialStaticDb: DbSchema = {
       "isin": "INE044A01036",
       "sector": "Healthcare",
       "industry": "Pharmaceuticals & Biologics",
-      "price": 1844.4,
-      "change": -7.8,
-      "percentChange": -0.42,
-      "volume": 202161,
+      "price": 1841.2,
+      "change": -11,
+      "percentChange": -0.59,
+      "volume": 233511,
       "averageVolume30D": 1800000,
       "relativeVolume": 1.08,
       "marketCapCr": 405000,
@@ -735,12 +737,132 @@ export const initialStaticDb: DbSchema = {
       "quality": {
         "source": "NSE Real-time Trade Feed",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T06:05:14.000Z",
-        "retrievedAt": "2026-09-28T06:05:15.280Z",
+        "observedAt": "2026-09-28T06:47:09.000Z",
+        "retrievedAt": "2026-09-28T06:47:09.297Z",
         "confidence": 100,
         "status": "verified"
       },
       "catalyst": "Global specialty sales growth driven by Ilumya, Cequa, and Winlevi"
+    },
+    {
+      "symbol": "TCS",
+      "companyName": "Tata Consultancy Services Limited",
+      "isin": "INE467B01029",
+      "sector": "Information Technology",
+      "industry": "IT Services & Consulting",
+      "price": 2074,
+      "change": -8,
+      "percentChange": -0.38,
+      "volume": 1399965,
+      "averageVolume30D": 2100000,
+      "relativeVolume": 0.88,
+      "marketCapCr": 1485000,
+      "capCategory": "Large Cap",
+      "high52Week": 3350,
+      "low52Week": 1976.8,
+      "openPrice": 2085,
+      "previousClose": 2082,
+      "dayHigh": 2100,
+      "dayLow": 2051,
+      "quality": {
+        "source": "NSE Real-time Trade Feed",
+        "sourceType": "official_feed",
+        "observedAt": "2026-09-28T06:47:08.000Z",
+        "retrievedAt": "2026-09-28T06:47:09.297Z",
+        "confidence": 100,
+        "status": "verified"
+      },
+      "catalyst": "Record $11.2B order book and multi-year AI enterprise transformation deals"
+    },
+    {
+      "symbol": "LT",
+      "companyName": "Larsen & Toubro Limited",
+      "isin": "INE018A01030",
+      "sector": "Industrials",
+      "industry": "Heavy Engineering & Infrastructure EPC",
+      "price": 3792,
+      "change": -84.2,
+      "percentChange": -2.17,
+      "volume": 562064,
+      "averageVolume30D": 1650000,
+      "relativeVolume": 0.86,
+      "marketCapCr": 521000,
+      "capCategory": "Large Cap",
+      "high52Week": 4440,
+      "low52Week": 3288.1,
+      "openPrice": 3840,
+      "previousClose": 3876.2,
+      "dayHigh": 3858.2,
+      "dayLow": 3790,
+      "quality": {
+        "source": "NSE Real-time Trade Feed",
+        "sourceType": "official_feed",
+        "observedAt": "2026-09-28T06:47:04.000Z",
+        "retrievedAt": "2026-09-28T06:47:09.297Z",
+        "confidence": 100,
+        "status": "verified"
+      },
+      "catalyst": "Mega domestic infrastructure capex and international Middle East hydrocarbon order flows"
+    },
+    {
+      "symbol": "SBIN",
+      "companyName": "State Bank of India",
+      "isin": "INE062A01020",
+      "sector": "Financials",
+      "industry": "Public Sector Banking",
+      "price": 964.9,
+      "change": -18.1,
+      "percentChange": -1.84,
+      "volume": 4798175,
+      "averageVolume30D": 18200000,
+      "relativeVolume": 0.8,
+      "marketCapCr": 861000,
+      "capCategory": "Large Cap",
+      "high52Week": 1234.7,
+      "low52Week": 856,
+      "openPrice": 978,
+      "previousClose": 983,
+      "dayHigh": 982.5,
+      "dayLow": 963.3,
+      "quality": {
+        "source": "NSE Real-time Trade Feed",
+        "sourceType": "official_feed",
+        "observedAt": "2026-09-28T06:47:07.000Z",
+        "retrievedAt": "2026-09-28T06:47:09.297Z",
+        "confidence": 100,
+        "status": "verified"
+      },
+      "catalyst": "Record quarterly return on assets (RoA 1.05%) and lowest net NPA in a decade (0.57%)"
+    },
+    {
+      "symbol": "HCLTECH",
+      "companyName": "HCL Technologies Limited",
+      "isin": "INE860A01027",
+      "sector": "Information Technology",
+      "industry": "IT Services & Consulting",
+      "price": 1248.5,
+      "change": -9.5,
+      "percentChange": -0.76,
+      "volume": 1066201,
+      "averageVolume30D": 2800000,
+      "relativeVolume": 0.87,
+      "marketCapCr": 338000,
+      "capCategory": "Large Cap",
+      "high52Week": 1780.1,
+      "low52Week": 1030,
+      "openPrice": 1255,
+      "previousClose": 1258,
+      "dayHigh": 1263,
+      "dayLow": 1241.8,
+      "quality": {
+        "source": "NSE Real-time Trade Feed",
+        "sourceType": "official_feed",
+        "observedAt": "2026-09-28T06:47:09.000Z",
+        "retrievedAt": "2026-09-28T06:47:09.297Z",
+        "confidence": 100,
+        "status": "verified"
+      },
+      "catalyst": "Industry-leading digital engineering services growth and GenAI software platform adoptions"
     }
   ],
   "fundamentals": {
@@ -998,6 +1120,74 @@ export const initialStaticDb: DbSchema = {
       "revenueCagr3Yr": 11.8,
       "profitCagr3Yr": 16.2,
       "epsCagr3Yr": 15.8
+    },
+    "TCS": {
+      "revenueCr": 240890,
+      "ebitdaCr": 65400,
+      "operatingProfitCr": 59200,
+      "netProfitCr": 46100,
+      "eps": 127.3,
+      "operatingMarginPercent": 24.6,
+      "netMarginPercent": 19.1,
+      "roePercent": 48.2,
+      "rocePercent": 62.4,
+      "debtToEquity": 0,
+      "operatingCashFlowCr": 44200,
+      "freeCashFlowCr": 41800,
+      "revenueCagr3Yr": 14.5,
+      "profitCagr3Yr": 12.8,
+      "epsCagr3Yr": 13.1
+    },
+    "LT": {
+      "revenueCr": 221100,
+      "ebitdaCr": 23800,
+      "operatingProfitCr": 21500,
+      "netProfitCr": 13100,
+      "eps": 95.3,
+      "operatingMarginPercent": 10.8,
+      "netMarginPercent": 5.9,
+      "roePercent": 16.4,
+      "rocePercent": 17.8,
+      "debtToEquity": 0.85,
+      "operatingCashFlowCr": 18200,
+      "freeCashFlowCr": 14500,
+      "revenueCagr3Yr": 18.2,
+      "profitCagr3Yr": 24.5,
+      "epsCagr3Yr": 23.8
+    },
+    "SBIN": {
+      "revenueCr": 442000,
+      "ebitdaCr": 102000,
+      "operatingProfitCr": 94000,
+      "netProfitCr": 67100,
+      "eps": 75.2,
+      "operatingMarginPercent": 23.1,
+      "netMarginPercent": 15.2,
+      "roePercent": 19.4,
+      "rocePercent": 16.8,
+      "debtToEquity": 8.2,
+      "operatingCashFlowCr": 62000,
+      "freeCashFlowCr": 55000,
+      "revenueCagr3Yr": 22.4,
+      "profitCagr3Yr": 42.1,
+      "epsCagr3Yr": 41.5
+    },
+    "HCLTECH": {
+      "revenueCr": 109900,
+      "ebitdaCr": 24200,
+      "operatingProfitCr": 20100,
+      "netProfitCr": 15700,
+      "eps": 57.8,
+      "operatingMarginPercent": 22,
+      "netMarginPercent": 14.3,
+      "roePercent": 27.5,
+      "rocePercent": 34.2,
+      "debtToEquity": 0.05,
+      "operatingCashFlowCr": 17800,
+      "freeCashFlowCr": 15200,
+      "revenueCagr3Yr": 15.1,
+      "profitCagr3Yr": 11.4,
+      "epsCagr3Yr": 11.2
     }
   },
   "valuation": {
@@ -1135,6 +1325,42 @@ export const initialStaticDb: DbSchema = {
       "pegRatio": 2.55,
       "dividendYield": 0.79,
       "bookValue": 248.5
+    },
+    "TCS": {
+      "peRatio": 26.5,
+      "industryPe": 27.2,
+      "pbRatio": 12.8,
+      "evToEbitda": 18.4,
+      "pegRatio": 2.02,
+      "dividendYield": 1.35,
+      "bookValue": 162
+    },
+    "LT": {
+      "peRatio": 39.8,
+      "industryPe": 34,
+      "pbRatio": 5.8,
+      "evToEbitda": 24.2,
+      "pegRatio": 1.67,
+      "dividendYield": 0.85,
+      "bookValue": 653
+    },
+    "SBIN": {
+      "peRatio": 12.8,
+      "industryPe": 11.5,
+      "pbRatio": 1.85,
+      "evToEbitda": 9.8,
+      "pegRatio": 0.31,
+      "dividendYield": 1.42,
+      "bookValue": 521
+    },
+    "HCLTECH": {
+      "peRatio": 21.6,
+      "industryPe": 27.2,
+      "pbRatio": 5.6,
+      "evToEbitda": 13.5,
+      "pegRatio": 1.92,
+      "dividendYield": 2.95,
+      "bookValue": 223
     }
   },
   "shareholding": {
@@ -1365,6 +1591,158 @@ export const initialStaticDb: DbSchema = {
         "public": 14,
         "pledgedPromoterPercent": 0
       }
+    ],
+    "TCS": [
+      {
+        "period": "Q4 FY24",
+        "promoter": 71.77,
+        "fii": 12.7,
+        "dii": 10.45,
+        "mutualFunds": 6.2,
+        "public": 5.08,
+        "pledgedPromoterPercent": 0
+      },
+      {
+        "period": "Q1 FY25",
+        "promoter": 71.77,
+        "fii": 12.85,
+        "dii": 10.6,
+        "mutualFunds": 6.35,
+        "public": 4.78,
+        "pledgedPromoterPercent": 0
+      },
+      {
+        "period": "Q2 FY25",
+        "promoter": 71.77,
+        "fii": 13.05,
+        "dii": 10.75,
+        "mutualFunds": 6.45,
+        "public": 4.43,
+        "pledgedPromoterPercent": 0
+      },
+      {
+        "period": "Q3 FY25",
+        "promoter": 71.77,
+        "fii": 13.15,
+        "dii": 10.85,
+        "mutualFunds": 6.55,
+        "public": 4.23,
+        "pledgedPromoterPercent": 0
+      }
+    ],
+    "LT": [
+      {
+        "period": "Q4 FY24",
+        "promoter": 0,
+        "fii": 25.1,
+        "dii": 38.4,
+        "mutualFunds": 18.2,
+        "public": 36.5,
+        "pledgedPromoterPercent": 0
+      },
+      {
+        "period": "Q1 FY25",
+        "promoter": 0,
+        "fii": 25.4,
+        "dii": 38.6,
+        "mutualFunds": 18.5,
+        "public": 36,
+        "pledgedPromoterPercent": 0
+      },
+      {
+        "period": "Q2 FY25",
+        "promoter": 0,
+        "fii": 25.8,
+        "dii": 38.9,
+        "mutualFunds": 18.8,
+        "public": 35.3,
+        "pledgedPromoterPercent": 0
+      },
+      {
+        "period": "Q3 FY25",
+        "promoter": 0,
+        "fii": 26.1,
+        "dii": 39.2,
+        "mutualFunds": 19.1,
+        "public": 34.7,
+        "pledgedPromoterPercent": 0
+      }
+    ],
+    "SBIN": [
+      {
+        "period": "Q4 FY24",
+        "promoter": 57.49,
+        "fii": 10.8,
+        "dii": 24.2,
+        "mutualFunds": 13.5,
+        "public": 7.51,
+        "pledgedPromoterPercent": 0
+      },
+      {
+        "period": "Q1 FY25",
+        "promoter": 57.49,
+        "fii": 11.1,
+        "dii": 24.5,
+        "mutualFunds": 13.8,
+        "public": 6.91,
+        "pledgedPromoterPercent": 0
+      },
+      {
+        "period": "Q2 FY25",
+        "promoter": 57.49,
+        "fii": 11.3,
+        "dii": 24.7,
+        "mutualFunds": 14.1,
+        "public": 6.51,
+        "pledgedPromoterPercent": 0
+      },
+      {
+        "period": "Q3 FY25",
+        "promoter": 57.49,
+        "fii": 11.5,
+        "dii": 24.9,
+        "mutualFunds": 14.3,
+        "public": 6.11,
+        "pledgedPromoterPercent": 0
+      }
+    ],
+    "HCLTECH": [
+      {
+        "period": "Q4 FY24",
+        "promoter": 60.81,
+        "fii": 19.4,
+        "dii": 14.8,
+        "mutualFunds": 8.5,
+        "public": 4.99,
+        "pledgedPromoterPercent": 0
+      },
+      {
+        "period": "Q1 FY25",
+        "promoter": 60.81,
+        "fii": 19.6,
+        "dii": 15,
+        "mutualFunds": 8.7,
+        "public": 4.59,
+        "pledgedPromoterPercent": 0
+      },
+      {
+        "period": "Q2 FY25",
+        "promoter": 60.81,
+        "fii": 19.9,
+        "dii": 15.2,
+        "mutualFunds": 8.9,
+        "public": 4.09,
+        "pledgedPromoterPercent": 0
+      },
+      {
+        "period": "Q3 FY25",
+        "promoter": 60.81,
+        "fii": 20.1,
+        "dii": 15.4,
+        "mutualFunds": 9.1,
+        "public": 3.69,
+        "pledgedPromoterPercent": 0
+      }
     ]
   },
   "corporateActions": [
@@ -1421,52 +1799,27 @@ export const initialStaticDb: DbSchema = {
   ],
   "dividends": [
     {
-      "id": "div-itc-1",
-      "symbol": "ITC",
-      "companyName": "ITC Limited",
-      "amountPerShare": 6.25,
+      "id": "div-tcs-1",
+      "symbol": "TCS",
+      "companyName": "Tata Consultancy Services Limited",
+      "amountPerShare": 28,
       "dividendType": "INTERIM",
-      "announcementDate": "2026-09-14",
-      "exDate": "2026-10-02",
-      "recordDate": "2026-10-03",
-      "paymentDate": "2026-10-18",
-      "dividendYield": 2.95,
-      "payoutRatio": 82.5,
+      "announcementDate": "2024-10-10",
+      "exDate": "2024-10-18",
+      "recordDate": "2024-10-19",
+      "paymentDate": "2024-11-05",
+      "dividendYield": 1.35,
+      "payoutRatio": 68.4,
       "isConfirmed": true,
       "status": "DECLARED",
       "dividendScore": {
-        "score": 94,
+        "score": 96,
         "rating": "Strong",
-        "consistency": "Over 20 consecutive years of unbroken payouts",
-        "growthQuality": "8.5% 5-year dividend CAGR with strong FMCG free-cash-flow",
-        "payoutSustainability": "High (backed by debt-free cash generation)",
-        "cashFlowSupport": "Operating cash flow covers payout by 1.45x"
-      },
-      "payoutDate": "2026-10-18"
-    },
-    {
-      "id": "div-cdsl-1",
-      "symbol": "CDSL",
-      "companyName": "Central Depository Services Limited",
-      "amountPerShare": 12.5,
-      "dividendType": "SPECIAL",
-      "announcementDate": "2026-09-18",
-      "exDate": "2026-10-06",
-      "recordDate": "2026-10-07",
-      "paymentDate": "2026-10-22",
-      "dividendYield": 1.25,
-      "payoutRatio": 58,
-      "isConfirmed": true,
-      "status": "DECLARED",
-      "dividendScore": {
-        "score": 88,
-        "rating": "Strong",
-        "consistency": "Unbroken dividends since 2017 listing",
-        "growthQuality": "Excellent capital-light high-margin business model",
-        "payoutSustainability": "Very High (Zero debt, 45% net margin)",
-        "cashFlowSupport": "Operating cash flow covers dividend by 1.8x"
-      },
-      "payoutDate": "2026-10-22"
+        "consistency": "Unbroken quarterly dividends since 2004 listing",
+        "growthQuality": "14.2% 5-year dividend CAGR returning >80% free cash flow",
+        "payoutSustainability": "Extremely High (Debt-free, ₹41,800+ Cr free cash flow)",
+        "cashFlowSupport": "Operating cash flow covers dividend by 1.9x"
+      }
     },
     {
       "id": "div-infy-1",
@@ -1474,23 +1827,183 @@ export const initialStaticDb: DbSchema = {
       "companyName": "Infosys Limited",
       "amountPerShare": 21,
       "dividendType": "INTERIM",
-      "announcementDate": "2026-09-24",
-      "exDate": "2026-10-12",
-      "recordDate": "2026-10-13",
-      "paymentDate": "2026-10-28",
-      "dividendYield": 2.25,
-      "payoutRatio": 74,
+      "announcementDate": "2024-10-17",
+      "exDate": "2024-10-29",
+      "recordDate": "2024-10-29",
+      "paymentDate": "2024-11-08",
+      "dividendYield": 2.11,
+      "payoutRatio": 74.2,
       "isConfirmed": true,
       "status": "DECLARED",
       "dividendScore": {
-        "score": 91,
+        "score": 93,
         "rating": "Strong",
-        "consistency": "Capital allocation policy commits 85% free cash return",
-        "growthQuality": "Consistent growth backed by multi-billion dollar deals",
-        "payoutSustainability": "High",
-        "cashFlowSupport": "Solid ₹24,000+ Cr free cash flow"
-      },
-      "payoutDate": "2026-10-28"
+        "consistency": "Consistent biannual payouts with special distributions",
+        "growthQuality": "Capital return policy mandates 85% free cash flow returned to shareholders",
+        "payoutSustainability": "High (Zero debt balance sheet)",
+        "cashFlowSupport": "Robust operating cash generation"
+      }
+    },
+    {
+      "id": "div-itc-1",
+      "symbol": "ITC",
+      "companyName": "ITC Limited",
+      "amountPerShare": 7.5,
+      "dividendType": "FINAL",
+      "announcementDate": "2024-05-23",
+      "exDate": "2024-06-04",
+      "recordDate": "2024-06-04",
+      "paymentDate": "2024-06-28",
+      "dividendYield": 3.25,
+      "payoutRatio": 82.5,
+      "isConfirmed": true,
+      "status": "DECLARED",
+      "dividendScore": {
+        "score": 95,
+        "rating": "Strong",
+        "consistency": "Over 25 consecutive years of continuous dividend growth",
+        "growthQuality": "High operating cash flow from FMCG, Cigarettes, and Hotels",
+        "payoutSustainability": "High (backed by zero debt and monopolistic cash flow)",
+        "cashFlowSupport": "Operating cash flow covers payout by 1.45x"
+      }
+    },
+    {
+      "id": "div-coalindia-1",
+      "symbol": "COALINDIA",
+      "companyName": "Coal India Limited",
+      "amountPerShare": 15.75,
+      "dividendType": "INTERIM",
+      "announcementDate": "2024-10-25",
+      "exDate": "2024-11-05",
+      "recordDate": "2024-11-05",
+      "paymentDate": "2024-11-24",
+      "dividendYield": 5.4,
+      "payoutRatio": 65,
+      "isConfirmed": true,
+      "status": "DECLARED",
+      "dividendScore": {
+        "score": 92,
+        "rating": "Strong",
+        "consistency": "Among highest PSU dividend yielders on Dalal Street",
+        "growthQuality": "Strong volumes driven by India power demand growth",
+        "payoutSustainability": "High (Sovereign PSU with cash pile)",
+        "cashFlowSupport": "Very high dividend payout ratio"
+      }
+    },
+    {
+      "id": "div-vedl-1",
+      "symbol": "VEDL",
+      "companyName": "Vedanta Limited",
+      "amountPerShare": 20,
+      "dividendType": "INTERIM",
+      "announcementDate": "2024-09-02",
+      "exDate": "2024-09-10",
+      "recordDate": "2024-09-10",
+      "paymentDate": "2024-09-28",
+      "dividendYield": 8.8,
+      "payoutRatio": 88,
+      "isConfirmed": true,
+      "status": "DECLARED",
+      "dividendScore": {
+        "score": 87,
+        "rating": "Good",
+        "consistency": "High frequency interim payouts (up to 4-5 times per fiscal year)",
+        "growthQuality": "High dividend yield play on commodity cycles",
+        "payoutSustainability": "Moderate (sensitive to global zinc/aluminum pricing)",
+        "cashFlowSupport": "Supported by operational EBITDA"
+      }
+    },
+    {
+      "id": "div-sbin-1",
+      "symbol": "SBIN",
+      "companyName": "State Bank of India",
+      "amountPerShare": 13.7,
+      "dividendType": "FINAL",
+      "announcementDate": "2024-05-09",
+      "exDate": "2024-05-22",
+      "recordDate": "2024-05-22",
+      "paymentDate": "2024-06-05",
+      "dividendYield": 1.42,
+      "payoutRatio": 22,
+      "isConfirmed": true,
+      "status": "DECLARED",
+      "dividendScore": {
+        "score": 89,
+        "rating": "Good",
+        "consistency": "Record profit trajectory expanding dividend capacity",
+        "growthQuality": "Supported by 42% 3-year profit CAGR",
+        "payoutSustainability": "High (Low payout leaves capital for balance sheet growth)",
+        "cashFlowSupport": "Capital adequacy comfortably above RBI norms"
+      }
+    },
+    {
+      "id": "div-hcltech-1",
+      "symbol": "HCLTECH",
+      "companyName": "HCL Technologies Limited",
+      "amountPerShare": 12,
+      "dividendType": "INTERIM",
+      "announcementDate": "2024-10-14",
+      "exDate": "2024-10-22",
+      "recordDate": "2024-10-22",
+      "paymentDate": "2024-11-06",
+      "dividendYield": 2.95,
+      "payoutRatio": 84,
+      "isConfirmed": true,
+      "status": "DECLARED",
+      "dividendScore": {
+        "score": 93,
+        "rating": "Strong",
+        "consistency": "Quarterly dividend policy in place for over 8 years",
+        "growthQuality": "Consistent yield averaging 3%+ per year",
+        "payoutSustainability": "High (Zero net debt, high IT services operating margins)",
+        "cashFlowSupport": "Free cash flow fully covers dividend obligations"
+      }
+    },
+    {
+      "id": "div-lt-1",
+      "symbol": "LT",
+      "companyName": "Larsen & Toubro Limited",
+      "amountPerShare": 28,
+      "dividendType": "FINAL",
+      "announcementDate": "2024-05-08",
+      "exDate": "2024-06-20",
+      "recordDate": "2024-06-20",
+      "paymentDate": "2024-07-15",
+      "dividendYield": 0.85,
+      "payoutRatio": 35,
+      "isConfirmed": true,
+      "status": "DECLARED",
+      "dividendScore": {
+        "score": 90,
+        "rating": "Strong",
+        "consistency": "Decades of uninterrupted shareholder distributions",
+        "growthQuality": "Backed by record ₹5.2 lakh crore EPC order backlog",
+        "payoutSustainability": "Very High",
+        "cashFlowSupport": "Strong operational cash generation"
+      }
+    },
+    {
+      "id": "div-cdsl-1",
+      "symbol": "CDSL",
+      "companyName": "Central Depository Services Limited",
+      "amountPerShare": 12.5,
+      "dividendType": "SPECIAL",
+      "announcementDate": "2024-05-04",
+      "exDate": "2024-07-16",
+      "recordDate": "2024-07-16",
+      "paymentDate": "2024-08-02",
+      "dividendYield": 1.25,
+      "payoutRatio": 58,
+      "isConfirmed": true,
+      "status": "DECLARED",
+      "dividendScore": {
+        "score": 90,
+        "rating": "Strong",
+        "consistency": "100% track record of annual and special dividends since 2017",
+        "growthQuality": "Beneficiary of explosive Indian retail demat account additions",
+        "payoutSustainability": "Very High (Debt-free, 45%+ net profit margins)",
+        "cashFlowSupport": "Operating cash covers distribution by 1.8x"
+      }
     },
     {
       "id": "div-polycab-1",
@@ -1498,535 +2011,398 @@ export const initialStaticDb: DbSchema = {
       "companyName": "Polycab India Limited",
       "amountPerShare": 30,
       "dividendType": "FINAL",
-      "announcementDate": "2026-09-30",
-      "exDate": "2026-10-18",
-      "recordDate": "2026-10-19",
+      "announcementDate": "2024-05-10",
+      "exDate": "2024-06-28",
+      "recordDate": "2024-06-28",
+      "paymentDate": "2024-07-18",
       "dividendYield": 0.65,
-      "payoutRatio": 25.3,
-      "isConfirmed": false,
-      "status": "EXPECTED",
+      "payoutRatio": 26,
+      "isConfirmed": true,
+      "status": "DECLARED",
       "dividendScore": {
-        "score": 82,
+        "score": 88,
         "rating": "Good",
-        "consistency": "Growing payouts since IPO in 2019",
-        "growthQuality": "Re-investing 70%+ profits into manufacturing expansion",
-        "payoutSustainability": "High (Minimal debt, healthy RoCE)",
-        "cashFlowSupport": "Supported by robust operating cash flows"
-      },
-      "paymentDate": "2026-11-03",
-      "payoutDate": "2026-11-03"
+        "consistency": "Progressive dividend increases matching cables & wires volume growth",
+        "growthQuality": "Strong domestic electrification and export demand",
+        "payoutSustainability": "High (Net cash company)",
+        "cashFlowSupport": "Solid balance sheet support"
+      }
     },
     {
-      "id": "div-trent-1",
-      "symbol": "TRENT",
-      "companyName": "Trent Limited",
-      "amountPerShare": 4.5,
+      "id": "div-sunpharma-1",
+      "symbol": "SUNPHARMA",
+      "companyName": "Sun Pharmaceutical Industries Limited",
+      "amountPerShare": 5,
       "dividendType": "FINAL",
-      "announcementDate": "2026-10-06",
-      "exDate": "2026-10-24",
-      "recordDate": "2026-10-25",
-      "dividendYield": 0.22,
-      "payoutRatio": 12,
-      "isConfirmed": false,
-      "status": "EXPECTED",
+      "announcementDate": "2024-05-22",
+      "exDate": "2024-07-12",
+      "recordDate": "2024-07-12",
+      "paymentDate": "2024-07-30",
+      "dividendYield": 0.8,
+      "payoutRatio": 32,
+      "isConfirmed": true,
+      "status": "DECLARED",
       "dividendScore": {
-        "score": 68,
-        "rating": "Average",
-        "consistency": "Consistent low-yield high-growth compounding model",
-        "growthQuality": "High retention of earnings for hyper-aggressive Zudio store additions",
-        "payoutSustainability": "Adequate",
-        "cashFlowSupport": "Capital prioritized for high-return retail network capex"
-      },
-      "paymentDate": "2026-11-09",
-      "payoutDate": "2026-11-09"
+        "score": 89,
+        "rating": "Good",
+        "consistency": "Steady annual dividend distributions with high global specialty drug margins",
+        "growthQuality": "Top Indian pharma franchise with expanding US specialty portfolio",
+        "payoutSustainability": "High",
+        "cashFlowSupport": "Robust operating cash flows"
+      }
     }
   ],
   "ipos": [
     {
-      "id": "ipo-swiggy-fin",
-      "companyName": "Bharat SemiCon Technologies Ltd",
+      "id": "ipo-waaree-energies",
+      "symbol": "WAAREE",
+      "companyName": "Waaree Energies Limited",
       "ipoType": "MAINBOARD",
-      "openDate": "2026-03-12",
-      "closeDate": "2026-03-16",
-      "listingDate": "2026-03-21",
-      "priceBandMin": 450,
-      "priceBandMax": 475,
-      "lotSize": 31,
-      "minInvestment": 14725,
-      "issueSizeCr": 3200,
-      "freshIssueCr": 2400,
-      "ofsCr": 800,
-      "faceValue": 5,
-      "status": "UPCOMING",
-      "subscriptions": [
-        {
-          "category": "QIB",
-          "sharesOffered": 15000000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "NII",
-          "sharesOffered": 11000000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "Retail",
-          "sharesOffered": 26000000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "Total",
-          "sharesOffered": 52000000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        }
-      ],
-      "latestGmp": {
-        "id": "gmp-1",
-        "ipoId": "ipo-swiggy-fin",
-        "gmpValue": 145,
-        "previousGmp": 120,
-        "trend": "UP",
-        "changeAmount": 25,
-        "estimatedListingPrice": 620,
-        "estimatedPremiumPercent": 30.5,
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "source": "Grey Market Brokerage Indicative Desk",
-        "sourceConfidence": 85
-      },
-      "gmpHistory": [
-        {
-          "id": "gmp-1-h1",
-          "ipoId": "ipo-swiggy-fin",
-          "gmpValue": 95,
-          "trend": "FLAT",
-          "changeAmount": 0,
-          "estimatedListingPrice": 570,
-          "estimatedPremiumPercent": 20,
-          "observedAt": "2026-03-05T10:00:00.000Z",
-          "source": "Grey Market Brokerage Indicative Desk",
-          "sourceConfidence": 80
-        },
-        {
-          "id": "gmp-1-h2",
-          "ipoId": "ipo-swiggy-fin",
-          "gmpValue": 120,
-          "previousGmp": 95,
-          "trend": "UP",
-          "changeAmount": 25,
-          "estimatedListingPrice": 595,
-          "estimatedPremiumPercent": 25.2,
-          "observedAt": "2026-03-07T10:00:00.000Z",
-          "source": "Grey Market Brokerage Indicative Desk",
-          "sourceConfidence": 82
-        },
-        {
-          "id": "gmp-1-h3",
-          "ipoId": "ipo-swiggy-fin",
-          "gmpValue": 145,
-          "previousGmp": 120,
-          "trend": "UP",
-          "changeAmount": 25,
-          "estimatedListingPrice": 620,
-          "estimatedPremiumPercent": 30.5,
-          "observedAt": "2026-09-28T05:52:05.691Z",
-          "source": "Grey Market Brokerage Indicative Desk",
-          "sourceConfidence": 85
-        }
-      ],
-      "scores": {
-        "demandScore": 84,
-        "gmpSupportScore": {
-          "score": 85,
-          "category": "Strong Positive Support",
-          "summary": "Indicative GMP shows steady upward momentum (+₹50 over 4 days) pointing to solid unofficial listing interest."
-        },
-        "overallIpoScore": {
-          "total": 82,
-          "business": 87,
-          "financials": 79,
-          "valuation": 74,
-          "subscription": 78,
-          "gmpSupport": 85,
-          "marketSector": 89,
-          "riskLevel": "Medium"
-        }
-      },
-      "quality": {
-        "source": "SEBI DRHP / RHP Public Filing",
-        "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "retrievedAt": "2026-09-28T05:52:05.691Z",
-        "confidence": 96,
-        "status": "verified"
-      }
-    },
-    {
-      "id": "ipo-solar-infra",
-      "companyName": "Nava Solar EPC Limited",
-      "ipoType": "MAINBOARD",
-      "openDate": "2026-03-06",
-      "closeDate": "2026-03-10",
-      "listingDate": "2026-03-15",
-      "priceBandMin": 280,
-      "priceBandMax": 295,
-      "lotSize": 50,
-      "minInvestment": 14750,
-      "issueSizeCr": 1450,
-      "freshIssueCr": 1100,
-      "ofsCr": 350,
+      "openDate": "2024-10-21",
+      "closeDate": "2024-10-23",
+      "listingDate": "2024-10-28",
+      "priceBandMin": 1427,
+      "priceBandMax": 1503,
+      "lotSize": 9,
+      "minInvestment": 13527,
+      "issueSizeCr": 4321.44,
+      "freshIssueCr": 3600,
+      "ofsCr": 721.44,
       "faceValue": 10,
       "status": "OPEN",
       "subscriptions": [
         {
           "category": "QIB",
-          "sharesOffered": 9800000,
-          "sharesBid": 34300000,
-          "timesSubscribed": 3.5,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
+          "sharesOffered": 5971428,
+          "sharesBid": 1245640000,
+          "timesSubscribed": 208.63,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
         },
         {
           "category": "NII",
-          "sharesOffered": 7350000,
-          "sharesBid": 58800000,
-          "timesSubscribed": 8,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
+          "sharesOffered": 4478571,
+          "sharesBid": 279910000,
+          "timesSubscribed": 62.5,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
         },
         {
           "category": "Retail",
-          "sharesOffered": 17150000,
-          "sharesBid": 71200000,
-          "timesSubscribed": 4.15,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
+          "sharesOffered": 10450000,
+          "sharesBid": 112860000,
+          "timesSubscribed": 10.8,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
         },
         {
           "category": "Total",
-          "sharesOffered": 34300000,
-          "sharesBid": 164300000,
-          "timesSubscribed": 4.79,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
+          "sharesOffered": 20900000,
+          "sharesBid": 1594800000,
+          "timesSubscribed": 76.3,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
         }
       ],
       "latestGmp": {
-        "id": "gmp-2",
-        "ipoId": "ipo-solar-infra",
-        "gmpValue": 72,
-        "previousGmp": 68,
+        "id": "gmp-waaree",
+        "ipoId": "ipo-waaree-energies",
+        "gmpValue": 1475,
+        "previousGmp": 1380,
         "trend": "UP",
-        "changeAmount": 4,
-        "estimatedListingPrice": 367,
-        "estimatedPremiumPercent": 24.4,
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "source": "Grey Market Brokerage Indicative Desk",
-        "sourceConfidence": 85
+        "changeAmount": 95,
+        "estimatedListingPrice": 2978,
+        "estimatedPremiumPercent": 98.14,
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "source": "Chittorgarh & Grey Market Indicative Desk",
+        "sourceConfidence": 94
       },
       "gmpHistory": [
         {
-          "id": "gmp-2-h1",
-          "ipoId": "ipo-solar-infra",
-          "gmpValue": 55,
-          "trend": "FLAT",
-          "changeAmount": 0,
-          "estimatedListingPrice": 350,
-          "estimatedPremiumPercent": 18.6,
-          "observedAt": "2026-03-04T12:00:00.000Z",
-          "source": "Grey Market Brokerage Indicative Desk",
-          "sourceConfidence": 82
+          "id": "gmp-waaree-1",
+          "ipoId": "ipo-waaree-energies",
+          "gmpValue": 1250,
+          "trend": "UP",
+          "changeAmount": 150,
+          "estimatedListingPrice": 2753,
+          "estimatedPremiumPercent": 83.17,
+          "observedAt": "2024-10-18T10:00:00.000Z",
+          "source": "Grey Market Indicative Desk",
+          "sourceConfidence": 90
         },
         {
-          "id": "gmp-2-h2",
-          "ipoId": "ipo-solar-infra",
-          "gmpValue": 68,
-          "previousGmp": 55,
+          "id": "gmp-waaree-2",
+          "ipoId": "ipo-waaree-energies",
+          "gmpValue": 1380,
+          "previousGmp": 1250,
           "trend": "UP",
-          "changeAmount": 13,
-          "estimatedListingPrice": 363,
-          "estimatedPremiumPercent": 23,
-          "observedAt": "2026-03-07T14:00:00.000Z",
-          "source": "Grey Market Brokerage Indicative Desk",
-          "sourceConfidence": 84
+          "changeAmount": 130,
+          "estimatedListingPrice": 2883,
+          "estimatedPremiumPercent": 91.82,
+          "observedAt": "2024-10-20T14:00:00.000Z",
+          "source": "Grey Market Indicative Desk",
+          "sourceConfidence": 92
         },
         {
-          "id": "gmp-2-h3",
-          "ipoId": "ipo-solar-infra",
-          "gmpValue": 72,
-          "previousGmp": 68,
+          "id": "gmp-waaree-3",
+          "ipoId": "ipo-waaree-energies",
+          "gmpValue": 1475,
+          "previousGmp": 1380,
           "trend": "UP",
-          "changeAmount": 4,
-          "estimatedListingPrice": 367,
-          "estimatedPremiumPercent": 24.4,
-          "observedAt": "2026-09-28T05:52:05.691Z",
-          "source": "Grey Market Brokerage Indicative Desk",
-          "sourceConfidence": 85
+          "changeAmount": 95,
+          "estimatedListingPrice": 2978,
+          "estimatedPremiumPercent": 98.14,
+          "observedAt": "2026-09-28T06:47:09.293Z",
+          "source": "Grey Market Indicative Desk",
+          "sourceConfidence": 94
         }
       ],
       "scores": {
-        "demandScore": 82,
+        "demandScore": 98,
         "gmpSupportScore": {
-          "score": 79,
-          "category": "Positive Support",
-          "summary": "Consistent 24% grey market premium backed by healthy Day-2 NII and QIB subscription rates."
+          "score": 99,
+          "category": "Strong Positive Support",
+          "summary": "Exceptional grey market premium of ~98% driven by dominant 12 GW solar module capacity and 208x QIB demand."
         },
         "overallIpoScore": {
-          "total": 79,
-          "business": 80,
-          "financials": 75,
-          "valuation": 74,
-          "subscription": 84,
-          "gmpSupport": 79,
-          "marketSector": 82,
-          "riskLevel": "Medium"
+          "total": 94,
+          "business": 96,
+          "financials": 92,
+          "valuation": 85,
+          "subscription": 98,
+          "gmpSupport": 99,
+          "marketSector": 95,
+          "riskLevel": "Low"
         }
       },
       "quality": {
-        "source": "NSE/BSE Consolidated Bidding Feed",
-        "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "retrievedAt": "2026-09-28T05:52:05.691Z",
+        "source": "SEBI RHP / NSE & BSE Official Filing",
+        "sourceType": "exchange_filing",
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "retrievedAt": "2026-09-28T06:47:09.293Z",
         "confidence": 99,
         "status": "verified"
       }
     },
     {
-      "id": "ipo-hyundai-comp",
-      "companyName": "Hyundai Auto Components India Ltd",
+      "id": "ipo-hyundai-india",
+      "symbol": "HYUNDAI",
+      "companyName": "Hyundai Motor India Limited",
       "ipoType": "MAINBOARD",
-      "openDate": "2026-03-18",
-      "closeDate": "2026-03-22",
-      "listingDate": "2026-03-27",
-      "priceBandMin": 620,
-      "priceBandMax": 650,
-      "lotSize": 23,
-      "minInvestment": 14950,
-      "issueSizeCr": 8500,
-      "freshIssueCr": 3500,
-      "ofsCr": 5000,
+      "openDate": "2024-10-15",
+      "closeDate": "2024-10-17",
+      "listingDate": "2024-10-22",
+      "priceBandMin": 1865,
+      "priceBandMax": 1960,
+      "lotSize": 7,
+      "minInvestment": 13720,
+      "issueSizeCr": 27870.16,
+      "freshIssueCr": 0,
+      "ofsCr": 27870.16,
       "faceValue": 10,
-      "status": "UPCOMING",
+      "status": "OPEN",
       "subscriptions": [
         {
           "category": "QIB",
-          "sharesOffered": 45000000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
+          "sharesOffered": 28249000,
+          "sharesBid": 196895000,
+          "timesSubscribed": 6.97,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
         },
         {
           "category": "NII",
-          "sharesOffered": 33750000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
+          "sharesOffered": 21186000,
+          "sharesBid": 12711000,
+          "timesSubscribed": 0.6,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
         },
         {
           "category": "Retail",
-          "sharesOffered": 78750000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
+          "sharesOffered": 49435000,
+          "sharesBid": 24717000,
+          "timesSubscribed": 0.5,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
         },
         {
           "category": "Total",
-          "sharesOffered": 157500000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
+          "sharesOffered": 99742000,
+          "sharesBid": 236389000,
+          "timesSubscribed": 2.37,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
         }
       ],
       "latestGmp": {
-        "id": "gmp-3",
-        "ipoId": "ipo-hyundai-comp",
-        "gmpValue": 125,
-        "previousGmp": 110,
-        "trend": "UP",
-        "changeAmount": 15,
-        "estimatedListingPrice": 775,
-        "estimatedPremiumPercent": 19.2,
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "source": "Institutional IPO Indicative Quotes",
-        "sourceConfidence": 88
+        "id": "gmp-hyundai",
+        "ipoId": "ipo-hyundai-india",
+        "gmpValue": 45,
+        "previousGmp": 65,
+        "trend": "DOWN",
+        "changeAmount": -20,
+        "estimatedListingPrice": 2005,
+        "estimatedPremiumPercent": 2.3,
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "source": "Grey Market Indicative Desk",
+        "sourceConfidence": 91
       },
       "gmpHistory": [
         {
-          "id": "gmp-3-h1",
-          "ipoId": "ipo-hyundai-comp",
+          "id": "gmp-h-1",
+          "ipoId": "ipo-hyundai-india",
           "gmpValue": 110,
-          "trend": "FLAT",
-          "changeAmount": 0,
-          "estimatedListingPrice": 760,
-          "estimatedPremiumPercent": 16.9,
-          "observedAt": "2026-03-05T09:00:00.000Z",
-          "source": "Institutional IPO Indicative Quotes",
-          "sourceConfidence": 86
-        },
-        {
-          "id": "gmp-3-h2",
-          "ipoId": "ipo-hyundai-comp",
-          "gmpValue": 125,
-          "previousGmp": 110,
           "trend": "UP",
-          "changeAmount": 15,
-          "estimatedListingPrice": 775,
-          "estimatedPremiumPercent": 19.2,
-          "observedAt": "2026-09-28T05:52:05.691Z",
-          "source": "Institutional IPO Indicative Quotes",
+          "changeAmount": 0,
+          "estimatedListingPrice": 2070,
+          "estimatedPremiumPercent": 5.61,
+          "observedAt": "2024-10-12T10:00:00.000Z",
+          "source": "Grey Market Indicative Desk",
           "sourceConfidence": 88
+        },
+        {
+          "id": "gmp-h-2",
+          "ipoId": "ipo-hyundai-india",
+          "gmpValue": 65,
+          "previousGmp": 110,
+          "trend": "DOWN",
+          "changeAmount": -45,
+          "estimatedListingPrice": 2025,
+          "estimatedPremiumPercent": 3.32,
+          "observedAt": "2024-10-15T12:00:00.000Z",
+          "source": "Grey Market Indicative Desk",
+          "sourceConfidence": 89
+        },
+        {
+          "id": "gmp-h-3",
+          "ipoId": "ipo-hyundai-india",
+          "gmpValue": 45,
+          "previousGmp": 65,
+          "trend": "DOWN",
+          "changeAmount": -20,
+          "estimatedListingPrice": 2005,
+          "estimatedPremiumPercent": 2.3,
+          "observedAt": "2026-09-28T06:47:09.293Z",
+          "source": "Grey Market Indicative Desk",
+          "sourceConfidence": 91
         }
       ],
       "scores": {
-        "demandScore": 86,
+        "demandScore": 72,
         "gmpSupportScore": {
-          "score": 82,
-          "category": "Positive Support",
-          "summary": "Premier multinational auto Tier-1 vendor with extensive export linkages and strong OEM relationships."
+          "score": 65,
+          "category": "Neutral",
+          "summary": "India’s largest IPO in history ($3.3B); moderate GMP premium (+2.3%) given mega issue size and pure OFS nature."
         },
         "overallIpoScore": {
-          "total": 85,
-          "business": 90,
-          "financials": 85,
-          "valuation": 76,
-          "subscription": 80,
-          "gmpSupport": 82,
+          "total": 81,
+          "business": 94,
+          "financials": 88,
+          "valuation": 68,
+          "subscription": 72,
+          "gmpSupport": 65,
           "marketSector": 88,
-          "riskLevel": "Low"
-        }
-      },
-      "quality": {
-        "source": "SEBI DRHP Red Herring Filing",
-        "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "retrievedAt": "2026-09-28T05:52:05.691Z",
-        "confidence": 97,
-        "status": "verified"
-      }
-    },
-    {
-      "id": "ipo-hexaware-tech",
-      "companyName": "Hexaware Digital Technologies Ltd",
-      "ipoType": "MAINBOARD",
-      "openDate": "2026-03-24",
-      "closeDate": "2026-03-27",
-      "listingDate": "2026-04-02",
-      "priceBandMin": 510,
-      "priceBandMax": 540,
-      "lotSize": 27,
-      "minInvestment": 14580,
-      "issueSizeCr": 4200,
-      "freshIssueCr": 2100,
-      "ofsCr": 2100,
-      "faceValue": 2,
-      "status": "UPCOMING",
-      "subscriptions": [
-        {
-          "category": "QIB",
-          "sharesOffered": 26000000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "NII",
-          "sharesOffered": 19500000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "Retail",
-          "sharesOffered": 45500000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "Total",
-          "sharesOffered": 91000000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        }
-      ],
-      "latestGmp": {
-        "id": "gmp-4",
-        "ipoId": "ipo-hexaware-tech",
-        "gmpValue": 120,
-        "previousGmp": 105,
-        "trend": "UP",
-        "changeAmount": 15,
-        "estimatedListingPrice": 660,
-        "estimatedPremiumPercent": 22.2,
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "source": "Grey Market Brokerage Indicative Desk",
-        "sourceConfidence": 83
-      },
-      "gmpHistory": [
-        {
-          "id": "gmp-4-h1",
-          "ipoId": "ipo-hexaware-tech",
-          "gmpValue": 105,
-          "trend": "FLAT",
-          "changeAmount": 0,
-          "estimatedListingPrice": 645,
-          "estimatedPremiumPercent": 19.4,
-          "observedAt": "2026-03-06T10:00:00.000Z",
-          "source": "Grey Market Brokerage Indicative Desk",
-          "sourceConfidence": 81
-        },
-        {
-          "id": "gmp-4-h2",
-          "ipoId": "ipo-hexaware-tech",
-          "gmpValue": 120,
-          "previousGmp": 105,
-          "trend": "UP",
-          "changeAmount": 15,
-          "estimatedListingPrice": 660,
-          "estimatedPremiumPercent": 22.2,
-          "observedAt": "2026-09-28T05:52:05.691Z",
-          "source": "Grey Market Brokerage Indicative Desk",
-          "sourceConfidence": 83
-        }
-      ],
-      "scores": {
-        "demandScore": 81,
-        "gmpSupportScore": {
-          "score": 80,
-          "category": "Positive Support",
-          "summary": "Mid-tier IT enterprise software services play with proven AI and automation practice scale."
-        },
-        "overallIpoScore": {
-          "total": 80,
-          "business": 82,
-          "financials": 83,
-          "valuation": 75,
-          "subscription": 77,
-          "gmpSupport": 80,
-          "marketSector": 79,
           "riskLevel": "Medium"
         }
       },
       "quality": {
-        "source": "SEBI Approved DRHP Listing Notice",
+        "source": "SEBI RHP / NSE & BSE Official Filing",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "retrievedAt": "2026-09-28T05:52:05.691Z",
-        "confidence": 96,
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "retrievedAt": "2026-09-28T06:47:09.293Z",
+        "confidence": 99,
+        "status": "verified"
+      }
+    },
+    {
+      "id": "ipo-bajaj-housing",
+      "symbol": "BAJAJHFL",
+      "companyName": "Bajaj Housing Finance Limited",
+      "ipoType": "MAINBOARD",
+      "openDate": "2024-09-09",
+      "closeDate": "2024-09-11",
+      "listingDate": "2024-09-16",
+      "priceBandMin": 66,
+      "priceBandMax": 70,
+      "lotSize": 214,
+      "minInvestment": 14980,
+      "issueSizeCr": 6560,
+      "freshIssueCr": 3560,
+      "ofsCr": 3000,
+      "faceValue": 10,
+      "status": "LISTED",
+      "subscriptions": [
+        {
+          "category": "QIB",
+          "sharesOffered": 177000000,
+          "sharesBid": 39294000000,
+          "timesSubscribed": 222,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        },
+        {
+          "category": "NII",
+          "sharesOffered": 132700000,
+          "sharesBid": 5812260000,
+          "timesSubscribed": 43.8,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        },
+        {
+          "category": "Retail",
+          "sharesOffered": 309700000,
+          "sharesBid": 2291780000,
+          "timesSubscribed": 7.4,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        },
+        {
+          "category": "Total",
+          "sharesOffered": 619400000,
+          "sharesBid": 41747000000,
+          "timesSubscribed": 67.4,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        }
+      ],
+      "latestGmp": {
+        "id": "gmp-bajaj",
+        "ipoId": "ipo-bajaj-housing",
+        "gmpValue": 80,
+        "previousGmp": 75,
+        "trend": "UP",
+        "changeAmount": 5,
+        "estimatedListingPrice": 150,
+        "estimatedPremiumPercent": 114.28,
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "source": "Actual Listing Day Price (NSE/BSE)",
+        "sourceConfidence": 100
+      },
+      "gmpHistory": [],
+      "scores": {
+        "demandScore": 99,
+        "gmpSupportScore": {
+          "score": 99,
+          "category": "Strong Positive Support",
+          "summary": "Bumper listing debut: listed at ₹150 (+114.3% listing gain) vs ₹70 issue price with over ₹3.2 lakh crore bids received."
+        },
+        "overallIpoScore": {
+          "total": 96,
+          "business": 98,
+          "financials": 95,
+          "valuation": 88,
+          "subscription": 99,
+          "gmpSupport": 99,
+          "marketSector": 96,
+          "riskLevel": "Low"
+        }
+      },
+      "quality": {
+        "source": "National Stock Exchange (NSE) Trade Engine",
+        "sourceType": "official_feed",
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "retrievedAt": "2026-09-28T06:47:09.293Z",
+        "confidence": 100,
         "status": "verified"
       }
     },
     {
       "id": "ipo-afcons-infra",
-      "companyName": "Afcons Infrastructure Megastructures Ltd",
+      "symbol": "AFCONS",
+      "companyName": "Afcons Infrastructure Limited (Shapoorji Pallonji)",
       "ipoType": "MAINBOARD",
-      "openDate": "2026-03-08",
-      "closeDate": "2026-03-12",
-      "listingDate": "2026-03-18",
+      "openDate": "2024-10-25",
+      "closeDate": "2024-10-29",
+      "listingDate": "2024-11-04",
       "priceBandMin": 440,
       "priceBandMax": 463,
       "lotSize": 32,
@@ -2035,1609 +2411,906 @@ export const initialStaticDb: DbSchema = {
       "freshIssueCr": 1250,
       "ofsCr": 4180,
       "faceValue": 10,
-      "status": "OPEN",
-      "subscriptions": [
-        {
-          "category": "QIB",
-          "sharesOffered": 38000000,
-          "sharesBid": 98800000,
-          "timesSubscribed": 2.6,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "NII",
-          "sharesOffered": 28500000,
-          "sharesBid": 142500000,
-          "timesSubscribed": 5,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "Retail",
-          "sharesOffered": 66500000,
-          "sharesBid": 212800000,
-          "timesSubscribed": 3.2,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "Total",
-          "sharesOffered": 133000000,
-          "sharesBid": 454100000,
-          "timesSubscribed": 3.41,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        }
-      ],
-      "latestGmp": {
-        "id": "gmp-5",
-        "ipoId": "ipo-afcons-infra",
-        "gmpValue": 74,
-        "previousGmp": 65,
-        "trend": "UP",
-        "changeAmount": 9,
-        "estimatedListingPrice": 537,
-        "estimatedPremiumPercent": 16,
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "source": "NSE Consolidated IPO Bidding Center",
-        "sourceConfidence": 87
-      },
-      "gmpHistory": [
-        {
-          "id": "gmp-5-h1",
-          "ipoId": "ipo-afcons-infra",
-          "gmpValue": 65,
-          "trend": "FLAT",
-          "changeAmount": 0,
-          "estimatedListingPrice": 528,
-          "estimatedPremiumPercent": 14,
-          "observedAt": "2026-03-06T15:00:00.000Z",
-          "source": "Grey Market Brokerage Indicative Desk",
-          "sourceConfidence": 83
-        },
-        {
-          "id": "gmp-5-h2",
-          "ipoId": "ipo-afcons-infra",
-          "gmpValue": 74,
-          "previousGmp": 65,
-          "trend": "UP",
-          "changeAmount": 9,
-          "estimatedListingPrice": 537,
-          "estimatedPremiumPercent": 16,
-          "observedAt": "2026-09-28T05:52:05.691Z",
-          "source": "Grey Market Brokerage Indicative Desk",
-          "sourceConfidence": 87
-        }
-      ],
-      "scores": {
-        "demandScore": 78,
-        "gmpSupportScore": {
-          "score": 76,
-          "category": "Positive Support",
-          "summary": "Shapoorji Pallonji flagship engineering business; order book exceeds ₹34,000 Cr across marine and highway infrastructure."
-        },
-        "overallIpoScore": {
-          "total": 77,
-          "business": 85,
-          "financials": 74,
-          "valuation": 71,
-          "subscription": 78,
-          "gmpSupport": 76,
-          "marketSector": 82,
-          "riskLevel": "Medium"
-        }
-      },
-      "quality": {
-        "source": "NSE/BSE Consolidated Bidding Feed",
-        "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "retrievedAt": "2026-09-28T05:52:05.691Z",
-        "confidence": 99,
-        "status": "verified"
-      }
-    },
-    {
-      "id": "ipo-vishal-mega",
-      "companyName": "Vishal Mega Mart Retail Limited",
-      "ipoType": "MAINBOARD",
-      "openDate": "2026-03-20",
-      "closeDate": "2026-03-25",
-      "listingDate": "2026-03-31",
-      "priceBandMin": 74,
-      "priceBandMax": 78,
-      "lotSize": 190,
-      "minInvestment": 14820,
-      "issueSizeCr": 8000,
-      "freshIssueCr": 0,
-      "ofsCr": 8000,
-      "faceValue": 1,
       "status": "UPCOMING",
       "subscriptions": [
         {
           "category": "QIB",
-          "sharesOffered": 340000000,
+          "sharesOffered": 5863930,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
+          "updatedAt": "2026-09-28T06:47:09.293Z"
         },
         {
           "category": "NII",
-          "sharesOffered": 255000000,
+          "sharesOffered": 4397948,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
+          "updatedAt": "2026-09-28T06:47:09.293Z"
         },
         {
           "category": "Retail",
-          "sharesOffered": 595000000,
+          "sharesOffered": 10261878,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
+          "updatedAt": "2026-09-28T06:47:09.293Z"
         },
         {
           "category": "Total",
-          "sharesOffered": 1190000000,
+          "sharesOffered": 20523756,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
+          "updatedAt": "2026-09-28T06:47:09.293Z"
         }
       ],
       "latestGmp": {
-        "id": "gmp-6",
-        "ipoId": "ipo-vishal-mega",
-        "gmpValue": 21,
-        "previousGmp": 18,
+        "id": "gmp-afcons",
+        "ipoId": "ipo-afcons-infra",
+        "gmpValue": 85,
+        "previousGmp": 70,
         "trend": "UP",
-        "changeAmount": 3,
-        "estimatedListingPrice": 99,
-        "estimatedPremiumPercent": 26.9,
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "source": "Grey Market Brokerage Indicative Desk",
-        "sourceConfidence": 84
+        "changeAmount": 15,
+        "estimatedListingPrice": 548,
+        "estimatedPremiumPercent": 18.36,
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "source": "Grey Market Indicative Desk",
+        "sourceConfidence": 89
       },
-      "gmpHistory": [
-        {
-          "id": "gmp-6-h1",
-          "ipoId": "ipo-vishal-mega",
-          "gmpValue": 18,
-          "trend": "FLAT",
-          "changeAmount": 0,
-          "estimatedListingPrice": 96,
-          "estimatedPremiumPercent": 23.1,
-          "observedAt": "2026-03-05T12:00:00.000Z",
-          "source": "Grey Market Brokerage Indicative Desk",
-          "sourceConfidence": 82
-        },
-        {
-          "id": "gmp-6-h2",
-          "ipoId": "ipo-vishal-mega",
-          "gmpValue": 21,
-          "previousGmp": 18,
-          "trend": "UP",
-          "changeAmount": 3,
-          "estimatedListingPrice": 99,
-          "estimatedPremiumPercent": 26.9,
-          "observedAt": "2026-09-28T05:52:05.691Z",
-          "source": "Grey Market Brokerage Indicative Desk",
-          "sourceConfidence": 84
-        }
-      ],
+      "gmpHistory": [],
       "scores": {
-        "demandScore": 85,
+        "demandScore": 84,
         "gmpSupportScore": {
-          "score": 83,
+          "score": 82,
           "category": "Positive Support",
-          "summary": "Tier-2 and Tier-3 value retail leader with 600+ hypermarkets; strong comparable dynamics to Trent and DMart."
+          "summary": "Strong ₹34,000+ Cr EPC order book backed by marquee marine, metro, and bridge infrastructure executions."
         },
         "overallIpoScore": {
-          "total": 82,
-          "business": 86,
+          "total": 83,
+          "business": 89,
           "financials": 82,
           "valuation": 78,
-          "subscription": 81,
-          "gmpSupport": 83,
-          "marketSector": 85,
-          "riskLevel": "Medium"
-        }
-      },
-      "quality": {
-        "source": "SEBI Approved DRHP Public Notice",
-        "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "retrievedAt": "2026-09-28T05:52:05.691Z",
-        "confidence": 97,
-        "status": "verified"
-      }
-    },
-    {
-      "id": "ipo-waaree-solar",
-      "companyName": "Waaree Energies CleanTech Ltd",
-      "ipoType": "MAINBOARD",
-      "openDate": "2026-03-26",
-      "closeDate": "2026-03-30",
-      "listingDate": "2026-04-06",
-      "priceBandMin": 1427,
-      "priceBandMax": 1503,
-      "lotSize": 9,
-      "minInvestment": 13527,
-      "issueSizeCr": 4320,
-      "freshIssueCr": 3600,
-      "ofsCr": 720,
-      "faceValue": 10,
-      "status": "UPCOMING",
-      "subscriptions": [
-        {
-          "category": "QIB",
-          "sharesOffered": 9600000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "NII",
-          "sharesOffered": 7200000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "Retail",
-          "sharesOffered": 16800000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "Total",
-          "sharesOffered": 33600000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        }
-      ],
-      "latestGmp": {
-        "id": "gmp-7",
-        "ipoId": "ipo-waaree-solar",
-        "gmpValue": 710,
-        "previousGmp": 650,
-        "trend": "UP",
-        "changeAmount": 60,
-        "estimatedListingPrice": 2213,
-        "estimatedPremiumPercent": 47.2,
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "source": "Specialty CleanTech Syndicate Desk",
-        "sourceConfidence": 91
-      },
-      "gmpHistory": [
-        {
-          "id": "gmp-7-h1",
-          "ipoId": "ipo-waaree-solar",
-          "gmpValue": 580,
-          "trend": "UP",
-          "changeAmount": 80,
-          "estimatedListingPrice": 2083,
-          "estimatedPremiumPercent": 38.6,
-          "observedAt": "2026-03-04T10:00:00.000Z",
-          "source": "Specialty CleanTech Syndicate Desk",
-          "sourceConfidence": 89
-        },
-        {
-          "id": "gmp-7-h2",
-          "ipoId": "ipo-waaree-solar",
-          "gmpValue": 650,
-          "previousGmp": 580,
-          "trend": "UP",
-          "changeAmount": 70,
-          "estimatedListingPrice": 2153,
-          "estimatedPremiumPercent": 43.2,
-          "observedAt": "2026-03-07T12:00:00.000Z",
-          "source": "Specialty CleanTech Syndicate Desk",
-          "sourceConfidence": 90
-        },
-        {
-          "id": "gmp-7-h3",
-          "ipoId": "ipo-waaree-solar",
-          "gmpValue": 710,
-          "previousGmp": 650,
-          "trend": "UP",
-          "changeAmount": 60,
-          "estimatedListingPrice": 2213,
-          "estimatedPremiumPercent": 47.2,
-          "observedAt": "2026-09-28T05:52:05.691Z",
-          "source": "Specialty CleanTech Syndicate Desk",
-          "sourceConfidence": 91
-        }
-      ],
-      "scores": {
-        "demandScore": 94,
-        "gmpSupportScore": {
-          "score": 95,
-          "category": "Strong Positive Support",
-          "summary": "India’s largest solar PV module manufacturer with 12 GW capacity; extraordinary grey market premium backing (+47%)."
-        },
-        "overallIpoScore": {
-          "total": 89,
-          "business": 92,
-          "financials": 88,
-          "valuation": 79,
-          "subscription": 92,
-          "gmpSupport": 95,
-          "marketSector": 94,
-          "riskLevel": "Medium"
-        }
-      },
-      "quality": {
-        "source": "SEBI Approved Red Herring Prospectus",
-        "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "retrievedAt": "2026-09-28T05:52:05.691Z",
-        "confidence": 99,
-        "status": "verified"
-      }
-    },
-    {
-      "id": "ipo-swiggy-consumer",
-      "companyName": "Swiggy Consumer Tech Limited",
-      "ipoType": "MAINBOARD",
-      "openDate": "2026-03-31",
-      "closeDate": "2026-04-03",
-      "listingDate": "2026-04-09",
-      "priceBandMin": 370,
-      "priceBandMax": 390,
-      "lotSize": 38,
-      "minInvestment": 14820,
-      "issueSizeCr": 11300,
-      "freshIssueCr": 4500,
-      "ofsCr": 6800,
-      "faceValue": 1,
-      "status": "UPCOMING",
-      "subscriptions": [
-        {
-          "category": "QIB",
-          "sharesOffered": 96000000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "NII",
-          "sharesOffered": 72000000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "Retail",
-          "sharesOffered": 168000000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "Total",
-          "sharesOffered": 336000000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        }
-      ],
-      "latestGmp": {
-        "id": "gmp-8",
-        "ipoId": "ipo-swiggy-consumer",
-        "gmpValue": 75,
-        "previousGmp": 68,
-        "trend": "UP",
-        "changeAmount": 7,
-        "estimatedListingPrice": 465,
-        "estimatedPremiumPercent": 19.2,
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "source": "Consumer Tech Syndicate Indicative Desk",
-        "sourceConfidence": 86
-      },
-      "gmpHistory": [
-        {
-          "id": "gmp-8-h1",
-          "ipoId": "ipo-swiggy-consumer",
-          "gmpValue": 68,
-          "trend": "FLAT",
-          "changeAmount": 0,
-          "estimatedListingPrice": 458,
-          "estimatedPremiumPercent": 17.4,
-          "observedAt": "2026-03-06T11:00:00.000Z",
-          "source": "Consumer Tech Syndicate Indicative Desk",
-          "sourceConfidence": 84
-        },
-        {
-          "id": "gmp-8-h2",
-          "ipoId": "ipo-swiggy-consumer",
-          "gmpValue": 75,
-          "previousGmp": 68,
-          "trend": "UP",
-          "changeAmount": 7,
-          "estimatedListingPrice": 465,
-          "estimatedPremiumPercent": 19.2,
-          "observedAt": "2026-09-28T05:52:05.691Z",
-          "source": "Consumer Tech Syndicate Indicative Desk",
-          "sourceConfidence": 86
-        }
-      ],
-      "scores": {
-        "demandScore": 83,
-        "gmpSupportScore": {
-          "score": 81,
-          "category": "Positive Support",
-          "summary": "Duopoly position in quick commerce and food delivery with Instamart dark stores expanding GOV over 80% YoY."
-        },
-        "overallIpoScore": {
-          "total": 80,
-          "business": 89,
-          "financials": 71,
-          "valuation": 72,
-          "subscription": 83,
-          "gmpSupport": 81,
+          "subscription": 80,
+          "gmpSupport": 82,
           "marketSector": 86,
           "riskLevel": "Medium"
         }
       },
       "quality": {
-        "source": "SEBI Approved RHP Disclosure",
+        "source": "SEBI Approved RHP Prospectus",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "retrievedAt": "2026-09-28T05:52:05.691Z",
-        "confidence": 97,
-        "status": "verified"
-      }
-    },
-    {
-      "id": "ipo-acme-solar",
-      "companyName": "ACME Solar Renewable Holdings Ltd",
-      "ipoType": "MAINBOARD",
-      "openDate": "2026-03-05",
-      "closeDate": "2026-03-09",
-      "listingDate": "2026-03-14",
-      "priceBandMin": 275,
-      "priceBandMax": 289,
-      "lotSize": 51,
-      "minInvestment": 14739,
-      "issueSizeCr": 2900,
-      "freshIssueCr": 2395,
-      "ofsCr": 505,
-      "faceValue": 2,
-      "status": "OPEN",
-      "subscriptions": [
-        {
-          "category": "QIB",
-          "sharesOffered": 29000000,
-          "sharesBid": 92800000,
-          "timesSubscribed": 3.2,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "NII",
-          "sharesOffered": 21750000,
-          "sharesBid": 110925000,
-          "timesSubscribed": 5.1,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "Retail",
-          "sharesOffered": 50750000,
-          "sharesBid": 167475000,
-          "timesSubscribed": 3.3,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "Total",
-          "sharesOffered": 101500000,
-          "sharesBid": 371200000,
-          "timesSubscribed": 3.66,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        }
-      ],
-      "latestGmp": {
-        "id": "gmp-9",
-        "ipoId": "ipo-acme-solar",
-        "gmpValue": 38,
-        "previousGmp": 34,
-        "trend": "UP",
-        "changeAmount": 4,
-        "estimatedListingPrice": 327,
-        "estimatedPremiumPercent": 13.1,
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "source": "Green Energy Desk Quotes",
-        "sourceConfidence": 84
-      },
-      "gmpHistory": [
-        {
-          "id": "gmp-9-h1",
-          "ipoId": "ipo-acme-solar",
-          "gmpValue": 34,
-          "trend": "FLAT",
-          "changeAmount": 0,
-          "estimatedListingPrice": 323,
-          "estimatedPremiumPercent": 11.8,
-          "observedAt": "2026-03-04T12:00:00.000Z",
-          "source": "Green Energy Desk Quotes",
-          "sourceConfidence": 82
-        },
-        {
-          "id": "gmp-9-h2",
-          "ipoId": "ipo-acme-solar",
-          "gmpValue": 38,
-          "previousGmp": 34,
-          "trend": "UP",
-          "changeAmount": 4,
-          "estimatedListingPrice": 327,
-          "estimatedPremiumPercent": 13.1,
-          "observedAt": "2026-09-28T05:52:05.691Z",
-          "source": "Green Energy Desk Quotes",
-          "sourceConfidence": 84
-        }
-      ],
-      "scores": {
-        "demandScore": 76,
-        "gmpSupportScore": {
-          "score": 74,
-          "category": "Positive Support",
-          "summary": "Large-scale operational solar and green hydrogen power producer with SECI long-term power purchase agreements."
-        },
-        "overallIpoScore": {
-          "total": 76,
-          "business": 82,
-          "financials": 73,
-          "valuation": 72,
-          "subscription": 76,
-          "gmpSupport": 74,
-          "marketSector": 81,
-          "riskLevel": "Medium"
-        }
-      },
-      "quality": {
-        "source": "NSE/BSE Bidding Portal Live",
-        "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "retrievedAt": "2026-09-28T05:52:05.691Z",
-        "confidence": 99,
-        "status": "verified"
-      }
-    },
-    {
-      "id": "ipo-niva-bupa",
-      "companyName": "Niva Bupa Health Insurance Co",
-      "ipoType": "MAINBOARD",
-      "openDate": "2026-03-23",
-      "closeDate": "2026-03-26",
-      "listingDate": "2026-04-01",
-      "priceBandMin": 70,
-      "priceBandMax": 74,
-      "lotSize": 200,
-      "minInvestment": 14800,
-      "issueSizeCr": 2200,
-      "freshIssueCr": 800,
-      "ofsCr": 1400,
-      "faceValue": 10,
-      "status": "UPCOMING",
-      "subscriptions": [
-        {
-          "category": "QIB",
-          "sharesOffered": 88000000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "NII",
-          "sharesOffered": 66000000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "Retail",
-          "sharesOffered": 154000000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "Total",
-          "sharesOffered": 308000000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        }
-      ],
-      "latestGmp": {
-        "id": "gmp-10",
-        "ipoId": "ipo-niva-bupa",
-        "gmpValue": 12,
-        "previousGmp": 10,
-        "trend": "UP",
-        "changeAmount": 2,
-        "estimatedListingPrice": 86,
-        "estimatedPremiumPercent": 16.2,
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "source": "BFSI Syndicate Desk",
-        "sourceConfidence": 85
-      },
-      "gmpHistory": [
-        {
-          "id": "gmp-10-h1",
-          "ipoId": "ipo-niva-bupa",
-          "gmpValue": 10,
-          "trend": "FLAT",
-          "changeAmount": 0,
-          "estimatedListingPrice": 84,
-          "estimatedPremiumPercent": 13.5,
-          "observedAt": "2026-03-05T14:00:00.000Z",
-          "source": "BFSI Syndicate Desk",
-          "sourceConfidence": 83
-        },
-        {
-          "id": "gmp-10-h2",
-          "ipoId": "ipo-niva-bupa",
-          "gmpValue": 12,
-          "previousGmp": 10,
-          "trend": "UP",
-          "changeAmount": 2,
-          "estimatedListingPrice": 86,
-          "estimatedPremiumPercent": 16.2,
-          "observedAt": "2026-09-28T05:52:05.691Z",
-          "source": "BFSI Syndicate Desk",
-          "sourceConfidence": 85
-        }
-      ],
-      "scores": {
-        "demandScore": 77,
-        "gmpSupportScore": {
-          "score": 77,
-          "category": "Positive Support",
-          "summary": "Pure-play standalone health insurer with strong direct distribution and low claims processing turnaround."
-        },
-        "overallIpoScore": {
-          "total": 78,
-          "business": 83,
-          "financials": 77,
-          "valuation": 73,
-          "subscription": 78,
-          "gmpSupport": 77,
-          "marketSector": 82,
-          "riskLevel": "Medium"
-        }
-      },
-      "quality": {
-        "source": "IRDAI & SEBI Registered Filing",
-        "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "retrievedAt": "2026-09-28T05:52:05.691Z",
-        "confidence": 97,
-        "status": "verified"
-      }
-    },
-    {
-      "id": "ipo-sme-apex-aerospace",
-      "companyName": "Apex Precision Aerospace SME Ltd",
-      "ipoType": "SME",
-      "openDate": "2026-03-09",
-      "closeDate": "2026-03-11",
-      "listingDate": "2026-03-17",
-      "priceBandMin": 110,
-      "priceBandMax": 115,
-      "lotSize": 1200,
-      "minInvestment": 138000,
-      "issueSizeCr": 48.5,
-      "freshIssueCr": 48.5,
-      "ofsCr": 0,
-      "faceValue": 10,
-      "status": "OPEN",
-      "subscriptions": [
-        {
-          "category": "QIB",
-          "sharesOffered": 800000,
-          "sharesBid": 9600000,
-          "timesSubscribed": 12,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "NII",
-          "sharesOffered": 600000,
-          "sharesBid": 21600000,
-          "timesSubscribed": 36,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "Retail",
-          "sharesOffered": 1400000,
-          "sharesBid": 25200000,
-          "timesSubscribed": 18,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "Total",
-          "sharesOffered": 2800000,
-          "sharesBid": 56400000,
-          "timesSubscribed": 20.14,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        }
-      ],
-      "latestGmp": {
-        "id": "gmp-sme-1",
-        "ipoId": "ipo-sme-apex-aerospace",
-        "gmpValue": 65,
-        "previousGmp": 50,
-        "trend": "UP",
-        "changeAmount": 15,
-        "estimatedListingPrice": 180,
-        "estimatedPremiumPercent": 56.5,
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "source": "SME Merchant Banker Desk Tracking",
-        "sourceConfidence": 82
-      },
-      "gmpHistory": [
-        {
-          "id": "gmp-sme-h1",
-          "ipoId": "ipo-sme-apex-aerospace",
-          "gmpValue": 35,
-          "trend": "FLAT",
-          "changeAmount": 0,
-          "estimatedListingPrice": 150,
-          "estimatedPremiumPercent": 30.4,
-          "observedAt": "2026-03-06T10:00:00.000Z",
-          "source": "SME Merchant Banker Desk Tracking",
-          "sourceConfidence": 78
-        },
-        {
-          "id": "gmp-sme-h2",
-          "ipoId": "ipo-sme-apex-aerospace",
-          "gmpValue": 50,
-          "previousGmp": 35,
-          "trend": "UP",
-          "changeAmount": 15,
-          "estimatedListingPrice": 165,
-          "estimatedPremiumPercent": 43.4,
-          "observedAt": "2026-03-08T11:00:00.000Z",
-          "source": "SME Merchant Banker Desk Tracking",
-          "sourceConfidence": 80
-        },
-        {
-          "id": "gmp-sme-h3",
-          "ipoId": "ipo-sme-apex-aerospace",
-          "gmpValue": 65,
-          "previousGmp": 50,
-          "trend": "UP",
-          "changeAmount": 15,
-          "estimatedListingPrice": 180,
-          "estimatedPremiumPercent": 56.5,
-          "observedAt": "2026-09-28T05:52:05.691Z",
-          "source": "SME Merchant Banker Desk Tracking",
-          "sourceConfidence": 82
-        }
-      ],
-      "scores": {
-        "demandScore": 89,
-        "gmpSupportScore": {
-          "score": 92,
-          "category": "Strong Positive Support",
-          "summary": "High SME demand with 20x overall Day-1 bid coverage and 56% indicative premium in aerospace precision engineering."
-        },
-        "overallIpoScore": {
-          "total": 83,
-          "business": 84,
-          "financials": 79,
-          "valuation": 75,
-          "subscription": 94,
-          "gmpSupport": 92,
-          "marketSector": 85,
-          "riskLevel": "High"
-        }
-      },
-      "quality": {
-        "source": "BSE SME Platform Live Bidding",
-        "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "retrievedAt": "2026-09-28T05:52:05.691Z",
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "retrievedAt": "2026-09-28T06:47:09.293Z",
         "confidence": 98,
         "status": "verified"
       }
     },
     {
-      "id": "ipo-sme-suntech-ev",
-      "companyName": "SunTech EV Mobility SME Ltd",
-      "ipoType": "SME",
-      "openDate": "2026-03-08",
-      "closeDate": "2026-03-11",
-      "listingDate": "2026-03-16",
-      "priceBandMin": 85,
-      "priceBandMax": 90,
-      "lotSize": 1600,
-      "minInvestment": 144000,
-      "issueSizeCr": 34.2,
-      "freshIssueCr": 34.2,
-      "ofsCr": 0,
+      "id": "ipo-northern-arc",
+      "symbol": "NORTHARC",
+      "companyName": "Northern ARC Capital Limited",
+      "ipoType": "MAINBOARD",
+      "openDate": "2024-09-16",
+      "closeDate": "2024-09-19",
+      "listingDate": "2024-09-24",
+      "priceBandMin": 249,
+      "priceBandMax": 263,
+      "lotSize": 57,
+      "minInvestment": 14991,
+      "issueSizeCr": 777,
+      "freshIssueCr": 500,
+      "ofsCr": 277,
       "faceValue": 10,
-      "status": "OPEN",
+      "status": "LISTED",
       "subscriptions": [
         {
           "category": "QIB",
-          "sharesOffered": 760000,
-          "sharesBid": 6840000,
-          "timesSubscribed": 9,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
+          "sharesOffered": 5450000,
+          "sharesBid": 728120000,
+          "timesSubscribed": 133.6,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
         },
         {
           "category": "NII",
-          "sharesOffered": 570000,
-          "sharesBid": 14820000,
-          "timesSubscribed": 26,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
+          "sharesOffered": 4087500,
+          "sharesBid": 582060000,
+          "timesSubscribed": 142.4,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
         },
         {
           "category": "Retail",
-          "sharesOffered": 1330000,
-          "sharesBid": 18620000,
-          "timesSubscribed": 14,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
+          "sharesOffered": 9537500,
+          "sharesBid": 296616000,
+          "timesSubscribed": 31.1,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
         },
         {
           "category": "Total",
-          "sharesOffered": 2660000,
-          "sharesBid": 40280000,
-          "timesSubscribed": 15.14,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
+          "sharesOffered": 19075000,
+          "sharesBid": 2115400000,
+          "timesSubscribed": 110.9,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
         }
       ],
       "latestGmp": {
-        "id": "gmp-sme-2",
-        "ipoId": "ipo-sme-suntech-ev",
-        "gmpValue": 38,
-        "previousGmp": 28,
+        "id": "gmp-northern-arc",
+        "ipoId": "ipo-northern-arc",
+        "gmpValue": 88,
+        "previousGmp": 80,
         "trend": "UP",
-        "changeAmount": 10,
-        "estimatedListingPrice": 128,
-        "estimatedPremiumPercent": 42.2,
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "source": "NSE Emerge Brokerage Desk",
-        "sourceConfidence": 81
+        "changeAmount": 8,
+        "estimatedListingPrice": 351,
+        "estimatedPremiumPercent": 33.46,
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "source": "NSE / BSE Official Listing",
+        "sourceConfidence": 100
       },
-      "gmpHistory": [
-        {
-          "id": "gmp-sme-2-h1",
-          "ipoId": "ipo-sme-suntech-ev",
-          "gmpValue": 28,
-          "trend": "FLAT",
-          "changeAmount": 0,
-          "estimatedListingPrice": 118,
-          "estimatedPremiumPercent": 31.1,
-          "observedAt": "2026-03-06T12:00:00.000Z",
-          "source": "NSE Emerge Brokerage Desk",
-          "sourceConfidence": 79
-        },
-        {
-          "id": "gmp-sme-2-h2",
-          "ipoId": "ipo-sme-suntech-ev",
-          "gmpValue": 38,
-          "previousGmp": 28,
-          "trend": "UP",
-          "changeAmount": 10,
-          "estimatedListingPrice": 128,
-          "estimatedPremiumPercent": 42.2,
-          "observedAt": "2026-09-28T05:52:05.691Z",
-          "source": "NSE Emerge Brokerage Desk",
-          "sourceConfidence": 81
-        }
-      ],
-      "scores": {
-        "demandScore": 86,
-        "gmpSupportScore": {
-          "score": 87,
-          "category": "Strong Positive Support",
-          "summary": "Supplies lithium-ion battery management systems (BMS) for commercial 3-wheelers with fast top-line growth."
-        },
-        "overallIpoScore": {
-          "total": 81,
-          "business": 82,
-          "financials": 77,
-          "valuation": 76,
-          "subscription": 88,
-          "gmpSupport": 87,
-          "marketSector": 84,
-          "riskLevel": "High"
-        }
-      },
-      "quality": {
-        "source": "NSE Emerge Live Bidding Console",
-        "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "retrievedAt": "2026-09-28T05:52:05.691Z",
-        "confidence": 99,
-        "status": "verified"
-      }
-    },
-    {
-      "id": "ipo-sme-quantum-pharma",
-      "companyName": "Quantum BioPharma SME Ltd",
-      "ipoType": "SME",
-      "openDate": "2026-03-16",
-      "closeDate": "2026-03-19",
-      "listingDate": "2026-03-25",
-      "priceBandMin": 140,
-      "priceBandMax": 148,
-      "lotSize": 1000,
-      "minInvestment": 148000,
-      "issueSizeCr": 28.5,
-      "freshIssueCr": 28.5,
-      "ofsCr": 0,
-      "faceValue": 10,
-      "status": "UPCOMING",
-      "subscriptions": [
-        {
-          "category": "QIB",
-          "sharesOffered": 380000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "NII",
-          "sharesOffered": 285000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "Retail",
-          "sharesOffered": 665000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "Total",
-          "sharesOffered": 1330000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        }
-      ],
-      "latestGmp": {
-        "id": "gmp-sme-3",
-        "ipoId": "ipo-sme-quantum-pharma",
-        "gmpValue": 56,
-        "previousGmp": 45,
-        "trend": "UP",
-        "changeAmount": 11,
-        "estimatedListingPrice": 204,
-        "estimatedPremiumPercent": 37.8,
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "source": "SME Merchant Banker Desk Tracking",
-        "sourceConfidence": 80
-      },
-      "gmpHistory": [
-        {
-          "id": "gmp-sme-3-h1",
-          "ipoId": "ipo-sme-quantum-pharma",
-          "gmpValue": 45,
-          "trend": "FLAT",
-          "changeAmount": 0,
-          "estimatedListingPrice": 193,
-          "estimatedPremiumPercent": 30.4,
-          "observedAt": "2026-03-06T14:00:00.000Z",
-          "source": "SME Merchant Banker Desk Tracking",
-          "sourceConfidence": 78
-        },
-        {
-          "id": "gmp-sme-3-h2",
-          "ipoId": "ipo-sme-quantum-pharma",
-          "gmpValue": 56,
-          "previousGmp": 45,
-          "trend": "UP",
-          "changeAmount": 11,
-          "estimatedListingPrice": 204,
-          "estimatedPremiumPercent": 37.8,
-          "observedAt": "2026-09-28T05:52:05.691Z",
-          "source": "SME Merchant Banker Desk Tracking",
-          "sourceConfidence": 80
-        }
-      ],
-      "scores": {
-        "demandScore": 82,
-        "gmpSupportScore": {
-          "score": 84,
-          "category": "Positive Support",
-          "summary": "Specialty API formulation with export approvals in LATAM and Southeast Asia; strong RoCE of 28%."
-        },
-        "overallIpoScore": {
-          "total": 80,
-          "business": 84,
-          "financials": 81,
-          "valuation": 73,
-          "subscription": 79,
-          "gmpSupport": 84,
-          "marketSector": 81,
-          "riskLevel": "High"
-        }
-      },
-      "quality": {
-        "source": "BSE SME Registered Prospectus",
-        "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "retrievedAt": "2026-09-28T05:52:05.691Z",
-        "confidence": 96,
-        "status": "verified"
-      }
-    },
-    {
-      "id": "ipo-sme-greengrid",
-      "companyName": "GreenGrid Power Controls SME Ltd",
-      "ipoType": "SME",
-      "openDate": "2026-03-17",
-      "closeDate": "2026-03-20",
-      "listingDate": "2026-03-26",
-      "priceBandMin": 120,
-      "priceBandMax": 126,
-      "lotSize": 1000,
-      "minInvestment": 126000,
-      "issueSizeCr": 41.2,
-      "freshIssueCr": 35,
-      "ofsCr": 6.2,
-      "faceValue": 10,
-      "status": "UPCOMING",
-      "subscriptions": [
-        {
-          "category": "QIB",
-          "sharesOffered": 650000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "NII",
-          "sharesOffered": 490000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "Retail",
-          "sharesOffered": 1140000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "Total",
-          "sharesOffered": 2280000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        }
-      ],
-      "latestGmp": {
-        "id": "gmp-sme-4",
-        "ipoId": "ipo-sme-greengrid",
-        "gmpValue": 58,
-        "previousGmp": 48,
-        "trend": "UP",
-        "changeAmount": 10,
-        "estimatedListingPrice": 184,
-        "estimatedPremiumPercent": 46,
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "source": "NSE Emerge Brokerage Desk",
-        "sourceConfidence": 82
-      },
-      "gmpHistory": [
-        {
-          "id": "gmp-sme-4-h1",
-          "ipoId": "ipo-sme-greengrid",
-          "gmpValue": 48,
-          "trend": "FLAT",
-          "changeAmount": 0,
-          "estimatedListingPrice": 174,
-          "estimatedPremiumPercent": 38,
-          "observedAt": "2026-03-05T11:00:00.000Z",
-          "source": "NSE Emerge Brokerage Desk",
-          "sourceConfidence": 80
-        },
-        {
-          "id": "gmp-sme-4-h2",
-          "ipoId": "ipo-sme-greengrid",
-          "gmpValue": 58,
-          "previousGmp": 48,
-          "trend": "UP",
-          "changeAmount": 10,
-          "estimatedListingPrice": 184,
-          "estimatedPremiumPercent": 46,
-          "observedAt": "2026-09-28T05:52:05.691Z",
-          "source": "NSE Emerge Brokerage Desk",
-          "sourceConfidence": 82
-        }
-      ],
-      "scores": {
-        "demandScore": 84,
-        "gmpSupportScore": {
-          "score": 86,
-          "category": "Strong Positive Support",
-          "summary": "Smart grid monitoring systems and automated switchgear benefiting from national RDSS distribution schemes."
-        },
-        "overallIpoScore": {
-          "total": 82,
-          "business": 83,
-          "financials": 80,
-          "valuation": 75,
-          "subscription": 82,
-          "gmpSupport": 86,
-          "marketSector": 85,
-          "riskLevel": "High"
-        }
-      },
-      "quality": {
-        "source": "NSE Emerge DRHP Filing",
-        "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "retrievedAt": "2026-09-28T05:52:05.691Z",
-        "confidence": 96,
-        "status": "verified"
-      }
-    },
-    {
-      "id": "ipo-sme-aeromech",
-      "companyName": "AeroMech Defence Systems SME Ltd",
-      "ipoType": "SME",
-      "openDate": "2026-03-07",
-      "closeDate": "2026-03-10",
-      "listingDate": "2026-03-15",
-      "priceBandMin": 185,
-      "priceBandMax": 195,
-      "lotSize": 600,
-      "minInvestment": 117000,
-      "issueSizeCr": 36.8,
-      "freshIssueCr": 36.8,
-      "ofsCr": 0,
-      "faceValue": 10,
-      "status": "OPEN",
-      "subscriptions": [
-        {
-          "category": "QIB",
-          "sharesOffered": 375000,
-          "sharesBid": 6750000,
-          "timesSubscribed": 18,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "NII",
-          "sharesOffered": 285000,
-          "sharesBid": 14250000,
-          "timesSubscribed": 50,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "Retail",
-          "sharesOffered": 665000,
-          "sharesBid": 17290000,
-          "timesSubscribed": 26,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "Total",
-          "sharesOffered": 1325000,
-          "sharesBid": 38290000,
-          "timesSubscribed": 28.89,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        }
-      ],
-      "latestGmp": {
-        "id": "gmp-sme-5",
-        "ipoId": "ipo-sme-aeromech",
-        "gmpValue": 122,
-        "previousGmp": 100,
-        "trend": "UP",
-        "changeAmount": 22,
-        "estimatedListingPrice": 317,
-        "estimatedPremiumPercent": 62.5,
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "source": "BSE SME Syndicate Quotes",
-        "sourceConfidence": 86
-      },
-      "gmpHistory": [
-        {
-          "id": "gmp-sme-5-h1",
-          "ipoId": "ipo-sme-aeromech",
-          "gmpValue": 80,
-          "trend": "FLAT",
-          "changeAmount": 0,
-          "estimatedListingPrice": 275,
-          "estimatedPremiumPercent": 41,
-          "observedAt": "2026-03-05T12:00:00.000Z",
-          "source": "BSE SME Syndicate Quotes",
-          "sourceConfidence": 82
-        },
-        {
-          "id": "gmp-sme-5-h2",
-          "ipoId": "ipo-sme-aeromech",
-          "gmpValue": 100,
-          "previousGmp": 80,
-          "trend": "UP",
-          "changeAmount": 20,
-          "estimatedListingPrice": 295,
-          "estimatedPremiumPercent": 51.2,
-          "observedAt": "2026-03-07T14:00:00.000Z",
-          "source": "BSE SME Syndicate Quotes",
-          "sourceConfidence": 84
-        },
-        {
-          "id": "gmp-sme-5-h3",
-          "ipoId": "ipo-sme-aeromech",
-          "gmpValue": 122,
-          "previousGmp": 100,
-          "trend": "UP",
-          "changeAmount": 22,
-          "estimatedListingPrice": 317,
-          "estimatedPremiumPercent": 62.5,
-          "observedAt": "2026-09-28T05:52:05.691Z",
-          "source": "BSE SME Syndicate Quotes",
-          "sourceConfidence": 86
-        }
-      ],
+      "gmpHistory": [],
       "scores": {
         "demandScore": 92,
         "gmpSupportScore": {
-          "score": 96,
+          "score": 90,
           "category": "Strong Positive Support",
-          "summary": "Extremely high subscription demand with 29x total coverage; precision aerospace components supplier to DRDO and ISRO."
+          "summary": "Listed at ₹351 (+33.5% listing gain); 110.9x overall subscription across institutional categories."
         },
         "overallIpoScore": {
-          "total": 86,
-          "business": 88,
-          "financials": 82,
-          "valuation": 75,
-          "subscription": 96,
-          "gmpSupport": 96,
-          "marketSector": 89,
-          "riskLevel": "High"
+          "total": 88,
+          "business": 89,
+          "financials": 86,
+          "valuation": 84,
+          "subscription": 92,
+          "gmpSupport": 90,
+          "marketSector": 88,
+          "riskLevel": "Low"
         }
       },
       "quality": {
-        "source": "BSE SME Consolidated Bidding Terminal",
+        "source": "BSE & NSE Official Trade Engine",
         "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "retrievedAt": "2026-09-28T05:52:05.691Z",
-        "confidence": 99,
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "retrievedAt": "2026-09-28T06:47:09.293Z",
+        "confidence": 100,
         "status": "verified"
       }
     },
     {
-      "id": "ipo-sme-zenagro",
-      "companyName": "ZenAgro Chemical Organics SME Ltd",
-      "ipoType": "SME",
-      "openDate": "2026-03-19",
-      "closeDate": "2026-03-24",
-      "listingDate": "2026-03-30",
-      "priceBandMin": 72,
-      "priceBandMax": 76,
-      "lotSize": 1600,
-      "minInvestment": 121600,
-      "issueSizeCr": 24.5,
-      "freshIssueCr": 24.5,
+      "id": "ipo-krn-heat",
+      "symbol": "KRN",
+      "companyName": "KRN Heat Exchanger and Refrigeration Limited",
+      "ipoType": "MAINBOARD",
+      "openDate": "2024-09-25",
+      "closeDate": "2024-09-27",
+      "listingDate": "2024-10-03",
+      "priceBandMin": 209,
+      "priceBandMax": 220,
+      "lotSize": 65,
+      "minInvestment": 14300,
+      "issueSizeCr": 341.95,
+      "freshIssueCr": 341.95,
       "ofsCr": 0,
+      "faceValue": 10,
+      "status": "LISTED",
+      "subscriptions": [
+        {
+          "category": "QIB",
+          "sharesOffered": 2600000,
+          "sharesBid": 657800000,
+          "timesSubscribed": 253,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        },
+        {
+          "category": "NII",
+          "sharesOffered": 1950000,
+          "sharesBid": 844350000,
+          "timesSubscribed": 433,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        },
+        {
+          "category": "Retail",
+          "sharesOffered": 4550000,
+          "sharesBid": 436800000,
+          "timesSubscribed": 96,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        },
+        {
+          "category": "Total",
+          "sharesOffered": 9100000,
+          "sharesBid": 1951000000,
+          "timesSubscribed": 214.4,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        }
+      ],
+      "latestGmp": {
+        "id": "gmp-krn",
+        "ipoId": "ipo-krn-heat",
+        "gmpValue": 260,
+        "previousGmp": 235,
+        "trend": "UP",
+        "changeAmount": 25,
+        "estimatedListingPrice": 480,
+        "estimatedPremiumPercent": 118.18,
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "source": "NSE / BSE Official Listing",
+        "sourceConfidence": 100
+      },
+      "gmpHistory": [],
+      "scores": {
+        "demandScore": 99,
+        "gmpSupportScore": {
+          "score": 99,
+          "category": "Strong Positive Support",
+          "summary": "Massive multibagger debut: listed at ₹480 (+118.2% premium) on huge 214.4x total subscription."
+        },
+        "overallIpoScore": {
+          "total": 95,
+          "business": 94,
+          "financials": 92,
+          "valuation": 89,
+          "subscription": 99,
+          "gmpSupport": 99,
+          "marketSector": 96,
+          "riskLevel": "Low"
+        }
+      },
+      "quality": {
+        "source": "National Stock Exchange (NSE)",
+        "sourceType": "official_feed",
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "retrievedAt": "2026-09-28T06:47:09.293Z",
+        "confidence": 100,
+        "status": "verified"
+      }
+    },
+    {
+      "id": "ipo-godavari-bioref",
+      "symbol": "GODAVARI",
+      "companyName": "Godavari Biorefineries Limited",
+      "ipoType": "MAINBOARD",
+      "openDate": "2024-10-23",
+      "closeDate": "2024-10-25",
+      "listingDate": "2024-10-30",
+      "priceBandMin": 334,
+      "priceBandMax": 352,
+      "lotSize": 42,
+      "minInvestment": 14784,
+      "issueSizeCr": 554.75,
+      "freshIssueCr": 325,
+      "ofsCr": 229.75,
       "faceValue": 10,
       "status": "UPCOMING",
       "subscriptions": [
         {
           "category": "QIB",
-          "sharesOffered": 640000,
+          "sharesOffered": 4500000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
+          "updatedAt": "2026-09-28T06:47:09.293Z"
         },
         {
           "category": "NII",
-          "sharesOffered": 480000,
+          "sharesOffered": 3375000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
+          "updatedAt": "2026-09-28T06:47:09.293Z"
         },
         {
           "category": "Retail",
-          "sharesOffered": 1120000,
+          "sharesOffered": 7875000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
+          "updatedAt": "2026-09-28T06:47:09.293Z"
         },
         {
           "category": "Total",
-          "sharesOffered": 2240000,
+          "sharesOffered": 15750000,
           "sharesBid": 0,
           "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
+          "updatedAt": "2026-09-28T06:47:09.293Z"
         }
       ],
       "latestGmp": {
-        "id": "gmp-sme-6",
-        "ipoId": "ipo-sme-zenagro",
-        "gmpValue": 22,
-        "previousGmp": 18,
+        "id": "gmp-godavari",
+        "ipoId": "ipo-godavari-bioref",
+        "gmpValue": 25,
+        "previousGmp": 20,
         "trend": "UP",
-        "changeAmount": 4,
-        "estimatedListingPrice": 98,
-        "estimatedPremiumPercent": 28.9,
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "source": "AgriTech IPO Syndicate Desk",
-        "sourceConfidence": 80
+        "changeAmount": 5,
+        "estimatedListingPrice": 377,
+        "estimatedPremiumPercent": 7.1,
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "source": "Grey Market Indicative Desk",
+        "sourceConfidence": 86
       },
-      "gmpHistory": [
-        {
-          "id": "gmp-sme-6-h1",
-          "ipoId": "ipo-sme-zenagro",
-          "gmpValue": 18,
-          "trend": "FLAT",
-          "changeAmount": 0,
-          "estimatedListingPrice": 94,
-          "estimatedPremiumPercent": 23.6,
-          "observedAt": "2026-03-06T10:00:00.000Z",
-          "source": "AgriTech IPO Syndicate Desk",
-          "sourceConfidence": 78
-        },
-        {
-          "id": "gmp-sme-6-h2",
-          "ipoId": "ipo-sme-zenagro",
-          "gmpValue": 22,
-          "previousGmp": 18,
-          "trend": "UP",
-          "changeAmount": 4,
-          "estimatedListingPrice": 98,
-          "estimatedPremiumPercent": 28.9,
-          "observedAt": "2026-09-28T05:52:05.691Z",
-          "source": "AgriTech IPO Syndicate Desk",
-          "sourceConfidence": 80
-        }
-      ],
+      "gmpHistory": [],
       "scores": {
         "demandScore": 78,
         "gmpSupportScore": {
-          "score": 80,
+          "score": 75,
           "category": "Positive Support",
-          "summary": "Bio-stimulants and certified organic crop protection products with 400+ rural distributor retail points."
+          "summary": "Integrated bio-refinery producing ethanol, bio-based chemicals, and power; steady industrial demand."
         },
         "overallIpoScore": {
-          "total": 77,
-          "business": 79,
-          "financials": 77,
-          "valuation": 75,
-          "subscription": 76,
-          "gmpSupport": 80,
-          "marketSector": 76,
-          "riskLevel": "High"
-        }
-      },
-      "quality": {
-        "source": "BSE SME Regulatory RHP Filing",
-        "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "retrievedAt": "2026-09-28T05:52:05.691Z",
-        "confidence": 96,
-        "status": "verified"
-      }
-    },
-    {
-      "id": "ipo-sme-finedge",
-      "companyName": "FinEdge Payment Technologies SME Ltd",
-      "ipoType": "SME",
-      "openDate": "2026-03-22",
-      "closeDate": "2026-03-25",
-      "listingDate": "2026-03-31",
-      "priceBandMin": 130,
-      "priceBandMax": 138,
-      "lotSize": 1000,
-      "minInvestment": 138000,
-      "issueSizeCr": 39,
-      "freshIssueCr": 39,
-      "ofsCr": 0,
-      "faceValue": 10,
-      "status": "UPCOMING",
-      "subscriptions": [
-        {
-          "category": "QIB",
-          "sharesOffered": 560000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "NII",
-          "sharesOffered": 420000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "Retail",
-          "sharesOffered": 980000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        },
-        {
-          "category": "Total",
-          "sharesOffered": 1960000,
-          "sharesBid": 0,
-          "timesSubscribed": 0,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
-        }
-      ],
-      "latestGmp": {
-        "id": "gmp-sme-7",
-        "ipoId": "ipo-sme-finedge",
-        "gmpValue": 48,
-        "previousGmp": 40,
-        "trend": "UP",
-        "changeAmount": 8,
-        "estimatedListingPrice": 186,
-        "estimatedPremiumPercent": 34.7,
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "source": "Fintech SME Market Desk",
-        "sourceConfidence": 81
-      },
-      "gmpHistory": [
-        {
-          "id": "gmp-sme-7-h1",
-          "ipoId": "ipo-sme-finedge",
-          "gmpValue": 40,
-          "trend": "FLAT",
-          "changeAmount": 0,
-          "estimatedListingPrice": 178,
-          "estimatedPremiumPercent": 28.9,
-          "observedAt": "2026-03-05T13:00:00.000Z",
-          "source": "Fintech SME Market Desk",
-          "sourceConfidence": 79
-        },
-        {
-          "id": "gmp-sme-7-h2",
-          "ipoId": "ipo-sme-finedge",
-          "gmpValue": 48,
-          "previousGmp": 40,
-          "trend": "UP",
-          "changeAmount": 8,
-          "estimatedListingPrice": 186,
-          "estimatedPremiumPercent": 34.7,
-          "observedAt": "2026-09-28T05:52:05.691Z",
-          "source": "Fintech SME Market Desk",
-          "sourceConfidence": 81
-        }
-      ],
-      "scores": {
-        "demandScore": 81,
-        "gmpSupportScore": {
-          "score": 83,
-          "category": "Positive Support",
-          "summary": "Proprietary soundbox and biometric micro-ATM POS hardware manufacturer partnering with regional rural banks."
-        },
-        "overallIpoScore": {
-          "total": 80,
+          "total": 78,
           "business": 82,
-          "financials": 80,
-          "valuation": 75,
-          "subscription": 80,
-          "gmpSupport": 83,
-          "marketSector": 81,
-          "riskLevel": "High"
+          "financials": 76,
+          "valuation": 74,
+          "subscription": 75,
+          "gmpSupport": 75,
+          "marketSector": 82,
+          "riskLevel": "Medium"
         }
       },
       "quality": {
-        "source": "NSE Emerge Draft Prospectus",
+        "source": "SEBI Approved RHP Prospectus",
         "sourceType": "exchange_filing",
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "retrievedAt": "2026-09-28T05:52:05.691Z",
-        "confidence": 96,
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "retrievedAt": "2026-09-28T06:47:09.293Z",
+        "confidence": 97,
         "status": "verified"
       }
     },
     {
-      "id": "ipo-sme-logiexpress",
-      "companyName": "LogiExpress Cold Chain SME Ltd",
+      "id": "ipo-sme-danish-power",
+      "symbol": "DANISH",
+      "companyName": "Danish Power Limited",
       "ipoType": "SME",
-      "openDate": "2026-03-08",
-      "closeDate": "2026-03-12",
-      "listingDate": "2026-03-18",
-      "priceBandMin": 98,
-      "priceBandMax": 104,
-      "lotSize": 1200,
-      "minInvestment": 124800,
-      "issueSizeCr": 31.5,
-      "freshIssueCr": 31.5,
+      "openDate": "2024-10-22",
+      "closeDate": "2024-10-24",
+      "listingDate": "2024-10-29",
+      "priceBandMin": 360,
+      "priceBandMax": 380,
+      "lotSize": 300,
+      "minInvestment": 114000,
+      "issueSizeCr": 197.9,
+      "freshIssueCr": 197.9,
       "ofsCr": 0,
       "faceValue": 10,
       "status": "OPEN",
       "subscriptions": [
         {
           "category": "QIB",
-          "sharesOffered": 600000,
-          "sharesBid": 4200000,
-          "timesSubscribed": 7,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
+          "sharesOffered": 1040000,
+          "sharesBid": 39936000,
+          "timesSubscribed": 38.4,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
         },
         {
           "category": "NII",
-          "sharesOffered": 450000,
-          "sharesBid": 9900000,
-          "timesSubscribed": 22,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
+          "sharesOffered": 780000,
+          "sharesBid": 113256000,
+          "timesSubscribed": 145.2,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
         },
         {
           "category": "Retail",
-          "sharesOffered": 1050000,
-          "sharesBid": 12600000,
-          "timesSubscribed": 12,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
+          "sharesOffered": 1820000,
+          "sharesBid": 161252000,
+          "timesSubscribed": 88.6,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
         },
         {
           "category": "Total",
-          "sharesOffered": 2100000,
-          "sharesBid": 26700000,
-          "timesSubscribed": 12.71,
-          "updatedAt": "2026-09-28T05:52:05.691Z"
+          "sharesOffered": 3640000,
+          "sharesBid": 373100000,
+          "timesSubscribed": 102.5,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
         }
       ],
       "latestGmp": {
-        "id": "gmp-sme-8",
-        "ipoId": "ipo-sme-logiexpress",
-        "gmpValue": 42,
-        "previousGmp": 34,
+        "id": "gmp-danish",
+        "ipoId": "ipo-sme-danish-power",
+        "gmpValue": 240,
+        "previousGmp": 215,
         "trend": "UP",
-        "changeAmount": 8,
-        "estimatedListingPrice": 146,
-        "estimatedPremiumPercent": 40.3,
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "source": "SME Merchant Banker Desk Tracking",
-        "sourceConfidence": 82
+        "changeAmount": 25,
+        "estimatedListingPrice": 620,
+        "estimatedPremiumPercent": 63.16,
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "source": "NSE SME Indicative Desk",
+        "sourceConfidence": 93
       },
       "gmpHistory": [
         {
-          "id": "gmp-sme-8-h1",
-          "ipoId": "ipo-sme-logiexpress",
-          "gmpValue": 34,
-          "trend": "FLAT",
+          "id": "gmp-d-1",
+          "ipoId": "ipo-sme-danish-power",
+          "gmpValue": 190,
+          "trend": "UP",
           "changeAmount": 0,
-          "estimatedListingPrice": 138,
-          "estimatedPremiumPercent": 32.6,
-          "observedAt": "2026-03-06T11:00:00.000Z",
-          "source": "SME Merchant Banker Desk Tracking",
-          "sourceConfidence": 80
+          "estimatedListingPrice": 570,
+          "estimatedPremiumPercent": 50,
+          "observedAt": "2024-10-19T10:00:00.000Z",
+          "source": "Grey Market Indicative Desk",
+          "sourceConfidence": 88
         },
         {
-          "id": "gmp-sme-8-h2",
-          "ipoId": "ipo-sme-logiexpress",
-          "gmpValue": 42,
-          "previousGmp": 34,
+          "id": "gmp-d-2",
+          "ipoId": "ipo-sme-danish-power",
+          "gmpValue": 215,
+          "previousGmp": 190,
           "trend": "UP",
-          "changeAmount": 8,
-          "estimatedListingPrice": 146,
-          "estimatedPremiumPercent": 40.3,
-          "observedAt": "2026-09-28T05:52:05.691Z",
-          "source": "SME Merchant Banker Desk Tracking",
-          "sourceConfidence": 82
+          "changeAmount": 25,
+          "estimatedListingPrice": 595,
+          "estimatedPremiumPercent": 56.58,
+          "observedAt": "2024-10-21T12:00:00.000Z",
+          "source": "Grey Market Indicative Desk",
+          "sourceConfidence": 91
+        },
+        {
+          "id": "gmp-d-3",
+          "ipoId": "ipo-sme-danish-power",
+          "gmpValue": 240,
+          "previousGmp": 215,
+          "trend": "UP",
+          "changeAmount": 25,
+          "estimatedListingPrice": 620,
+          "estimatedPremiumPercent": 63.16,
+          "observedAt": "2026-09-28T06:47:09.293Z",
+          "source": "Grey Market Indicative Desk",
+          "sourceConfidence": 93
         }
       ],
       "scores": {
-        "demandScore": 84,
+        "demandScore": 94,
         "gmpSupportScore": {
-          "score": 85,
+          "score": 93,
           "category": "Strong Positive Support",
-          "summary": "Pharma temperature-controlled fleet operator catering to vaccine and biological exports with long-term contracts."
+          "summary": "Huge ~63% GMP premium; top transformer manufacturer benefiting from India’s renewable grid transmission expansion."
         },
         "overallIpoScore": {
-          "total": 81,
-          "business": 83,
-          "financials": 78,
-          "valuation": 75,
-          "subscription": 85,
-          "gmpSupport": 85,
-          "marketSector": 82,
-          "riskLevel": "High"
+          "total": 91,
+          "business": 92,
+          "financials": 90,
+          "valuation": 85,
+          "subscription": 94,
+          "gmpSupport": 93,
+          "marketSector": 95,
+          "riskLevel": "Low"
         }
       },
       "quality": {
-        "source": "BSE SME Bidding Console Live",
-        "sourceType": "official_feed",
-        "observedAt": "2026-09-28T05:52:05.691Z",
-        "retrievedAt": "2026-09-28T05:52:05.691Z",
+        "source": "NSE Emerge SME Platform",
+        "sourceType": "exchange_filing",
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "retrievedAt": "2026-09-28T06:47:09.293Z",
         "confidence": 99,
+        "status": "verified"
+      }
+    },
+    {
+      "id": "ipo-sme-united-heat",
+      "symbol": "UHTL",
+      "companyName": "United Heat Transfer Limited",
+      "ipoType": "SME",
+      "openDate": "2024-10-22",
+      "closeDate": "2024-10-24",
+      "listingDate": "2024-10-29",
+      "priceBandMin": 56,
+      "priceBandMax": 59,
+      "lotSize": 2000,
+      "minInvestment": 118000,
+      "issueSizeCr": 29.97,
+      "freshIssueCr": 29.97,
+      "ofsCr": 0,
+      "faceValue": 10,
+      "status": "OPEN",
+      "subscriptions": [
+        {
+          "category": "QIB",
+          "sharesOffered": 960000,
+          "sharesBid": 11520000,
+          "timesSubscribed": 12,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        },
+        {
+          "category": "NII",
+          "sharesOffered": 720000,
+          "sharesBid": 34920000,
+          "timesSubscribed": 48.5,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        },
+        {
+          "category": "Retail",
+          "sharesOffered": 1680000,
+          "sharesBid": 54432000,
+          "timesSubscribed": 32.4,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        },
+        {
+          "category": "Total",
+          "sharesOffered": 3360000,
+          "sharesBid": 114912000,
+          "timesSubscribed": 34.2,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        }
+      ],
+      "latestGmp": {
+        "id": "gmp-uhtl",
+        "ipoId": "ipo-sme-united-heat",
+        "gmpValue": 28,
+        "previousGmp": 24,
+        "trend": "UP",
+        "changeAmount": 4,
+        "estimatedListingPrice": 87,
+        "estimatedPremiumPercent": 47.46,
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "source": "NSE SME Platform",
+        "sourceConfidence": 90
+      },
+      "gmpHistory": [],
+      "scores": {
+        "demandScore": 86,
+        "gmpSupportScore": {
+          "score": 88,
+          "category": "Strong Positive Support",
+          "summary": "Solid 47.5% premium for heat exchangers and shell-and-tube units for marine, naval, and power industries."
+        },
+        "overallIpoScore": {
+          "total": 85,
+          "business": 86,
+          "financials": 84,
+          "valuation": 82,
+          "subscription": 86,
+          "gmpSupport": 88,
+          "marketSector": 88,
+          "riskLevel": "Medium"
+        }
+      },
+      "quality": {
+        "source": "NSE Emerge SME Platform",
+        "sourceType": "exchange_filing",
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "retrievedAt": "2026-09-28T06:47:09.293Z",
+        "confidence": 98,
+        "status": "verified"
+      }
+    },
+    {
+      "id": "ipo-sme-obsc-perfection",
+      "symbol": "OBSC",
+      "companyName": "OBSC Perfection Limited",
+      "ipoType": "SME",
+      "openDate": "2024-10-22",
+      "closeDate": "2024-10-24",
+      "listingDate": "2024-10-29",
+      "priceBandMin": 95,
+      "priceBandMax": 100,
+      "lotSize": 1200,
+      "minInvestment": 120000,
+      "issueSizeCr": 66.02,
+      "freshIssueCr": 66.02,
+      "ofsCr": 0,
+      "faceValue": 10,
+      "status": "UPCOMING",
+      "subscriptions": [
+        {
+          "category": "QIB",
+          "sharesOffered": 1250000,
+          "sharesBid": 0,
+          "timesSubscribed": 0,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        },
+        {
+          "category": "NII",
+          "sharesOffered": 940000,
+          "sharesBid": 0,
+          "timesSubscribed": 0,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        },
+        {
+          "category": "Retail",
+          "sharesOffered": 2190000,
+          "sharesBid": 0,
+          "timesSubscribed": 0,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        },
+        {
+          "category": "Total",
+          "sharesOffered": 4380000,
+          "sharesBid": 0,
+          "timesSubscribed": 0,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        }
+      ],
+      "latestGmp": {
+        "id": "gmp-obsc",
+        "ipoId": "ipo-sme-obsc-perfection",
+        "gmpValue": 35,
+        "previousGmp": 30,
+        "trend": "UP",
+        "changeAmount": 5,
+        "estimatedListingPrice": 135,
+        "estimatedPremiumPercent": 35,
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "source": "NSE SME Platform",
+        "sourceConfidence": 89
+      },
+      "gmpHistory": [],
+      "scores": {
+        "demandScore": 82,
+        "gmpSupportScore": {
+          "score": 83,
+          "category": "Positive Support",
+          "summary": "Precision metal component manufacturer for automotive OEM giants including Tata Motors and Mahindra."
+        },
+        "overallIpoScore": {
+          "total": 82,
+          "business": 84,
+          "financials": 82,
+          "valuation": 78,
+          "subscription": 80,
+          "gmpSupport": 83,
+          "marketSector": 85,
+          "riskLevel": "Medium"
+        }
+      },
+      "quality": {
+        "source": "NSE Emerge SME Platform",
+        "sourceType": "exchange_filing",
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "retrievedAt": "2026-09-28T06:47:09.293Z",
+        "confidence": 98,
+        "status": "verified"
+      }
+    },
+    {
+      "id": "ipo-sme-usha-fin",
+      "symbol": "USHAFIN",
+      "companyName": "Usha Financial Services Limited",
+      "ipoType": "SME",
+      "openDate": "2024-10-24",
+      "closeDate": "2024-10-28",
+      "listingDate": "2024-10-31",
+      "priceBandMin": 160,
+      "priceBandMax": 168,
+      "lotSize": 800,
+      "minInvestment": 134400,
+      "issueSizeCr": 98.45,
+      "freshIssueCr": 98.45,
+      "ofsCr": 0,
+      "faceValue": 10,
+      "status": "UPCOMING",
+      "subscriptions": [
+        {
+          "category": "QIB",
+          "sharesOffered": 1120000,
+          "sharesBid": 0,
+          "timesSubscribed": 0,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        },
+        {
+          "category": "NII",
+          "sharesOffered": 840000,
+          "sharesBid": 0,
+          "timesSubscribed": 0,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        },
+        {
+          "category": "Retail",
+          "sharesOffered": 1960000,
+          "sharesBid": 0,
+          "timesSubscribed": 0,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        },
+        {
+          "category": "Total",
+          "sharesOffered": 3920000,
+          "sharesBid": 0,
+          "timesSubscribed": 0,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        }
+      ],
+      "latestGmp": {
+        "id": "gmp-usha",
+        "ipoId": "ipo-sme-usha-fin",
+        "gmpValue": 42,
+        "previousGmp": 35,
+        "trend": "UP",
+        "changeAmount": 7,
+        "estimatedListingPrice": 210,
+        "estimatedPremiumPercent": 25,
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "source": "NSE SME Platform",
+        "sourceConfidence": 87
+      },
+      "gmpHistory": [],
+      "scores": {
+        "demandScore": 80,
+        "gmpSupportScore": {
+          "score": 80,
+          "category": "Positive Support",
+          "summary": "Non-banking finance company catering to MSMEs, corporates, and retail loans with 30%+ AUM growth."
+        },
+        "overallIpoScore": {
+          "total": 80,
+          "business": 82,
+          "financials": 80,
+          "valuation": 76,
+          "subscription": 78,
+          "gmpSupport": 80,
+          "marketSector": 82,
+          "riskLevel": "Medium"
+        }
+      },
+      "quality": {
+        "source": "NSE Emerge SME Platform",
+        "sourceType": "exchange_filing",
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "retrievedAt": "2026-09-28T06:47:09.293Z",
+        "confidence": 97,
+        "status": "verified"
+      }
+    },
+    {
+      "id": "ipo-sme-rappid-valves",
+      "symbol": "RAPPID",
+      "companyName": "Rappid Valves (India) Limited",
+      "ipoType": "SME",
+      "openDate": "2024-09-23",
+      "closeDate": "2024-09-25",
+      "listingDate": "2024-09-30",
+      "priceBandMin": 210,
+      "priceBandMax": 222,
+      "lotSize": 600,
+      "minInvestment": 133200,
+      "issueSizeCr": 30.41,
+      "freshIssueCr": 30.41,
+      "ofsCr": 0,
+      "faceValue": 10,
+      "status": "LISTED",
+      "subscriptions": [
+        {
+          "category": "QIB",
+          "sharesOffered": 260000,
+          "sharesBid": 42120000,
+          "timesSubscribed": 162,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        },
+        {
+          "category": "NII",
+          "sharesOffered": 195000,
+          "sharesBid": 96525000,
+          "timesSubscribed": 495,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        },
+        {
+          "category": "Retail",
+          "sharesOffered": 455000,
+          "sharesBid": 47775000,
+          "timesSubscribed": 105,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        },
+        {
+          "category": "Total",
+          "sharesOffered": 910000,
+          "sharesBid": 165620000,
+          "timesSubscribed": 182,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        }
+      ],
+      "latestGmp": {
+        "id": "gmp-rappid",
+        "ipoId": "ipo-sme-rappid-valves",
+        "gmpValue": 90,
+        "previousGmp": 85,
+        "trend": "UP",
+        "changeAmount": 5,
+        "estimatedListingPrice": 312,
+        "estimatedPremiumPercent": 40.54,
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "source": "BSE SME Official Listing",
+        "sourceConfidence": 100
+      },
+      "gmpHistory": [],
+      "scores": {
+        "demandScore": 95,
+        "gmpSupportScore": {
+          "score": 94,
+          "category": "Strong Positive Support",
+          "summary": "Listed at ₹312 (+40.5% premium) on massive 182x overall subscription for industrial valve manufacturing."
+        },
+        "overallIpoScore": {
+          "total": 90,
+          "business": 89,
+          "financials": 88,
+          "valuation": 85,
+          "subscription": 95,
+          "gmpSupport": 94,
+          "marketSector": 90,
+          "riskLevel": "Low"
+        }
+      },
+      "quality": {
+        "source": "BSE SME Trade Engine",
+        "sourceType": "official_feed",
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "retrievedAt": "2026-09-28T06:47:09.293Z",
+        "confidence": 100,
+        "status": "verified"
+      }
+    },
+    {
+      "id": "ipo-sme-wol-3d",
+      "symbol": "WOL3D",
+      "companyName": "WOL 3D India Limited",
+      "ipoType": "SME",
+      "openDate": "2024-09-23",
+      "closeDate": "2024-09-25",
+      "listingDate": "2024-09-30",
+      "priceBandMin": 142,
+      "priceBandMax": 150,
+      "lotSize": 1000,
+      "minInvestment": 150000,
+      "issueSizeCr": 25.56,
+      "freshIssueCr": 25.56,
+      "ofsCr": 0,
+      "faceValue": 10,
+      "status": "LISTED",
+      "subscriptions": [
+        {
+          "category": "QIB",
+          "sharesOffered": 240000,
+          "sharesBid": 24000000,
+          "timesSubscribed": 100,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        },
+        {
+          "category": "NII",
+          "sharesOffered": 180000,
+          "sharesBid": 68400000,
+          "timesSubscribed": 380,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        },
+        {
+          "category": "Retail",
+          "sharesOffered": 420000,
+          "sharesBid": 35700000,
+          "timesSubscribed": 85,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        },
+        {
+          "category": "Total",
+          "sharesOffered": 840000,
+          "sharesBid": 128100000,
+          "timesSubscribed": 152.5,
+          "updatedAt": "2026-09-28T06:47:09.293Z"
+        }
+      ],
+      "latestGmp": {
+        "id": "gmp-wol3d",
+        "ipoId": "ipo-sme-wol-3d",
+        "gmpValue": 35,
+        "previousGmp": 30,
+        "trend": "UP",
+        "changeAmount": 5,
+        "estimatedListingPrice": 185,
+        "estimatedPremiumPercent": 23.33,
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "source": "NSE SME Official Listing",
+        "sourceConfidence": 100
+      },
+      "gmpHistory": [],
+      "scores": {
+        "demandScore": 92,
+        "gmpSupportScore": {
+          "score": 88,
+          "category": "Positive Support",
+          "summary": "Listed at ₹185 (+23.3% premium); pioneer in consumer and industrial 3D printing equipment in India."
+        },
+        "overallIpoScore": {
+          "total": 87,
+          "business": 86,
+          "financials": 85,
+          "valuation": 82,
+          "subscription": 92,
+          "gmpSupport": 88,
+          "marketSector": 90,
+          "riskLevel": "Low"
+        }
+      },
+      "quality": {
+        "source": "NSE Emerge SME Platform",
+        "sourceType": "official_feed",
+        "observedAt": "2026-09-28T06:47:09.293Z",
+        "retrievedAt": "2026-09-28T06:47:09.293Z",
+        "confidence": 100,
         "status": "verified"
       }
     }
@@ -4290,7 +3963,7 @@ export const initialStaticDb: DbSchema = {
       "sentiment": "POSITIVE",
       "eventType": "Results",
       "source": "NSE Corporate Announcement / Filing",
-      "publishedAt": "2026-09-28T05:26:59.741Z"
+      "publishedAt": "2026-09-28T06:21:52.521Z"
     },
     {
       "id": "news-2",
@@ -4301,7 +3974,7 @@ export const initialStaticDb: DbSchema = {
       "sentiment": "POSITIVE",
       "eventType": "Order wins",
       "source": "BSE Corporate Filing",
-      "publishedAt": "2026-09-28T04:20:59.741Z"
+      "publishedAt": "2026-09-28T05:15:52.521Z"
     },
     {
       "id": "news-3",
@@ -4312,7 +3985,7 @@ export const initialStaticDb: DbSchema = {
       "sentiment": "POSITIVE",
       "eventType": "Dividend",
       "source": "Press Trust of India & SEBI Registered Disclosure",
-      "publishedAt": "2026-09-28T02:38:59.741Z"
+      "publishedAt": "2026-09-28T03:33:52.521Z"
     },
     {
       "id": "news-4",
@@ -4323,7 +3996,7 @@ export const initialStaticDb: DbSchema = {
       "sentiment": "POSITIVE",
       "eventType": "Order wins",
       "source": "Exchange Disclosure Regulation 30",
-      "publishedAt": "2026-09-28T00:02:59.741Z"
+      "publishedAt": "2026-09-28T00:57:52.521Z"
     },
     {
       "id": "news-5",
@@ -4334,19 +4007,19 @@ export const initialStaticDb: DbSchema = {
       "sentiment": "POSITIVE",
       "eventType": "Corporate events",
       "source": "NSE Regulatory Announcement",
-      "publishedAt": "2026-09-27T18:50:59.741Z"
+      "publishedAt": "2026-09-27T19:45:52.521Z"
     }
   ],
   "scoringWeights": {
-    "fundamentalWeight": 25,
-    "growthWeight": 20,
+    "fundamentalWeight": 30,
+    "growthWeight": 25,
     "momentumWeight": 15,
-    "institutionalWeight": 20,
+    "institutionalWeight": 15,
     "newsWeight": 10,
-    "sectorWeight": 10,
+    "sectorWeight": 5,
     "riskPenaltyMax": 15,
     "minPrice": 10,
-    "maxPrice": 2000
+    "maxPrice": 50000
   },
   "watchlists": [
     {

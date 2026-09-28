@@ -18,6 +18,8 @@ import {
 } from '../../src/types/index.ts';
 import { getSeedIpos } from './iposData.ts';
 import { getSeedInstitutional } from './institutionalData.ts';
+import { getSeedStocks } from './stocksData.ts';
+import { getSeedDividends } from './dividendsData.ts';
 import { freshenDatabaseDates, simulateMarketTick } from '../../src/utils/dynamicDates.ts';
 import { realtimeMarketService } from '../services/realtimeMarketService.ts';
 
@@ -73,13 +75,33 @@ class DatabaseService {
       if (fs.existsSync(DB_FILE)) {
         const raw = fs.readFileSync(DB_FILE, 'utf-8');
         this.db = JSON.parse(raw);
-        // Auto-migrate if IPO or institutional dataset is sparse or older version
-        if (!this.db || !this.db.version || this.db.version < 2 || !this.db.ipos || this.db.ipos.length < 5 || !this.db.institutional || this.db.institutional.length < 8) {
-          console.log('[IndianShares DB] Migrating database to version 2 with expanded IPOs and institutional picks...');
+        // Auto-migrate if IPO, dividend, or stock dataset is sparse or older version
+        if (
+          !this.db ||
+          !this.db.version ||
+          this.db.version < 4 ||
+          !this.db.stocks ||
+          this.db.stocks.length < 19 ||
+          !this.db.dividends ||
+          this.db.dividends.length < 10
+        ) {
+          console.log('[IndianShares DB] Migrating database to version 4 with real-world IPOs, SME IPOs, verified dividends and 19 tracked equities...');
           const nowIso = new Date().toISOString();
-          this.db!.version = 2;
+          this.db!.version = 4;
           this.db!.ipos = getSeedIpos(nowIso);
-          this.db!.institutional = getSeedInstitutional(nowIso);
+          this.db!.dividends = getSeedDividends(nowIso);
+          this.db!.stocks = getSeedStocks(nowIso);
+          this.db!.scoringWeights = {
+            fundamentalWeight: 30,
+            growthWeight: 25,
+            momentumWeight: 15,
+            institutionalWeight: 15,
+            newsWeight: 10,
+            sectorWeight: 5,
+            riskPenaltyMax: 15,
+            minPrice: 10,
+            maxPrice: 50000,
+          };
           this.persistSync();
         }
         if (this.db) {
@@ -1351,7 +1373,7 @@ class DatabaseService {
       sectorWeight: 10,
       riskPenaltyMax: 15,
       minPrice: 10,
-      maxPrice: 2000,
+      maxPrice: 50000,
     };
 
     const watchlists: WatchlistItem[] = [

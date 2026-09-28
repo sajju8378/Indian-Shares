@@ -227,7 +227,7 @@ class ClientFallbackService {
 
     scored.sort((a, b) => b.scores.overallScore - a.scores.overallScore);
 
-    const top10 = scored.slice(0, 10).map((item, idx) => ({
+    const ranked = scored.map((item, idx) => ({
       ...item,
       rank: idx + 1,
       scores: { ...item.scores, rank: idx + 1 },
@@ -237,7 +237,7 @@ class ClientFallbackService {
       universeCriteria: `Price ₹${weights.minPrice} - ₹${weights.maxPrice}`,
       weights,
       lastCalculated: db.lastUpdated,
-      stocks: top10,
+      stocks: ranked,
     };
   }
 

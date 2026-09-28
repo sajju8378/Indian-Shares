@@ -73,6 +73,9 @@ export class IndianSharesIpoEngine {
     const list = type ? db.ipos.filter((i) => i.ipoType === type) : db.ipos;
 
     return list.map((ipo) => {
+      if (ipo.scores?.overallIpoScore && ipo.scores.overallIpoScore.total > 0) {
+        return ipo;
+      }
       const demandScore = this.calculateDemandScore(ipo);
       const gmpSupport = this.calculateGmpSupportScore(ipo.latestGmp);
 

@@ -24,6 +24,10 @@ export const STOCK_TICKERS: Record<string, string> = {
   RELIANCE: 'RELIANCE.NS',
   HDFCBANK: 'HDFCBANK.NS',
   SUNPHARMA: 'SUNPHARMA.NS',
+  TCS: 'TCS.NS',
+  LT: 'LT.NS',
+  SBIN: 'SBIN.NS',
+  HCLTECH: 'HCLTECH.NS',
 };
 
 interface LiveQuoteResult {

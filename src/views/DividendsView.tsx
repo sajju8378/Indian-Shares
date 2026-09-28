@@ -43,7 +43,7 @@ export const DividendsView: React.FC<DividendsViewProps> = ({ onOpenStockModal }
       return item.dividendYield >= 2.0;
     }
     if (filterType === 'UPCOMING') {
-      return new Date(item.exDate).getTime() >= Date.now() - 86400000;
+      return item.status === 'DECLARED' || item.status === 'EXPECTED' || new Date(item.exDate).getTime() >= Date.now() - 86400000;
     }
     return true;
   });

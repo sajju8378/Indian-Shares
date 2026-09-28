@@ -5,6 +5,9 @@ export class IndianSharesDividendEngine {
   public static getAllDividends(): DividendItem[] {
     const db = dbService.getDb();
     return db.dividends.map((item) => {
+      if (item.dividendScore && item.dividendScore.score >= 85) {
+        return item;
+      }
       // Refresh score calculation
       const fund = db.fundamentals[item.symbol];
       const val = db.valuation[item.symbol];
