@@ -14,6 +14,7 @@ import {
   Info,
 } from 'lucide-react';
 import { Top10Response, apiClient } from '../api/client.ts';
+import { formatRelativeTime, getIndianMarketStatus } from '../utils/dynamicDates.ts';
 
 interface Top10ViewProps {
   onOpenStockModal: (symbol: string) => void;
@@ -105,8 +106,8 @@ export const Top10View: React.FC<Top10ViewProps> = ({ onOpenStockModal }) => {
               <span className="text-xs font-bold uppercase tracking-wider text-amber-400">
                 Authoritative Algorithm
               </span>
-              <span className="text-xs text-slate-400 font-mono">
-                {data.universeCriteria}
+              <span className="text-xs text-slate-300 font-mono bg-slate-950/80 px-2 py-0.5 rounded border border-slate-800">
+                Ranked Live • {getIndianMarketStatus().dateStringIst}
               </span>
             </div>
             <h1 className="text-2xl font-black text-white tracking-tight">
@@ -453,7 +454,7 @@ export const Top10View: React.FC<Top10ViewProps> = ({ onOpenStockModal }) => {
                   </div>
 
                   <div className="flex items-center justify-between text-[11px] text-slate-500 pt-1">
-                    <span>Observed At: {scores.timestamp ? new Date(scores.timestamp).toLocaleString('en-IN') : 'Recent'}</span>
+                    <span>Rank Calculated: <strong className="text-slate-400 font-normal">{scores.timestamp ? formatRelativeTime(scores.timestamp) : 'Live Session'}</strong></span>
                     <button
                       onClick={() => onOpenStockModal(item.symbol)}
                       className="text-amber-400 hover:underline font-semibold"

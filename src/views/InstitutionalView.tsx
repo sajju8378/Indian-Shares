@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import { InstitutionalOverviewData, apiClient } from '../api/client.ts';
 import { InstitutionalObservation } from '../types/index.ts';
+import { getIndianMarketStatus } from '../utils/dynamicDates.ts';
 
 interface InstitutionalViewProps {
   onOpenStockModal: (symbol: string) => void;
@@ -96,7 +97,9 @@ export const InstitutionalView: React.FC<InstitutionalViewProps> = ({ onOpenStoc
               <span className="text-xs font-bold uppercase tracking-wider text-purple-400">
                 Smart Money & Ownership Intelligence
               </span>
-              <span className="text-xs text-slate-400">BSE/NSE Shareholding Pattern Filings</span>
+              <span className="text-xs text-slate-300 bg-slate-950/80 px-2 py-0.5 rounded border border-slate-800">
+                Verified Disclosures • {getIndianMarketStatus().dateStringIst}
+              </span>
             </div>
             <h1 className="text-2xl font-black text-white tracking-tight">
               Shares Suggested by Institutions & FII / Mutual Fund Accumulation

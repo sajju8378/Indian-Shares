@@ -24,6 +24,7 @@ import {
   InstitutionalOverviewData,
 } from '../api/client.ts';
 import { initialStaticDb } from '../data/staticDb.ts';
+import { freshenDatabaseDates, simulateMarketTick } from '../utils/dynamicDates.ts';
 
 export interface DbSchema {
   version: number;
@@ -56,13 +57,23 @@ export interface DbSchema {
 }
 
 class ClientFallbackService {
-  private db: DbSchema = initialStaticDb;
+  private db: DbSchema;
+
+  constructor() {
+    this.db = freshenDatabaseDates(initialStaticDb);
+  }
 
   private async loadDb(): Promise<DbSchema> {
     return this.db;
   }
 
   public async getMarketOverview(): Promise<MarketOverviewData> {
+    // Tick market prices realistically for live trading feel
+    const ticked = simulateMarketTick(this.db.stocks, this.db.indices);
+    this.db.stocks = ticked.stocks;
+    this.db.indices = ticked.indices;
+    this.db.lastUpdated = new Date().toISOString();
+
     const db = this.db;
     const sortedMovers = [...db.stocks].sort((a, b) => b.percentChange - a.percentChange);
     const topGainers = sortedMovers.slice(0, 5).map((s) => ({

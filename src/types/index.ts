@@ -104,10 +104,11 @@ export interface DividendItem {
   exDate: string;
   recordDate: string;
   paymentDate?: string;
+  payoutDate?: string;
   dividendYield: number;
   payoutRatio?: number;
   isConfirmed: boolean; // false for expected/estimated
-  status: 'DECLARED' | 'EXPECTED' | 'HISTORICAL';
+  status: 'DECLARED' | 'EXPECTED' | 'HISTORICAL' | 'EXECUTED';
   dividendScore?: {
     score: number;
     rating: 'Strong' | 'Good' | 'Average' | 'Weak' | 'Unavailable';
@@ -210,6 +211,13 @@ export interface GmpObservation {
   observedAt: string;
   source: string;
   sourceConfidence: number;
+  historicalQuotes?: {
+    gmpValue: number;
+    trend: string;
+    observedAt: string;
+    source: string;
+    sourceConfidence: number;
+  }[];
 }
 
 export interface IpoItem {

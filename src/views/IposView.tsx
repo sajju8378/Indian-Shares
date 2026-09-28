@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import { apiClient } from '../api/client.ts';
 import { IpoItem } from '../types/index.ts';
+import { formatDisplayDate, formatDateRange, formatRelativeTime, getIndianMarketStatus } from '../utils/dynamicDates.ts';
 
 export const IposView: React.FC = () => {
   const [selectedType, setSelectedType] = useState<'ALL' | 'MAINBOARD' | 'SME'>('ALL');
@@ -78,7 +79,9 @@ export const IposView: React.FC = () => {
               <span className="text-xs font-bold uppercase tracking-wider text-sky-400">
                 Primary Market Intelligence Desk
               </span>
-              <span className="text-xs text-slate-400">NSE / BSE Mainboard & SME Offerings</span>
+              <span className="text-xs text-slate-300 bg-slate-950/80 px-2 py-0.5 rounded border border-slate-800">
+                Calendar As of {getIndianMarketStatus().dateStringIst}
+              </span>
             </div>
             <h1 className="text-2xl font-black text-white tracking-tight">
               Upcoming & Active IPOs with Indicative GMP Intelligence
@@ -271,24 +274,27 @@ export const IposView: React.FC = () => {
                       >
                         {ipo.ipoType} IPO
                       </span>
-                      <span
-                        className={`text-xs font-semibold px-2 py-0.5 rounded ${
-                          ipo.status === 'UPCOMING'
-                            ? 'bg-amber-500/10 text-amber-400'
-                            : ipo.status === 'OPEN'
-                            ? 'bg-emerald-500/10 text-emerald-400'
-                            : 'bg-slate-800 text-slate-400'
-                        }`}
-                      >
-                        Status: {ipo.status}
-                      </span>
+                      {ipo.status === 'OPEN' ? (
+                        <span className="text-xs font-bold px-2.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 flex items-center gap-1.5">
+                          <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                          OPEN FOR BIDDING
+                        </span>
+                      ) : ipo.status === 'UPCOMING' ? (
+                        <span className="text-xs font-semibold px-2.5 py-0.5 rounded bg-sky-500/10 text-sky-400 border border-sky-500/20">
+                          UPCOMING ({formatDisplayDate(ipo.openDate)})
+                        </span>
+                      ) : (
+                        <span className="text-xs font-semibold px-2.5 py-0.5 rounded bg-slate-800 text-slate-400">
+                          CLOSED (Listed)
+                        </span>
+                      )}
                       <span className="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-300">
                         Issue Size: ₹{(ipo.issueSizeCr ?? 0).toLocaleString('en-IN')} Cr
                       </span>
                       {ipo.listingDate && (
-                        <span className="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-400 flex items-center gap-1">
-                          <Calendar className="h-3 w-3" />
-                          Listing: {ipo.listingDate}
+                        <span className="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-300 flex items-center gap-1">
+                          <Calendar className="h-3 w-3 text-amber-400" />
+                          Listing: {formatDisplayDate(ipo.listingDate)}
                         </span>
                       )}
                     </div>
@@ -368,13 +374,13 @@ export const IposView: React.FC = () => {
                       <div className="p-3 bg-slate-900 rounded border border-slate-800">
                         <span className="text-slate-400 block text-[11px]">Bidding Dates</span>
                         <span className="font-semibold text-white font-mono">
-                          {ipo.openDate} to {ipo.closeDate}
+                          {formatDateRange(ipo.openDate, ipo.closeDate)}
                         </span>
                       </div>
                       <div className="p-3 bg-slate-900 rounded border border-slate-800">
                         <span className="text-slate-400 block text-[11px]">Listing Date</span>
                         <span className="font-semibold text-emerald-400 font-mono">
-                          {ipo.listingDate || 'To be announced'}
+                          {ipo.listingDate ? formatDisplayDate(ipo.listingDate) : 'To be announced'}
                         </span>
                       </div>
                       <div className="p-3 bg-slate-900 rounded border border-slate-800">
@@ -427,7 +433,7 @@ export const IposView: React.FC = () => {
                         </p>
                         {gmp && (
                           <div className="text-[10px] text-slate-500 font-mono pt-1">
-                            Source Desk: {gmp.source} • Observed: {gmp.observedAt ? new Date(gmp.observedAt).toLocaleDateString('en-IN') : 'Recent'}
+                            Source Desk: {gmp.source} • Observed: {gmp.observedAt ? formatRelativeTime(gmp.observedAt) : 'Recent'}
                           </div>
                         )}
                       </div>

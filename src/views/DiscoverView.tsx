@@ -12,6 +12,7 @@ import {
 } from 'lucide-react';
 import { apiClient } from '../api/client.ts';
 import { StockQuote, StockScoreBreakdown, ScreenerFilterCriteria } from '../types/index.ts';
+import { getIndianMarketStatus } from '../utils/dynamicDates.ts';
 
 interface DiscoverViewProps {
   onOpenStockModal: (symbol: string) => void;
@@ -139,7 +140,9 @@ export const DiscoverView: React.FC<DiscoverViewProps> = ({ onOpenStockModal }) 
               <span className="text-xs font-bold uppercase tracking-wider text-amber-400">
                 Multi-Pillar Stock Screener
               </span>
-              <span className="text-xs text-slate-400">Normalized Fundamentals Engine</span>
+              <span className="text-xs text-slate-300 bg-slate-950/80 px-2 py-0.5 rounded border border-slate-800">
+                Screening Engine • {getIndianMarketStatus().dateStringIst}
+              </span>
             </div>
             <h1 className="text-2xl font-black text-white tracking-tight">
               Discover Quality Indian Shares

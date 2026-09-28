@@ -12,6 +12,7 @@ import {
 } from 'lucide-react';
 import { DividendItem } from '../types/index.ts';
 import { apiClient } from '../api/client.ts';
+import { formatDisplayDate, getIndianMarketStatus } from '../utils/dynamicDates.ts';
 
 interface DividendsViewProps {
   onOpenStockModal: (symbol: string) => void;
@@ -60,7 +61,9 @@ export const DividendsView: React.FC<DividendsViewProps> = ({ onOpenStockModal }
               <span className="text-xs font-bold uppercase tracking-wider text-emerald-400">
                 Corporate Actions Intelligence
               </span>
-              <span className="text-xs text-slate-400">BSE / NSE Disclosures</span>
+              <span className="text-xs text-slate-300 bg-slate-950/80 px-2 py-0.5 rounded border border-slate-800">
+                Verified Board Disclosures • As of {getIndianMarketStatus().dateStringIst}
+              </span>
             </div>
             <h1 className="text-2xl font-black text-white tracking-tight">
               Dividend Yield & Payout Sustainability Desk
@@ -151,9 +154,28 @@ export const DividendsView: React.FC<DividendsViewProps> = ({ onOpenStockModal }
                       <span className="text-[10px] px-2 py-0.5 rounded bg-emerald-950/60 text-emerald-300 border border-emerald-800 font-semibold">
                         {item.dividendType} Dividend
                       </span>
-                      <span className="text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-400">
-                        FY24-25
-                      </span>
+                      {(() => {
+                        const daysUntil = Math.ceil((new Date(item.exDate).getTime() - Date.now()) / 86400000);
+                        if (daysUntil > 0) {
+                          return (
+                            <span className="text-[10px] px-2 py-0.5 rounded bg-sky-500/10 text-sky-300 border border-sky-500/20 font-medium">
+                              Ex-Date in {daysUntil} {daysUntil === 1 ? 'day' : 'days'}
+                            </span>
+                          );
+                        } else if (daysUntil === 0) {
+                          return (
+                            <span className="text-[10px] px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold animate-pulse">
+                              Ex-Date Today
+                            </span>
+                          );
+                        } else {
+                          return (
+                            <span className="text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-400">
+                              Executed
+                            </span>
+                          );
+                        }
+                      })()}
                     </div>
                     <p className="text-xs text-slate-400 mt-0.5">{item.companyName}</p>
                   </div>
@@ -172,15 +194,15 @@ export const DividendsView: React.FC<DividendsViewProps> = ({ onOpenStockModal }
                 <div className="grid grid-cols-3 gap-2 mt-4 p-3 bg-slate-950/70 rounded-lg border border-slate-800/80 text-[11px]">
                   <div>
                     <span className="text-slate-500 block text-[10px]">Ex-Dividend Date</span>
-                    <span className="font-mono text-slate-200 font-semibold">{item.exDate}</span>
+                    <span className="font-mono text-slate-200 font-semibold">{formatDisplayDate(item.exDate)}</span>
                   </div>
                   <div>
                     <span className="text-slate-500 block text-[10px]">Record Date</span>
-                    <span className="font-mono text-slate-200 font-semibold">{item.recordDate}</span>
+                    <span className="font-mono text-slate-200 font-semibold">{formatDisplayDate(item.recordDate)}</span>
                   </div>
                   <div>
                     <span className="text-slate-500 block text-[10px]">Payout Date</span>
-                    <span className="font-mono text-slate-200 font-semibold">{item.payoutDate}</span>
+                    <span className="font-mono text-slate-200 font-semibold">{formatDisplayDate(item.payoutDate)}</span>
                   </div>
                 </div>
 

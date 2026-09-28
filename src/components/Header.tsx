@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import { MarketIndex, StockQuote } from '../types/index.ts';
 import { apiClient } from '../api/client.ts';
+import { getIndianMarketStatus, MarketSessionStatus } from '../utils/dynamicDates.ts';
 
 interface HeaderProps {
   currentTab: string;
@@ -32,6 +33,7 @@ export const Header: React.FC<HeaderProps> = ({
   watchlistCount,
 }) => {
   const [indices, setIndices] = useState<MarketIndex[]>([]);
+  const [marketStatus, setMarketStatus] = useState<MarketSessionStatus>(getIndianMarketStatus());
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState<StockQuote[]>([]);
   const [isSearching, setIsSearching] = useState(false);
@@ -39,11 +41,25 @@ export const Header: React.FC<HeaderProps> = ({
   const searchRef = useRef<HTMLDivElement>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
+  // Live ticking Indian Standard Time clock
   useEffect(() => {
-    apiClient
-      .getMarketOverview()
-      .then((data) => setIndices(data.indices || []))
-      .catch((err) => console.error('Error fetching indices for header:', err));
+    const timer = setInterval(() => {
+      setMarketStatus(getIndianMarketStatus());
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
+
+  // Periodic indices refresh for live tick feel
+  useEffect(() => {
+    const fetchIndices = () => {
+      apiClient
+        .getMarketOverview()
+        .then((data) => setIndices(data.indices || []))
+        .catch((err) => console.error('Error fetching indices for header:', err));
+    };
+    fetchIndices();
+    const pollTimer = setInterval(fetchIndices, 12000);
+    return () => clearInterval(pollTimer);
   }, []);
 
   useEffect(() => {
@@ -86,10 +102,10 @@ export const Header: React.FC<HeaderProps> = ({
       {/* Top Live Ticker Bar */}
       <div className="bg-slate-950 border-b border-slate-800/80 px-4 py-1.5 text-xs text-slate-300">
         <div className="max-w-7xl mx-auto flex items-center justify-between overflow-x-auto gap-6 scrollbar-none">
-          <div className="flex items-center gap-6 shrink-0">
-            <span className="flex items-center gap-1.5 font-medium text-emerald-400">
-              <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
-              MARKET LIVE
+          <div className="flex items-center gap-4 shrink-0">
+            <span className={`flex items-center gap-1.5 font-bold px-2 py-0.5 rounded text-[10px] tracking-wider uppercase border ${marketStatus.statusBadge}`}>
+              <span className={`h-1.5 w-1.5 rounded-full ${marketStatus.isOpen ? 'bg-emerald-400 animate-pulse' : marketStatus.isPreMarket ? 'bg-amber-400 animate-pulse' : 'bg-slate-400'}`} />
+              {marketStatus.statusLabel}
             </span>
             {indices.map((idx) => {
               const isPositive = (idx.change ?? 0) >= 0;
@@ -100,7 +116,7 @@ export const Header: React.FC<HeaderProps> = ({
                     {(idx.currentValue ?? 0).toLocaleString('en-IN', { minimumFractionDigits: 2 })}
                   </span>
                   <span
-                    className={`font-mono text-[11px] font-medium px-1 rounded ${
+                    className={`font-mono text-[11px] font-medium px-1 rounded transition-colors ${
                       isPositive ? 'text-emerald-400 bg-emerald-950/60' : 'text-rose-400 bg-rose-950/60'
                     }`}
                   >
@@ -112,13 +128,14 @@ export const Header: React.FC<HeaderProps> = ({
             })}
           </div>
 
-          <div className="hidden md:flex items-center gap-3 text-slate-400 shrink-0 text-[11px]">
-            <span className="flex items-center gap-1">
-              <ShieldCheck className="h-3.5 w-3.5 text-emerald-400" />
-              NSE / BSE Normalized Core
+          <div className="flex items-center gap-3 text-slate-300 shrink-0 text-[11px]">
+            <span className="font-mono bg-slate-900/90 px-2.5 py-0.5 rounded-md border border-slate-700/80 text-amber-300 font-semibold flex items-center gap-1.5 shadow-inner">
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+              {marketStatus.dateStringIst} • {marketStatus.timeStringIst}
             </span>
-            <span>•</span>
-            <span>IndianShares Engine v1.0</span>
+            <span className="hidden lg:inline text-slate-400 text-[10px] font-medium">
+              {marketStatus.timeUntilOpenOrClose}
+            </span>
           </div>
         </div>
       </div>

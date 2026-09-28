@@ -12,6 +12,7 @@ import {
   Filter,
 } from 'lucide-react';
 import { MoversData, apiClient } from '../api/client.ts';
+import { getIndianMarketStatus } from '../utils/dynamicDates.ts';
 
 interface MoversViewProps {
   onOpenStockModal: (symbol: string) => void;
@@ -22,12 +23,21 @@ export const MoversView: React.FC<MoversViewProps> = ({ onOpenStockModal }) => {
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState<'GAINERS' | 'LOSERS' | 'VOLUME' | 'UNUSUAL'>('GAINERS');
 
-  useEffect(() => {
+  const fetchMovers = (silent = false) => {
+    if (!silent) setLoading(true);
     apiClient
       .getMarketMovers()
       .then((res) => setData(res))
       .catch((err) => console.error('Error fetching movers:', err))
       .finally(() => setLoading(false));
+  };
+
+  useEffect(() => {
+    fetchMovers();
+    const interval = setInterval(() => {
+      fetchMovers(true);
+    }, 12000);
+    return () => clearInterval(interval);
   }, []);
 
   if (loading && !data) {
@@ -63,7 +73,9 @@ export const MoversView: React.FC<MoversViewProps> = ({ onOpenStockModal }) => {
               <span className="text-xs font-bold uppercase tracking-wider text-rose-400">
                 Momentum & Catalyst Tracking
               </span>
-              <span className="text-xs text-slate-400">Live Tick Flow</span>
+              <span className="text-xs text-slate-300 bg-slate-950/80 px-2 py-0.5 rounded border border-slate-800">
+                Live Tick Flow • {getIndianMarketStatus().dateStringIst}
+              </span>
             </div>
             <h1 className="text-2xl font-black text-white tracking-tight">
               Market Movers, Volume Spikes & Verified Catalysts

@@ -36,6 +36,7 @@ apiRouter.get('/healthz', (req: Request, res: Response) => {
 
 // 2. Market Overview & Indices
 apiRouter.get('/market/overview', (req: Request, res: Response) => {
+  dbService.tick();
   const db = dbService.getDb();
   const movers = IndianSharesMovementEngine.getMovers();
   res.json({

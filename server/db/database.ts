@@ -18,6 +18,7 @@ import {
 } from '../../src/types/index.ts';
 import { getSeedIpos } from './iposData.ts';
 import { getSeedInstitutional } from './institutionalData.ts';
+import { freshenDatabaseDates, simulateMarketTick } from '../../src/utils/dynamicDates.ts';
 
 export interface ScoringWeights {
   fundamentalWeight: number; // default 25
@@ -80,16 +81,27 @@ class DatabaseService {
           this.db!.institutional = getSeedInstitutional(nowIso);
           this.persistSync();
         }
+        if (this.db) {
+          this.db = freshenDatabaseDates(this.db);
+        }
         console.log('[IndianShares DB] Loaded persistent database from disk.');
       } else {
         console.log('[IndianShares DB] Initializing fresh database with verified market dataset...');
-        this.db = this.generateSeedData();
+        this.db = freshenDatabaseDates(this.generateSeedData());
         this.persistSync();
       }
     } catch (err) {
       console.error('[IndianShares DB] Error initializing database:', err);
-      this.db = this.generateSeedData();
+      this.db = freshenDatabaseDates(this.generateSeedData());
     }
+  }
+
+  public tick(): void {
+    if (!this.db) return;
+    const ticked = simulateMarketTick(this.db.stocks, this.db.indices);
+    this.db.stocks = ticked.stocks;
+    this.db.indices = ticked.indices;
+    this.db.lastUpdated = new Date().toISOString();
   }
 
   public getDb(): DbSchema {

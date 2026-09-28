@@ -12,8 +12,10 @@ import {
   ExternalLink,
   ChevronRight,
   ShieldCheck,
+  RefreshCw,
 } from 'lucide-react';
 import { MarketOverviewData, apiClient } from '../api/client.ts';
+import { getIndianMarketStatus, formatRelativeTime } from '../utils/dynamicDates.ts';
 
 interface MarketDeskViewProps {
   onOpenStockModal: (symbol: string) => void;
@@ -23,23 +25,35 @@ interface MarketDeskViewProps {
 export const MarketDeskView: React.FC<MarketDeskViewProps> = ({ onOpenStockModal, onSelectTab }) => {
   const [data, setData] = useState<MarketOverviewData | null>(null);
   const [loading, setLoading] = useState(true);
+  const [isRefreshing, setIsRefreshing] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [marketStatus, setMarketStatus] = useState(getIndianMarketStatus());
 
-  const fetchOverview = async () => {
+  const fetchOverview = async (silent = false) => {
     try {
-      setLoading(true);
+      if (!silent) setLoading(true);
+      else setIsRefreshing(true);
       const res = await apiClient.getMarketOverview();
       setData(res);
       setError(null);
+      setMarketStatus(getIndianMarketStatus());
     } catch (err: any) {
-      setError(err?.message || 'Failed to load market overview');
+      if (!silent) {
+        setError(err?.message || 'Failed to load market overview');
+      }
     } finally {
       setLoading(false);
+      setIsRefreshing(false);
     }
   };
 
   useEffect(() => {
     fetchOverview();
+    // Live ticking polling every 12 seconds
+    const interval = setInterval(() => {
+      fetchOverview(true);
+    }, 12000);
+    return () => clearInterval(interval);
   }, []);
 
   if (loading && !data) {
@@ -74,13 +88,16 @@ export const MarketDeskView: React.FC<MarketDeskViewProps> = ({ onOpenStockModal
       {/* Overview Top Headline & Quick Action Banner */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-gradient-to-r from-slate-900 via-slate-900 to-indigo-950/40 p-6 rounded-xl border border-slate-800 shadow-lg">
         <div>
-          <div className="flex items-center gap-2 mb-1">
+          <div className="flex flex-wrap items-center gap-2 mb-1">
             <span className="text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">
               NSE / BSE Overview
             </span>
-            <span className="text-xs text-slate-400 flex items-center gap-1">
-              <Clock className="h-3.5 w-3.5" />
-              Live Indian Market Hours (09:15 - 15:30 IST)
+            <span className="text-xs font-semibold text-slate-300 flex items-center gap-1.5 bg-slate-950/80 px-2.5 py-0.5 rounded border border-slate-800">
+              <Clock className="h-3.5 w-3.5 text-amber-400" />
+              {marketStatus.dateStringIst} • {marketStatus.timeStringIst}
+            </span>
+            <span className={`text-[11px] font-bold px-2 py-0.5 rounded border ${marketStatus.statusBadge}`}>
+              {marketStatus.statusLabel}
             </span>
           </div>
           <h1 className="text-2xl font-bold text-white tracking-tight">
@@ -92,7 +109,16 @@ export const MarketDeskView: React.FC<MarketDeskViewProps> = ({ onOpenStockModal
           </p>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-3">
+          <button
+            onClick={() => fetchOverview(true)}
+            disabled={isRefreshing}
+            className="px-3 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white font-semibold text-xs rounded-lg border border-slate-700 transition-colors flex items-center gap-1.5"
+            title="Refresh Market Live Quotes"
+          >
+            <RefreshCw className={`h-3.5 w-3.5 text-amber-400 ${isRefreshing ? 'animate-spin' : ''}`} />
+            <span>{isRefreshing ? 'Refreshing...' : 'Refresh Quotes'}</span>
+          </button>
           <button
             onClick={() => onSelectTab('top10')}
             className="px-4 py-2.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold text-xs rounded-lg shadow-md hover:shadow-amber-500/20 transition-all flex items-center gap-2"
@@ -112,13 +138,19 @@ export const MarketDeskView: React.FC<MarketDeskViewProps> = ({ onOpenStockModal
       {/* Major Indices Grid */}
       <div>
         <div className="flex items-center justify-between mb-3">
-          <h2 className="text-sm font-bold uppercase tracking-wider text-slate-300 flex items-center gap-2">
-            <Activity className="h-4 w-4 text-amber-500" />
-            Benchmark & Broad Indices
-          </h2>
-          <span className="text-xs text-slate-400 font-mono">
-            Updated: {new Date(data.timestamp).toLocaleTimeString('en-IN')}
-          </span>
+          <div className="flex items-center gap-2">
+            <h2 className="text-sm font-bold uppercase tracking-wider text-slate-300 flex items-center gap-2">
+              <Activity className="h-4 w-4 text-amber-500" />
+              Benchmark & Broad Indices
+            </h2>
+            <span className="flex items-center gap-1 text-[11px] text-emerald-400 font-mono font-medium px-2 py-0.5 rounded bg-emerald-950/50 border border-emerald-900/50">
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+              Live Feed
+            </span>
+          </div>
+          <div className="flex items-center gap-2 text-xs text-slate-400 font-mono">
+            <span>Tick: {new Date(data.timestamp).toLocaleTimeString('en-IN')}</span>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5">
@@ -471,8 +503,10 @@ export const MarketDeskView: React.FC<MarketDeskViewProps> = ({ onOpenStockModal
                 </div>
 
                 <div className="mt-4 pt-2.5 border-t border-slate-800/80 flex items-center justify-between text-[10px] text-slate-500">
-                  <span>{news.source}</span>
-                  <span>{new Date(news.publishedAt).toLocaleDateString('en-IN', { month: 'short', day: 'numeric' })}</span>
+                  <span className="truncate max-w-[140px]">{news.source}</span>
+                  <span className="font-medium text-slate-400 bg-slate-900 px-1.5 py-0.5 rounded border border-slate-800">
+                    {formatRelativeTime(news.publishedAt)}
+                  </span>
                 </div>
               </div>
             );

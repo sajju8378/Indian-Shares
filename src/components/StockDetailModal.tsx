@@ -18,6 +18,7 @@ import {
 } from 'lucide-react';
 import { CompanyStockDetail } from '../types/index.ts';
 import { apiClient } from '../api/client.ts';
+import { formatDisplayDate, formatRelativeTime } from '../utils/dynamicDates.ts';
 
 interface StockDetailModalProps {
   symbol: string | null;
@@ -771,7 +772,7 @@ export const StockDetailModal: React.FC<StockDetailModalProps> = ({
                                 {div.dividendType} Dividend
                               </span>
                               <p className="text-[11px] text-slate-400 mt-1">
-                                Ex-Date: {div.exDate} | Record Date: {div.recordDate} | Payout Date: {div.payoutDate}
+                                Ex-Date: {formatDisplayDate(div.exDate)} | Record Date: {formatDisplayDate(div.recordDate)} | Payout: {formatDisplayDate(div.payoutDate)}
                               </p>
                             </div>
                             <div className="text-right font-mono">
@@ -817,10 +818,10 @@ export const StockDetailModal: React.FC<StockDetailModalProps> = ({
                         </div>
                         <h4 className="text-sm font-semibold text-white">{item.headline}</h4>
                         <p className="text-xs text-slate-300 leading-relaxed">{item.summary}</p>
-                        <div className="pt-2 text-[10px] text-slate-500 flex items-center justify-between">
-                          <span>Source: {item.source}</span>
-                          <span>{item.publishedAt ? new Date(item.publishedAt).toLocaleString('en-IN') : 'Recent'}</span>
-                        </div>
+                          <div className="pt-2 text-[10px] text-slate-500 flex items-center justify-between">
+                            <span>Source: {item.source}</span>
+                            <span className="font-medium text-slate-400">{item.publishedAt ? formatRelativeTime(item.publishedAt) : 'Recent'}</span>
+                          </div>
                       </div>
                     ))
                   ) : (

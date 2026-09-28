@@ -1,7 +1,4 @@
-// Auto-generated client bundle database
-import { DbSchema } from "../services/clientFallback.ts";
-
-export const initialStaticDb: DbSchema = {
+{
   "version": 1,
   "lastUpdated": "2026-09-28T05:50:59.739Z",
   "indices": [
@@ -4397,4 +4394,4 @@ export const initialStaticDb: DbSchema = {
       "scoreAtSave": 92
     }
   ]
-};
+}
